@@ -1,0 +1,12 @@
+@main {
+    <h1>Cadastrar Pessoa</h1>
+
+    @helper.form(routes.PessoaController.cadastrarPessoa()) {
+        @helper.CSRF.formField
+        <lable>Nome:</lable>
+        <input type="text" name="nome">
+        <label>E-mail</label>
+        <input type="text" name="email">
+        <input type="submit" value="Enviar">
+    }
+}

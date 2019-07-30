@@ -29,13 +29,19 @@ public class PessoaDAOImpl implements PessoaDAO{
     }
 
     private List<Pessoa> listarImpl(EntityManager entityManager){
-        Query query = entityManager.createQuery("select p from Pessoa p");
+        Query query = entityManager.createQuery("select p from Pessoa p ORDER BY p.id");
         List<Pessoa> pessoas = query.getResultList();
         return pessoas;
     }
 
     private Pessoa atualizarImpl(EntityManager entityManager, Pessoa  pessoa){
         entityManager.merge(pessoa);
+        return pessoa;
+    }
+
+    private Pessoa buscarPorIdImpl(EntityManager entityManager, Long id){
+        Query query = entityManager.createQuery("select p from Pessoa p where p.id = :id").setParameter("id",id);
+        Pessoa pessoa = (Pessoa) query.getSingleResult();
         return pessoa;
     }
 
@@ -68,5 +74,10 @@ public class PessoaDAOImpl implements PessoaDAO{
     @Override
     public CompletionStage<Pessoa> deletar(Long id) {
         return supplyAsync(() -> wrap((entityManager) -> deletarImpl(entityManager,id)),executionContext);
+    }
+
+    @Override
+    public CompletionStage<Pessoa> buscarPorId(Long id) {
+        return supplyAsync(() -> wrap(entityManager -> buscarPorIdImpl(entityManager,id)),executionContext);
     }
 }

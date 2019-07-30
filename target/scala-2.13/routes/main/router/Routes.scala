@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Mon Jul 29 16:55:29 BRT 2019
+// @DATE:Tue Jul 30 15:40:23 BRT 2019
 
 package router
 
@@ -16,9 +16,9 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   HomeController_2: controllers.HomeController,
-  // @LINE:8
+  // @LINE:9
   PessoaController_0: controllers.PessoaController,
-  // @LINE:11
+  // @LINE:17
   Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -27,9 +27,9 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     HomeController_2: controllers.HomeController,
-    // @LINE:8
+    // @LINE:9
     PessoaController_0: controllers.PessoaController,
-    // @LINE:11
+    // @LINE:17
     Assets_1: controllers.Assets
   ) = this(errorHandler, HomeController_2, PessoaController_0, Assets_1, "/")
 
@@ -45,7 +45,12 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """criar-pessoa""", """controllers.PessoaController.criarPessoa"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cadastrar-pessoa""", """controllers.PessoaController.cadastrarPessoaPage"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """gerenciar-pessoa""", """controllers.PessoaController.gerenciarPessoaPage"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """atualizar-pessoa""", """controllers.PessoaController.atualizarPessoaPage(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """remover-pessoa""", """controllers.PessoaController.removerPessoa(id:Long)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cadastrar-pessoa""", """controllers.PessoaController.cadastrarPessoa(request:Request)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """atualizar-pessoa""", """controllers.PessoaController.atualizarPessoa(request:Request)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -72,29 +77,123 @@ class Routes(
     )
   )
 
-  // @LINE:8
-  private[this] lazy val controllers_PessoaController_criarPessoa1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("criar-pessoa")))
+  // @LINE:9
+  private[this] lazy val controllers_PessoaController_cadastrarPessoaPage1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cadastrar-pessoa")))
   )
-  private[this] lazy val controllers_PessoaController_criarPessoa1_invoker = createInvoker(
-    PessoaController_0.criarPessoa,
+  private[this] lazy val controllers_PessoaController_cadastrarPessoaPage1_invoker = createInvoker(
+    PessoaController_0.cadastrarPessoaPage,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PessoaController",
-      "criarPessoa",
+      "cadastrarPessoaPage",
       Nil,
       "GET",
-      this.prefix + """criar-pessoa""",
+      this.prefix + """cadastrar-pessoa""",
+      """Bloco Pessoa""",
+      Seq()
+    )
+  )
+
+  // @LINE:10
+  private[this] lazy val controllers_PessoaController_gerenciarPessoaPage2_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("gerenciar-pessoa")))
+  )
+  private[this] lazy val controllers_PessoaController_gerenciarPessoaPage2_invoker = createInvoker(
+    PessoaController_0.gerenciarPessoaPage,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.PessoaController",
+      "gerenciarPessoaPage",
+      Nil,
+      "GET",
+      this.prefix + """gerenciar-pessoa""",
       """""",
       Seq()
     )
   )
 
   // @LINE:11
-  private[this] lazy val controllers_Assets_versioned2_route = Route("GET",
+  private[this] lazy val controllers_PessoaController_atualizarPessoaPage3_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("atualizar-pessoa")))
+  )
+  private[this] lazy val controllers_PessoaController_atualizarPessoaPage3_invoker = createInvoker(
+    PessoaController_0.atualizarPessoaPage(fakeValue[Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.PessoaController",
+      "atualizarPessoaPage",
+      Seq(classOf[Long]),
+      "GET",
+      this.prefix + """atualizar-pessoa""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:12
+  private[this] lazy val controllers_PessoaController_removerPessoa4_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("remover-pessoa")))
+  )
+  private[this] lazy val controllers_PessoaController_removerPessoa4_invoker = createInvoker(
+    PessoaController_0.removerPessoa(fakeValue[Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.PessoaController",
+      "removerPessoa",
+      Seq(classOf[Long]),
+      "GET",
+      this.prefix + """remover-pessoa""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:14
+  private[this] lazy val controllers_PessoaController_cadastrarPessoa5_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cadastrar-pessoa")))
+  )
+  private[this] lazy val controllers_PessoaController_cadastrarPessoa5_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      PessoaController_0.cadastrarPessoa(fakeValue[play.mvc.Http.Request]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.PessoaController",
+      "cadastrarPessoa",
+      Seq(classOf[play.mvc.Http.Request]),
+      "POST",
+      this.prefix + """cadastrar-pessoa""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:15
+  private[this] lazy val controllers_PessoaController_atualizarPessoa6_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("atualizar-pessoa")))
+  )
+  private[this] lazy val controllers_PessoaController_atualizarPessoa6_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      PessoaController_0.atualizarPessoa(fakeValue[play.mvc.Http.Request]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.PessoaController",
+      "atualizarPessoa",
+      Seq(classOf[play.mvc.Http.Request]),
+      "POST",
+      this.prefix + """atualizar-pessoa""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:17
+  private[this] lazy val controllers_Assets_versioned7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned2_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned7_invoker = createInvoker(
     Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -117,16 +216,48 @@ class Routes(
         controllers_HomeController_index0_invoker.call(HomeController_2.index)
       }
   
-    // @LINE:8
-    case controllers_PessoaController_criarPessoa1_route(params@_) =>
+    // @LINE:9
+    case controllers_PessoaController_cadastrarPessoaPage1_route(params@_) =>
       call { 
-        controllers_PessoaController_criarPessoa1_invoker.call(PessoaController_0.criarPessoa)
+        controllers_PessoaController_cadastrarPessoaPage1_invoker.call(PessoaController_0.cadastrarPessoaPage)
+      }
+  
+    // @LINE:10
+    case controllers_PessoaController_gerenciarPessoaPage2_route(params@_) =>
+      call { 
+        controllers_PessoaController_gerenciarPessoaPage2_invoker.call(PessoaController_0.gerenciarPessoaPage)
       }
   
     // @LINE:11
-    case controllers_Assets_versioned2_route(params@_) =>
+    case controllers_PessoaController_atualizarPessoaPage3_route(params@_) =>
+      call(params.fromQuery[Long]("id", None)) { (id) =>
+        controllers_PessoaController_atualizarPessoaPage3_invoker.call(PessoaController_0.atualizarPessoaPage(id))
+      }
+  
+    // @LINE:12
+    case controllers_PessoaController_removerPessoa4_route(params@_) =>
+      call(params.fromQuery[Long]("id", None)) { (id) =>
+        controllers_PessoaController_removerPessoa4_invoker.call(PessoaController_0.removerPessoa(id))
+      }
+  
+    // @LINE:14
+    case controllers_PessoaController_cadastrarPessoa5_route(params@_) =>
+      call { 
+        controllers_PessoaController_cadastrarPessoa5_invoker.call(
+          req => PessoaController_0.cadastrarPessoa(req))
+      }
+  
+    // @LINE:15
+    case controllers_PessoaController_atualizarPessoa6_route(params@_) =>
+      call { 
+        controllers_PessoaController_atualizarPessoa6_invoker.call(
+          req => PessoaController_0.atualizarPessoa(req))
+      }
+  
+    // @LINE:17
+    case controllers_Assets_versioned7_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned2_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned7_invoker.call(Assets_1.versioned(path, file))
       }
   }
 }

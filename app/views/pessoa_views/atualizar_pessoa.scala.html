@@ -1,0 +1,14 @@
+@(pessoa: entidades.Pessoa)
+@main {
+    <h1>Atualizar Pessoa</h1>
+
+    @helper.form(routes.PessoaController.atualizarPessoa) {
+        @helper.CSRF.formField
+        <input type="hidden" value="@pessoa.getId" name="id">
+        <lable>Nome:</lable>
+        <input type="text" value="@pessoa.getNome" name="nome">
+        <label>E-mail</label>
+        <input type="text" value="@pessoa.getEmail" name="email">
+        <input type="submit" value="Enviar">
+    }
+}

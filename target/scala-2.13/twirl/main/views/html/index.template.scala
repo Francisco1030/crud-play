@@ -31,7 +31,7 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 
 Seq[Any](format.raw/*2.1*/("""
-"""),_display_(/*3.2*/main("Welcome to Play")/*3.25*/ {_display_(Seq[Any](format.raw/*3.27*/("""
+"""),_display_(/*3.2*/main/*3.6*/ {_display_(Seq[Any](format.raw/*3.8*/("""
   """),format.raw/*4.3*/("""<h1>Welcome to Play!</h1>
 """)))}),format.raw/*5.2*/("""
 """))
@@ -50,10 +50,10 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-07-29T16:55:29.585511
+                  DATE: 2019-07-30T14:01:45.947066
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/index.scala.html
-                  HASH: 101fa511ddebe89cb9bf324b96e228b7b59b8d04
-                  MATRIX: 941->1|1037->4|1064->6|1095->29|1134->31|1163->34|1219->61
+                  HASH: 8f279c0cd4e1cf0023fd36f11546b755a13e4c2d
+                  MATRIX: 941->1|1037->4|1064->6|1075->10|1113->12|1142->15|1198->42
                   LINES: 28->1|33->2|34->3|34->3|34->3|35->4|36->5
                   -- GENERATED --
               */

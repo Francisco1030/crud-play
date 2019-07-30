@@ -13,4 +13,5 @@ public interface PessoaDAO {
     CompletionStage <List<Pessoa>> listar();
     CompletionStage <Pessoa> atualizar(Pessoa pessoa);
     CompletionStage <Pessoa> deletar(Long id);
+    CompletionStage <Pessoa> buscarPorId(Long id);
 }
