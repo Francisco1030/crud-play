@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Tue Jul 30 15:40:23 BRT 2019
+// @DATE:Tue Jul 30 17:28:33 BRT 2019
 
 import play.api.mvc.Call
 
@@ -10,6 +10,27 @@ import _root_.play.libs.F
 
 // @LINE:6
 package controllers {
+
+  // @LINE:18
+  class ReverseEnderecoController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:20
+    def cadastrarEndereco(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "cadastrar-endereco")
+    }
+  
+    // @LINE:18
+    def cadastrarEnderecoPage(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "cadastrar-endereco")
+    }
+  
+  }
 
   // @LINE:6
   class ReverseHomeController(_prefix: => String) {
@@ -26,14 +47,14 @@ package controllers {
   
   }
 
-  // @LINE:17
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:17
+    // @LINE:22
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))

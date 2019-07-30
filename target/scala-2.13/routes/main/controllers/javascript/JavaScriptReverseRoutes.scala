@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Tue Jul 30 15:40:23 BRT 2019
+// @DATE:Tue Jul 30 17:28:33 BRT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -10,6 +10,36 @@ import _root_.play.libs.F
 
 // @LINE:6
 package controllers.javascript {
+
+  // @LINE:18
+  class ReverseEnderecoController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:20
+    def cadastrarEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.EnderecoController.cadastrarEndereco",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "cadastrar-endereco"})
+        }
+      """
+    )
+  
+    // @LINE:18
+    def cadastrarEnderecoPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.EnderecoController.cadastrarEnderecoPage",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "cadastrar-endereco"})
+        }
+      """
+    )
+  
+  }
 
   // @LINE:6
   class ReverseHomeController(_prefix: => String) {
@@ -31,7 +61,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:17
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -39,7 +69,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:17
+    // @LINE:22
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

@@ -1,0 +1,11 @@
+@main{
+    <h1>Cadastrar Endereco</h1>
+    @helper.form(routes.EnderecoController.cadastrarEndereco()) {
+        @helper.CSRF.formField
+        <lable>Rua:</lable>
+        <input type="text" name="rua">
+        <label>Numero</label>
+        <input type="text" name="numero">
+        <input type="submit" value="Enviar">
+    }
+}

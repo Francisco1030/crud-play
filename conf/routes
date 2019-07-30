@@ -13,5 +13,10 @@ GET     /remover-pessoa             controllers.PessoaController.removerPessoa(i
 
 POST    /cadastrar-pessoa           controllers.PessoaController.cadastrarPessoa(request: Request)
 POST    /atualizar-pessoa           controllers.PessoaController.atualizarPessoa(request: Request)
+
+#Bloco Endereco
+GET     /cadastrar-endereco         controllers.EnderecoController.cadastrarEnderecoPage
+
+POST    /cadastrar-endereco         controllers.EnderecoController.cadastrarEndereco(request: Request)
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

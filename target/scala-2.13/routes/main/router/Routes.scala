@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Tue Jul 30 15:40:23 BRT 2019
+// @DATE:Tue Jul 30 17:28:33 BRT 2019
 
 package router
 
@@ -18,7 +18,9 @@ class Routes(
   HomeController_2: controllers.HomeController,
   // @LINE:9
   PessoaController_0: controllers.PessoaController,
-  // @LINE:17
+  // @LINE:18
+  EnderecoController_3: controllers.EnderecoController,
+  // @LINE:22
   Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -29,14 +31,16 @@ class Routes(
     HomeController_2: controllers.HomeController,
     // @LINE:9
     PessoaController_0: controllers.PessoaController,
-    // @LINE:17
+    // @LINE:18
+    EnderecoController_3: controllers.EnderecoController,
+    // @LINE:22
     Assets_1: controllers.Assets
-  ) = this(errorHandler, HomeController_2, PessoaController_0, Assets_1, "/")
+  ) = this(errorHandler, HomeController_2, PessoaController_0, EnderecoController_3, Assets_1, "/")
 
   def withPrefix(addPrefix: String): Routes = {
     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_2, PessoaController_0, Assets_1, prefix)
+    new Routes(errorHandler, HomeController_2, PessoaController_0, EnderecoController_3, Assets_1, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -51,6 +55,8 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """remover-pessoa""", """controllers.PessoaController.removerPessoa(id:Long)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cadastrar-pessoa""", """controllers.PessoaController.cadastrarPessoa(request:Request)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """atualizar-pessoa""", """controllers.PessoaController.atualizarPessoa(request:Request)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cadastrar-endereco""", """controllers.EnderecoController.cadastrarEnderecoPage"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cadastrar-endereco""", """controllers.EnderecoController.cadastrarEndereco(request:Request)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -189,11 +195,49 @@ class Routes(
     )
   )
 
-  // @LINE:17
-  private[this] lazy val controllers_Assets_versioned7_route = Route("GET",
+  // @LINE:18
+  private[this] lazy val controllers_EnderecoController_cadastrarEnderecoPage7_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cadastrar-endereco")))
+  )
+  private[this] lazy val controllers_EnderecoController_cadastrarEnderecoPage7_invoker = createInvoker(
+    EnderecoController_3.cadastrarEnderecoPage,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.EnderecoController",
+      "cadastrarEnderecoPage",
+      Nil,
+      "GET",
+      this.prefix + """cadastrar-endereco""",
+      """Bloco Endereco""",
+      Seq()
+    )
+  )
+
+  // @LINE:20
+  private[this] lazy val controllers_EnderecoController_cadastrarEndereco8_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cadastrar-endereco")))
+  )
+  private[this] lazy val controllers_EnderecoController_cadastrarEndereco8_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      EnderecoController_3.cadastrarEndereco(fakeValue[play.mvc.Http.Request]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.EnderecoController",
+      "cadastrarEndereco",
+      Seq(classOf[play.mvc.Http.Request]),
+      "POST",
+      this.prefix + """cadastrar-endereco""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:22
+  private[this] lazy val controllers_Assets_versioned9_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned7_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned9_invoker = createInvoker(
     Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -254,10 +298,23 @@ class Routes(
           req => PessoaController_0.atualizarPessoa(req))
       }
   
-    // @LINE:17
-    case controllers_Assets_versioned7_route(params@_) =>
+    // @LINE:18
+    case controllers_EnderecoController_cadastrarEnderecoPage7_route(params@_) =>
+      call { 
+        controllers_EnderecoController_cadastrarEnderecoPage7_invoker.call(EnderecoController_3.cadastrarEnderecoPage)
+      }
+  
+    // @LINE:20
+    case controllers_EnderecoController_cadastrarEndereco8_route(params@_) =>
+      call { 
+        controllers_EnderecoController_cadastrarEndereco8_invoker.call(
+          req => EnderecoController_3.cadastrarEndereco(req))
+      }
+  
+    // @LINE:22
+    case controllers_Assets_versioned9_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned7_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned9_invoker.call(Assets_1.versioned(path, file))
       }
   }
 }
