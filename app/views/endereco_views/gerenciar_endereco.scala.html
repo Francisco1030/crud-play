@@ -1,0 +1,34 @@
+@(enderecos: List[entidades.Endereco])
+@main{
+    <h1 class="right-align">Gerenciar Endereco</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Rua</th>
+                <th>Numero</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(enderecos.isEmpty){
+                <tr>
+                    <td colspan="4">
+                        Nenhum endereço cadastrado!
+                    </td>
+                </tr>
+            }
+            @for(endereco <- enderecos) {
+                <tr>
+                    <td>@endereco.getId</td>
+                    <td>@endereco.getRua</td>
+                    <td>@endereco.getNumero</td>
+                    <td>
+                        <a class="waves-effect waves-light btn blue" href="@routes.EnderecoController.atualizarEnderecoPage(endereco.getId)"><i class="material-icons">create</i></a>
+                        <a class="waves-effect waves-light btn red"  href="@routes.EnderecoController.removerEndereco(endereco.getId)"><i class="material-icons">delete</i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -16,7 +16,12 @@ POST    /atualizar-pessoa           controllers.PessoaController.atualizarPessoa
 
 #Bloco Endereco
 GET     /cadastrar-endereco         controllers.EnderecoController.cadastrarEnderecoPage
+GET     /gerenciar-endereco         controllers.EnderecoController.gerenciarEnderecoPage
+GET     /atualizar-endereco         controllers.EnderecoController.atualizarEnderecoPage(id: Long)
+GET     /remover-endereco           controllers.EnderecoController.removerEndereco(id: Long)
 
 POST    /cadastrar-endereco         controllers.EnderecoController.cadastrarEndereco(request: Request)
+POST    /atualizar-endereco         controllers.EnderecoController.atualizarEndereco(request: Request)
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

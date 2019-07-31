@@ -43,6 +43,7 @@ public class EnderecoDAOImpl implements EnderecoDAO {
     private Endereco deletarImpl(EntityManager entityManager, Long id){
         Query query = entityManager.createQuery("select e from Endereco e where e.id = :id").setParameter("id",id);
         Endereco endereco = (Endereco) query.getSingleResult();
+        entityManager.remove(endereco);
         return endereco;
     }
 

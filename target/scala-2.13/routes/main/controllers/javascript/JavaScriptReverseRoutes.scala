@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Tue Jul 30 17:28:33 BRT 2019
+// @DATE:Wed Jul 31 14:35:16 BRT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -20,11 +20,51 @@ package controllers.javascript {
 
   
     // @LINE:20
+    def atualizarEnderecoPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.EnderecoController.atualizarEnderecoPage",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "atualizar-endereco" + _qS([(""" + implicitly[play.api.mvc.QueryStringBindable[Long]].javascriptUnbind + """)("id", id0)])})
+        }
+      """
+    )
+  
+    // @LINE:23
     def cadastrarEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.cadastrarEndereco",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "cadastrar-endereco"})
+        }
+      """
+    )
+  
+    // @LINE:21
+    def removerEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.EnderecoController.removerEndereco",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "remover-endereco" + _qS([(""" + implicitly[play.api.mvc.QueryStringBindable[Long]].javascriptUnbind + """)("id", id0)])})
+        }
+      """
+    )
+  
+    // @LINE:19
+    def gerenciarEnderecoPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.EnderecoController.gerenciarEnderecoPage",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "gerenciar-endereco"})
+        }
+      """
+    )
+  
+    // @LINE:24
+    def atualizarEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.EnderecoController.atualizarEndereco",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "atualizar-endereco"})
         }
       """
     )
@@ -61,7 +101,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:22
+  // @LINE:27
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -69,7 +109,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:22
+    // @LINE:27
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

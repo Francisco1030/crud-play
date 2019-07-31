@@ -52,18 +52,19 @@ Seq[Any](format.raw/*8.1*/("""
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">Logo</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
-                <li><a href="collapsible.html">JavaScript</a></li>
+                <li><a href=""""),_display_(/*26.31*/routes/*26.37*/.PessoaController.cadastrarPessoaPage()),format.raw/*26.76*/("""">Cadastrar Pessoa</a></li>
+                <li><a href=""""),_display_(/*27.31*/routes/*27.37*/.PessoaController.gerenciarPessoaPage()),format.raw/*27.76*/("""">Gerenciar Pessoas</a></li>
+                <li><a href=""""),_display_(/*28.31*/routes/*28.37*/.EnderecoController.cadastrarEnderecoPage()),format.raw/*28.80*/("""">Cadastrar Endereço</a></li>
+                <li><a href=""""),_display_(/*29.31*/routes/*29.37*/.EnderecoController.gerenciarEnderecoPage()),format.raw/*29.80*/("""">Gerenciar Endeeços</a></li>
             </ul>
         </div>
     </nav>
 
-        """),_display_(/*33.10*/content),format.raw/*33.17*/("""
+        """),_display_(/*34.10*/content),format.raw/*34.17*/("""
 
-        """),format.raw/*35.9*/("""<script src=""""),_display_(/*35.23*/routes/*35.29*/.Assets.versioned("javascripts/JQuery.js")),format.raw/*35.71*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*36.23*/routes/*36.29*/.Assets.versioned("materialize/js/materialize.min.js")),format.raw/*36.83*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*37.23*/routes/*37.29*/.Assets.versioned("javascripts/main.js")),format.raw/*37.69*/("""" type="text/javascript"></script>
+        """),format.raw/*36.9*/("""<script src=""""),_display_(/*36.23*/routes/*36.29*/.Assets.versioned("javascripts/JQuery.js")),format.raw/*36.71*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*37.23*/routes/*37.29*/.Assets.versioned("materialize/js/materialize.min.js")),format.raw/*37.83*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*38.23*/routes/*38.29*/.Assets.versioned("javascripts/main.js")),format.raw/*38.69*/("""" type="text/javascript"></script>
     </body>
 </html>
 """))
@@ -82,11 +83,11 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-07-30T14:52:53.098226
+                  DATE: 2019-07-31T13:46:49.551381
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/main.scala.html
-                  HASH: 9d676939084dae816b913e48a1296eafb8b1a774
-                  MATRIX: 1199->260|1308->276|1335->277|1415->382|1451->391|1553->466|1568->472|1631->513|1719->574|1734->580|1795->619|1863->660|1878->666|1951->718|2108->937|2140->942|2564->1339|2592->1346|2629->1356|2670->1370|2685->1376|2748->1418|2832->1475|2847->1481|2922->1535|3006->1592|3021->1598|3082->1638
-                  LINES: 33->7|38->8|39->9|42->12|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|50->21|51->22|62->33|62->33|64->35|64->35|64->35|64->35|65->36|65->36|65->36|66->37|66->37|66->37
+                  HASH: 4c98f58d9e494a7b3e77af62601468d4a3805a23
+                  MATRIX: 1199->260|1308->276|1335->277|1415->382|1451->391|1553->466|1568->472|1631->513|1719->574|1734->580|1795->619|1863->660|1878->666|1951->718|2108->937|2140->942|2357->1132|2372->1138|2432->1177|2517->1235|2532->1241|2592->1280|2678->1339|2693->1345|2757->1388|2844->1448|2859->1454|2923->1497|3034->1581|3062->1588|3099->1598|3140->1612|3155->1618|3218->1660|3302->1717|3317->1723|3392->1777|3476->1834|3491->1840|3552->1880
+                  LINES: 33->7|38->8|39->9|42->12|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|50->21|51->22|55->26|55->26|55->26|56->27|56->27|56->27|57->28|57->28|57->28|58->29|58->29|58->29|63->34|63->34|65->36|65->36|65->36|65->36|66->37|66->37|66->37|67->38|67->38|67->38
                   -- GENERATED --
               */
           
