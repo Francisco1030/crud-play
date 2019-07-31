@@ -1,9 +1,11 @@
 package controllers;
 
 import models.dao.EnderecoDAO;
+import models.dao.PessoaDAO;
 import models.entidades.Endereco;
 import play.data.Form;
 import play.data.FormFactory;
+import play.libs.Json;
 import play.libs.concurrent.HttpExecutionContext;
 import play.mvc.Controller;
 import play.mvc.Http;
@@ -18,20 +20,26 @@ public class EnderecoController extends Controller {
     final HttpExecutionContext executionContext;
     final EnderecoDAO enderecoDAO;
     final FormFactory formFactory;
+    final PessoaDAO pessoaDAO;
 
     @Inject
-    public EnderecoController(HttpExecutionContext executionContext, EnderecoDAO enderecoDAO, FormFactory formFactory) {
+    public EnderecoController(HttpExecutionContext executionContext, EnderecoDAO enderecoDAO, FormFactory formFactory, PessoaDAO pessoaDAO) {
         this.executionContext = executionContext;
         this.enderecoDAO = enderecoDAO;
         this.formFactory = formFactory;
+        this.pessoaDAO = pessoaDAO;
     }
 
     public CompletionStage<Result> cadastrarEnderecoPage(){
-        return CompletableFuture.completedFuture(ok(views.html.endereco_views.cadastrar_endereco.render()));
+        return pessoaDAO.listar().thenComposeAsync(pessoas -> {
+            return CompletableFuture.completedFuture(ok(views.html.endereco_views.cadastrar_endereco.render(pessoas)));
+        },executionContext.current());
+
     }
 
     public CompletionStage<Result> gerenciarEnderecoPage(){
         return enderecoDAO.listar().thenComposeAsync(enderecos -> {
+            //return CompletableFuture.completedFuture(ok(Json.toJson(enderecos)));
             return CompletableFuture.completedFuture(ok(views.html.endereco_views.gerenciar_endereco.render(enderecos)));
         },executionContext.current());
     }

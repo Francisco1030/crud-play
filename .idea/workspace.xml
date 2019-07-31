@@ -2,42 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="710f3bf4-7334-446d-9eb8-1cd129943fa6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/endereco_views/atualizar_endereco.scala.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/endereco_views/gerenciar_endereco.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/EnderecoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/EnderecoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/dao/EnderecoDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/dao/EnderecoDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/entidades/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/entidades/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/entidades/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/entidades/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/endereco_views/atualizar_endereco.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/endereco_views/atualizar_endereco.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/endereco_views/cadastrar_endereco.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/endereco_views/cadastrar_endereco.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/endereco_views/gerenciar_endereco.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/endereco_views/gerenciar_endereco.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/main.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pessoa_views/gerenciar_pessoa.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pessoa_views/gerenciar_pessoa.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$16863240bfb4ba3746d5$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$16863240bfb4ba3746d5.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$16863240bfb4ba3746d5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/EnderecoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/EnderecoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseAssets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseEnderecoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseEnderecoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReversePessoaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReversePessoaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseAssets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseAssets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseEnderecoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseEnderecoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReverseHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReversePessoaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/ReversePessoaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes$$anonfun$routes$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/routes" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$df32728f6ebf9ef9a39e$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$df32728f6ebf9ef9a39e.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$df32728f6ebf9ef9a39e.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/models/entidades/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/models/entidades/Endereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/models/entidades/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/models/entidades/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/endereco_views/cadastrar_endereco$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/endereco_views/cadastrar_endereco$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/pessoa_views/gerenciar_pessoa$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/pessoa_views/gerenciar_pessoa$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/routes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/Routes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/RoutesPrefix.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/endereco_views/atualizar_endereco.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/endereco_views/atualizar_endereco.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/endereco_views/cadastrar_endereco.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/endereco_views/cadastrar_endereco.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/endereco_views/gerenciar_endereco.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/endereco_views/gerenciar_endereco.template.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/main.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/main.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/pessoa_views/gerenciar_pessoa.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/pessoa_views/gerenciar_pessoa.template.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.13.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterDir="false" />
     </list>
@@ -68,7 +63,17 @@
     </system>
     <system id="SBT">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="crud" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -176,7 +181,8 @@
       <updated>1564425653945</updated>
       <workItem from="1564425655573" duration="5417000" />
       <workItem from="1564503393297" duration="15263000" />
-      <workItem from="1564589489858" duration="7050000" />
+      <workItem from="1564589489858" duration="8506000" />
+      <workItem from="1564598037334" duration="6728000" />
     </task>
     <servers />
   </component>

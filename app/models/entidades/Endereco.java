@@ -1,9 +1,6 @@
 package models.entidades;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -11,9 +8,11 @@ public class Endereco {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id = 1L;
+    private Long id = 0L;
     private String rua = "";
     private String numero = "";
+    @ManyToOne
+    private Pessoa pessoa;
 
     public Endereco(){
 
@@ -49,6 +48,14 @@ public class Endereco {
         this.numero = numero;
     }
 
+    public Pessoa getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -68,6 +75,7 @@ public class Endereco {
                 "id=" + id +
                 ", rua='" + rua + '\'' +
                 ", numero='" + numero + '\'' +
+                ", pessoa=" + pessoa +
                 '}';
     }
 }

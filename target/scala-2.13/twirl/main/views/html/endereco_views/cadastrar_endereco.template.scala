@@ -22,32 +22,45 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object cadastrar_endereco extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+object cadastrar_endereco extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[List[entidades.Pessoa],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(pessoas: List[entidades.Pessoa]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*1.2*/main/*1.6*/{_display_(Seq[Any](format.raw/*1.7*/("""
-    """),format.raw/*2.5*/("""<h1>Cadastrar Endereco</h1>
-    """),_display_(/*3.6*/helper/*3.12*/.form(routes.EnderecoController.cadastrarEndereco())/*3.64*/ {_display_(Seq[Any](format.raw/*3.66*/("""
-        """),_display_(/*4.10*/helper/*4.16*/.CSRF.formField),format.raw/*4.31*/("""
-        """),format.raw/*5.9*/("""<lable>Rua:</lable>
-        <input type="text" name="rua">
+Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
+    """),format.raw/*3.5*/("""<div class="container">
+
+    <h3 class="center-align">Cadastrar Endereco</h3>
+    """),_display_(/*6.6*/helper/*6.12*/.form(routes.EnderecoController.cadastrarEndereco())/*6.64*/ {_display_(Seq[Any](format.raw/*6.66*/("""
+        """),_display_(/*7.10*/helper/*7.16*/.CSRF.formField),format.raw/*7.31*/("""
+        """),format.raw/*8.9*/("""<lable>Rua:</lable>
+        <input type="text" name="rua" minlength="5" maxlength="200">
         <label>Numero</label>
         <input type="text" name="numero">
-        <input type="submit" value="Enviar">
-    """)))}),format.raw/*10.6*/("""
+
+        <div class="input-field col s12">
+            <select name="pessoa.id">
+                <option value="" disabled selected>Selecione</option>
+                """),_display_(/*16.18*/for(pessoa <- pessoas) yield /*16.40*/ {_display_(Seq[Any](format.raw/*16.42*/("""
+                    """),format.raw/*17.21*/("""<option value=""""),_display_(/*17.37*/pessoa/*17.43*/.getId),format.raw/*17.49*/("""">"""),_display_(/*17.52*/pessoa/*17.58*/.getNome),format.raw/*17.66*/("""</option>
+                """)))}),format.raw/*18.18*/("""
+            """),format.raw/*19.13*/("""</select>
+        </div>
+"""),format.raw/*21.63*/("""
+        """),format.raw/*22.9*/("""<input class="waves-effect waves-light white-text btn" type="submit" value="Enviar">
+    """)))}),format.raw/*23.6*/("""
+    """),format.raw/*24.5*/("""</div>
 """)))}))
       }
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(pessoas:List[entidades.Pessoa]): play.twirl.api.HtmlFormat.Appendable = apply(pessoas)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((List[entidades.Pessoa]) => play.twirl.api.HtmlFormat.Appendable) = (pessoas) => apply(pessoas)
 
   def ref: this.type = this
 
@@ -56,11 +69,11 @@ Seq[Any](_display_(/*1.2*/main/*1.6*/{_display_(Seq[Any](format.raw/*1.7*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-07-30T17:28:33.983154
+                  DATE: 2019-07-31T16:17:43.399124
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/endereco_views/cadastrar_endereco.scala.html
-                  HASH: cb6f670cb391b272a5bd72c9290d17323c6e53f1
-                  MATRIX: 1058->1|1069->5|1106->6|1137->11|1195->44|1209->50|1269->102|1308->104|1344->114|1358->120|1393->135|1428->144|1639->325
-                  LINES: 33->1|33->1|33->1|34->2|35->3|35->3|35->3|35->3|36->4|36->4|36->4|37->5|42->10
+                  HASH: 6d441ad7047f04b6ee326f425179c94ee3d82466
+                  MATRIX: 992->1|1119->36|1130->40|1167->41|1198->46|1306->129|1320->135|1380->187|1419->189|1455->199|1469->205|1504->220|1539->229|1895->558|1933->580|1973->582|2022->603|2065->619|2080->625|2107->631|2137->634|2152->640|2181->648|2239->675|2280->688|2333->775|2369->784|2489->874|2521->879
+                  LINES: 28->1|33->2|33->2|33->2|34->3|37->6|37->6|37->6|37->6|38->7|38->7|38->7|39->8|47->16|47->16|47->16|48->17|48->17|48->17|48->17|48->17|48->17|48->17|49->18|50->19|52->21|53->22|54->23|55->24
                   -- GENERATED --
               */
           

@@ -1,9 +1,8 @@
 package models.entidades;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -14,6 +13,8 @@ public class Pessoa {
     private Long id = 0L;
     private String nome = "";
     private String email = "";
+    @OneToMany
+    private List<Endereco> enderecos = new ArrayList<>();
 
     public Pessoa(){
 
@@ -43,6 +44,14 @@ public class Pessoa {
         this.email = email;
     }
 
+    public List<Endereco> getEnderecos() {
+        return enderecos;
+    }
+
+    public void setEnderecos(List<Endereco> enderecos) {
+        this.enderecos = enderecos;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -62,6 +71,7 @@ public class Pessoa {
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", email='" + email + '\'' +
+                ", enderecos=" + enderecos +
                 '}';
     }
 }

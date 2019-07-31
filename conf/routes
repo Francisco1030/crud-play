@@ -15,7 +15,7 @@ POST    /cadastrar-pessoa           controllers.PessoaController.cadastrarPessoa
 POST    /atualizar-pessoa           controllers.PessoaController.atualizarPessoa(request: Request)
 
 #Bloco Endereco
-GET     /cadastrar-endereco         controllers.EnderecoController.cadastrarEnderecoPage
+GET     /cadastrar-endereco         controllers.EnderecoController.cadastrarEnderecoPage()
 GET     /gerenciar-endereco         controllers.EnderecoController.gerenciarEnderecoPage
 GET     /atualizar-endereco         controllers.EnderecoController.atualizarEnderecoPage(id: Long)
 GET     /remover-endereco           controllers.EnderecoController.removerEndereco(id: Long)

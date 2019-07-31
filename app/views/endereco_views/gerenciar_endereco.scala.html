@@ -1,12 +1,14 @@
 @(enderecos: List[entidades.Endereco])
 @main{
-    <h1 class="right-align">Gerenciar Endereco</h1>
+    <div class="container">
+    <h1 class="center-align">Gerenciar Endereco</h1>
     <table>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Rua</th>
                 <th>Numero</th>
+                <th>Pessoa</th>
                 <th>Ações</th>
             </tr>
         </thead>
@@ -23,6 +25,7 @@
                     <td>@endereco.getId</td>
                     <td>@endereco.getRua</td>
                     <td>@endereco.getNumero</td>
+                    <td>@endereco.getPessoa.getNome</td>
                     <td>
                         <a class="waves-effect waves-light btn blue" href="@routes.EnderecoController.atualizarEnderecoPage(endereco.getId)"><i class="material-icons">create</i></a>
                         <a class="waves-effect waves-light btn red"  href="@routes.EnderecoController.removerEndereco(endereco.getId)"><i class="material-icons">delete</i></a>
@@ -31,4 +34,5 @@
             }
         </tbody>
     </table>
+    </div>
 }

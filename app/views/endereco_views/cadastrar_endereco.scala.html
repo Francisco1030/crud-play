@@ -1,11 +1,25 @@
+@(pessoas: List[entidades.Pessoa])
 @main{
-    <h1>Cadastrar Endereco</h1>
+    <div class="container">
+
+    <h3 class="center-align">Cadastrar Endereco</h3>
     @helper.form(routes.EnderecoController.cadastrarEndereco()) {
         @helper.CSRF.formField
         <lable>Rua:</lable>
-        <input type="text" name="rua">
+        <input type="text" name="rua" minlength="5" maxlength="200">
         <label>Numero</label>
         <input type="text" name="numero">
-        <input type="submit" value="Enviar">
+
+        <div class="input-field col s12">
+            <select name="pessoa.id">
+                <option value="" disabled selected>Selecione</option>
+                @for(pessoa <- pessoas) {
+                    <option value="@pessoa.getId">@pessoa.getNome</option>
+                }
+            </select>
+        </div>
+@*        <a class="waves-effect waves-light btn">button</a>*@
+        <input class="waves-effect waves-light white-text btn" type="submit" value="Enviar">
     }
+    </div>
 }

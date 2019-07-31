@@ -2,6 +2,7 @@ package models.dao;
 
 import models.DatabaseExecutionContext;
 import models.entidades.Endereco;
+import models.entidades.Pessoa;
 import play.db.jpa.JPAApi;
 
 import javax.inject.Inject;
@@ -25,6 +26,8 @@ public class EnderecoDAOImpl implements EnderecoDAO {
     }
 
     private Endereco criarImpl(EntityManager entityManager, Endereco endereco){
+        Pessoa pessoa = entityManager.find(Pessoa.class, endereco.getPessoa().getId());
+        endereco.setPessoa(pessoa);
         entityManager.persist(endereco);
         return endereco;
     }

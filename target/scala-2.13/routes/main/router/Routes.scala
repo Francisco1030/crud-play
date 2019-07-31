@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Wed Jul 31 14:35:16 BRT 2019
+// @DATE:Wed Jul 31 16:36:47 BRT 2019
 
 package router
 
@@ -55,7 +55,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """remover-pessoa""", """controllers.PessoaController.removerPessoa(id:Long)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cadastrar-pessoa""", """controllers.PessoaController.cadastrarPessoa(request:Request)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """atualizar-pessoa""", """controllers.PessoaController.atualizarPessoa(request:Request)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cadastrar-endereco""", """controllers.EnderecoController.cadastrarEnderecoPage"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cadastrar-endereco""", """controllers.EnderecoController.cadastrarEnderecoPage()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """gerenciar-endereco""", """controllers.EnderecoController.gerenciarEnderecoPage"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """atualizar-endereco""", """controllers.EnderecoController.atualizarEnderecoPage(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """remover-endereco""", """controllers.EnderecoController.removerEndereco(id:Long)"""),
@@ -204,7 +204,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cadastrar-endereco")))
   )
   private[this] lazy val controllers_EnderecoController_cadastrarEnderecoPage7_invoker = createInvoker(
-    EnderecoController_3.cadastrarEnderecoPage,
+    EnderecoController_3.cadastrarEnderecoPage(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.EnderecoController",
@@ -379,7 +379,7 @@ class Routes(
     // @LINE:18
     case controllers_EnderecoController_cadastrarEnderecoPage7_route(params@_) =>
       call { 
-        controllers_EnderecoController_cadastrarEnderecoPage7_invoker.call(EnderecoController_3.cadastrarEnderecoPage)
+        controllers_EnderecoController_cadastrarEnderecoPage7_invoker.call(EnderecoController_3.cadastrarEnderecoPage())
       }
   
     // @LINE:19

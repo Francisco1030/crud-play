@@ -8,15 +8,24 @@
         @helper.CSRF.formField
 
         <div class="row">
-            <div class="col s6">
+            <div class="col s4">
                 <input type="hidden" value="@endereco.getId" name="id">
                 <lable>Rua:</lable>
                 <input type="text" value="@endereco.getRua" name="rua">
             </div>
 
-            <div class="col s6">
+            <div class="col s4">
                 <label>N°</label>
                 <input type="text" value="@endereco.getNumero" name="numero">
+            </div>
+
+            <div class="col s4">
+                    <select name="pessoa.id">
+                        <option value="@endereco.getPessoa.getId">@endereco.getPessoa.getNome</option>
+@*                            @for(pessoa <- pessoas){*@
+@*                                <option value="@pessooa.getId">@pessoa.getNome</option>*@
+@*                            }*@
+                    </select>
             </div>
         </div>
 
