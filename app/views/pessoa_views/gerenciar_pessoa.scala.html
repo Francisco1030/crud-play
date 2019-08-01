@@ -1,37 +1,36 @@
 @(pessoas: List[entidades.Pessoa])
 @main{
     <div class="container">
-    <h3 class="center-align">Gerenciar Pessoa</h3>
-@*    <a class="btn-floating btn-large waves-effect waves-light red" href="@routes.PessoaController.cadastrarPessoaPage()"><i class="material-icons">add</i></a>*@
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @if(pessoas.isEmpty){
-                        <tr>
-                            <td colspan="4">
-                                Nenhuma pessoa cadastrada!
-                            </td>
-                        </tr>
-                    }
-                    @for(pessoa <- pessoas) {
-                        <tr>
-                            <td>@pessoa.getId</td>
-                            <td>@pessoa.getNome</td>
-                            <td>@pessoa.getEmail</td>
-                            <td>
-                                <a class="waves-effect waves-light btn blue" href="@routes.PessoaController.atualizarPessoaPage(pessoa.getId())"><i class="material-icons">create</i></a>
-                                <a class="waves-effect waves-light btn red"  href="@routes.PessoaController.removerPessoa(pessoa.getId())"><i class="material-icons">delete</i></a>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+    <h3 class="center-align">Gerenciador de Pessoas</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(pessoas.isEmpty){
+                <tr>
+                    <td colspan="4">
+                        Nenhuma pessoa cadastrada!
+                    </td>
+                </tr>
+            }
+            @for(pessoa <- pessoas) {
+                <tr>
+                    <td>@pessoa.getId</td>
+                    <td>@pessoa.getNome</td>
+                    <td>@pessoa.getEmail</td>
+                    <td>
+                        <a class="waves-effect waves-light btn blue" href="@routes.PessoaController.atualizarPessoaPage(pessoa.getId())"><i class="material-icons">create</i></a>
+                        <a class="waves-effect waves-light btn red"  href="@routes.PessoaController.removerPessoa(pessoa.getId())"><i class="material-icons">delete</i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
     </div>
 }

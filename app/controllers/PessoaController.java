@@ -4,6 +4,7 @@ import models.dao.PessoaDAO;
 import models.entidades.Pessoa;
 import play.data.Form;
 import play.data.FormFactory;
+import play.libs.Json;
 import play.libs.concurrent.HttpExecutionContext;
 import play.mvc.Controller;
 import play.mvc.Http;
@@ -42,6 +43,13 @@ public class PessoaController extends Controller {
         },executionContext.current());
     }
 
+    public CompletionStage<Result> pesquisarPessoaPage(Long id){
+            return pessoaDAO.buscarPorId(id).thenComposeAsync(pessoa -> {
+                return CompletableFuture.completedFuture(ok(views.html.pessoa_views.pesquisar_pessoa.render(pessoa)));
+            }, executionContext.current());
+        //return CompletableFuture.completedFuture(ok(Json.toJson(id)));
+    }
+
     public CompletionStage<Result> cadastrarPessoa(Http.Request request){
         Form<Pessoa> formulario = formFactory.form(Pessoa.class).bindFromRequest(request);
         Pessoa pessoa = formulario.get();
@@ -63,4 +71,5 @@ public class PessoaController extends Controller {
             return CompletableFuture.completedFuture(redirect(routes.PessoaController.gerenciarPessoaPage()));
         },executionContext.current());
     }
+
 }

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Wed Jul 31 16:36:47 BRT 2019
+// @DATE:Thu Aug 01 17:21:56 BRT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +11,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:18
+  // @LINE:19
   class ReverseEnderecoController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:20
+    // @LINE:21
     def atualizarEnderecoPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.atualizarEnderecoPage",
       """
@@ -29,7 +29,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:23
+    // @LINE:24
     def cadastrarEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.cadastrarEndereco",
       """
@@ -39,7 +39,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:22
     def removerEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.removerEndereco",
       """
@@ -49,7 +49,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:19
+    // @LINE:20
     def gerenciarEnderecoPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.gerenciarEnderecoPage",
       """
@@ -59,7 +59,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:24
+    // @LINE:25
     def atualizarEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.atualizarEndereco",
       """
@@ -69,7 +69,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:18
+    // @LINE:19
     def cadastrarEnderecoPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.cadastrarEnderecoPage",
       """
@@ -101,7 +101,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:27
+  // @LINE:28
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -109,7 +109,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:27
+    // @LINE:28
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -149,6 +149,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:13
+    def pesquisarPessoaPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PessoaController.pesquisarPessoaPage",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "pesquisar-pessoa" + _qS([(""" + implicitly[play.api.mvc.QueryStringBindable[Long]].javascriptUnbind + """)("id", id0)])})
+        }
+      """
+    )
+  
     // @LINE:9
     def cadastrarPessoaPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.cadastrarPessoaPage",
@@ -169,7 +179,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:14
+    // @LINE:15
     def cadastrarPessoa: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.cadastrarPessoa",
       """
@@ -179,7 +189,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:15
+    // @LINE:16
     def atualizarPessoa: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.atualizarPessoa",
       """

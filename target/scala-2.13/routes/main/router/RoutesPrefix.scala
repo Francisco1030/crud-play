@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Wed Jul 31 16:36:47 BRT 2019
+// @DATE:Thu Aug 01 17:21:56 BRT 2019
 
 
 package router {

@@ -10,6 +10,7 @@ GET     /cadastrar-pessoa           controllers.PessoaController.cadastrarPessoa
 GET     /gerenciar-pessoa           controllers.PessoaController.gerenciarPessoaPage
 GET     /atualizar-pessoa           controllers.PessoaController.atualizarPessoaPage(id: Long)
 GET     /remover-pessoa             controllers.PessoaController.removerPessoa(id: Long)
+GET     /pesquisar-pessoa           controllers.PessoaController.pesquisarPessoaPage(id: Long)
 
 POST    /cadastrar-pessoa           controllers.PessoaController.cadastrarPessoa(request: Request)
 POST    /atualizar-pessoa           controllers.PessoaController.atualizarPessoa(request: Request)
