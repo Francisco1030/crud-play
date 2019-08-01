@@ -1,6 +1,7 @@
 @(pessoas: List[entidades.Pessoa])
 @main{
-    <h1>Gerenciar Pessoa</h1>
+    <div class="container">
+    <h3 class="center-align">Gerenciar Pessoa</h3>
 @*    <a class="btn-floating btn-large waves-effect waves-light red" href="@routes.PessoaController.cadastrarPessoaPage()"><i class="material-icons">add</i></a>*@
             <table>
                 <thead>
@@ -32,4 +33,5 @@
                     }
                 </tbody>
             </table>
+    </div>
 }

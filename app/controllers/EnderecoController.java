@@ -46,7 +46,9 @@ public class EnderecoController extends Controller {
 
     public CompletionStage<Result> atualizarEnderecoPage(Long id){
         return enderecoDAO.buscarPorId(id).thenComposeAsync(endereco -> {
-            return CompletableFuture.completedFuture(ok(views.html.endereco_views.atualizar_endereco.render(endereco)));
+            return pessoaDAO.listar().thenComposeAsync(pessoas -> {
+                return CompletableFuture.completedFuture(ok(views.html.endereco_views.atualizar_endereco.render(endereco,pessoas)));
+            },executionContext.current());
         },executionContext.current());
     }
 

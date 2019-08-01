@@ -1,5 +1,6 @@
 @main {
-    <h1>Cadastrar Pessoa</h1>
+    <div class="container">
+    <h3 class="center-align">Cadastrar Pessoa</h3>
 
     @helper.form(routes.PessoaController.cadastrarPessoa()) {
         @helper.CSRF.formField
@@ -7,6 +8,7 @@
         <input type="text" name="nome">
         <label>E-mail</label>
         <input type="text" name="email">
-        <input type="submit" value="Enviar">
+        <input class="waves-effect waves-light white-text btn" type="submit" value="Enviar">
     }
+    </div>
 }

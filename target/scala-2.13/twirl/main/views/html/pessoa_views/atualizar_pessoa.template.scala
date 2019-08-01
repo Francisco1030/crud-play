@@ -31,17 +31,19 @@ object atualizar_pessoa extends _root_.play.twirl.api.BaseScalaTemplate[play.twi
 
 
 Seq[Any](_display_(/*2.2*/main/*2.6*/ {_display_(Seq[Any](format.raw/*2.8*/("""
-    """),format.raw/*3.5*/("""<h1>Atualizar Pessoa</h1>
+    """),format.raw/*3.5*/("""<div class="container">
+    <h3 class="center-align">Atualizar Pessoa</h3>
 
-    """),_display_(/*5.6*/helper/*5.12*/.form(routes.PessoaController.atualizarPessoa)/*5.58*/ {_display_(Seq[Any](format.raw/*5.60*/("""
-        """),_display_(/*6.10*/helper/*6.16*/.CSRF.formField),format.raw/*6.31*/("""
-        """),format.raw/*7.9*/("""<input type="hidden" value=""""),_display_(/*7.38*/pessoa/*7.44*/.getId),format.raw/*7.50*/("""" name="id">
+    """),_display_(/*6.6*/helper/*6.12*/.form(routes.PessoaController.atualizarPessoa)/*6.58*/ {_display_(Seq[Any](format.raw/*6.60*/("""
+        """),_display_(/*7.10*/helper/*7.16*/.CSRF.formField),format.raw/*7.31*/("""
+        """),format.raw/*8.9*/("""<input type="hidden" value=""""),_display_(/*8.38*/pessoa/*8.44*/.getId),format.raw/*8.50*/("""" name="id">
         <lable>Nome:</lable>
-        <input type="text" value=""""),_display_(/*9.36*/pessoa/*9.42*/.getNome),format.raw/*9.50*/("""" name="nome">
+        <input type="text" value=""""),_display_(/*10.36*/pessoa/*10.42*/.getNome),format.raw/*10.50*/("""" name="nome">
         <label>E-mail</label>
-        <input type="text" value=""""),_display_(/*11.36*/pessoa/*11.42*/.getEmail),format.raw/*11.51*/("""" name="email">
-        <input type="submit" value="Enviar">
-    """)))}),format.raw/*13.6*/("""
+        <input type="text" value=""""),_display_(/*12.36*/pessoa/*12.42*/.getEmail),format.raw/*12.51*/("""" name="email">
+        <input class="waves-effect waves-light white-text btn" type="submit" value="Enviar">
+    """)))}),format.raw/*14.6*/("""
+    """),format.raw/*15.5*/("""</div>
 """)))}))
       }
     }
@@ -58,11 +60,11 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/ {_display_(Seq[Any](format.raw/*2.8*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-07-30T15:25:23.215816
+                  DATE: 2019-08-01T13:24:38.940837
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/atualizar_pessoa.scala.html
-                  HASH: b637514452216b98e50c3df0985173d3d82d7a8a
-                  MATRIX: 982->1|1102->29|1113->33|1151->35|1182->40|1239->72|1253->78|1307->124|1346->126|1382->136|1396->142|1431->157|1466->166|1521->195|1535->201|1561->207|1664->284|1678->290|1706->298|1813->378|1828->384|1858->393|1954->459
-                  LINES: 28->1|33->2|33->2|33->2|34->3|36->5|36->5|36->5|36->5|37->6|37->6|37->6|38->7|38->7|38->7|38->7|40->9|40->9|40->9|42->11|42->11|42->11|44->13
+                  HASH: 7ef63b47035b9ffe9f5b107324fc6d3e46c0f007
+                  MATRIX: 982->1|1102->29|1113->33|1151->35|1182->40|1288->121|1302->127|1356->173|1395->175|1431->185|1445->191|1480->206|1515->215|1570->244|1584->250|1610->256|1714->333|1729->339|1758->347|1865->427|1880->433|1910->442|2054->556|2086->561
+                  LINES: 28->1|33->2|33->2|33->2|34->3|37->6|37->6|37->6|37->6|38->7|38->7|38->7|39->8|39->8|39->8|39->8|41->10|41->10|41->10|43->12|43->12|43->12|45->14|46->15
                   -- GENERATED --
               */
           

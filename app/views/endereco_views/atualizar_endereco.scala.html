@@ -1,8 +1,8 @@
-@(endereco: entidades.Endereco)
+@(endereco: entidades.Endereco)(pessoas: List[entidades.Pessoa])
 @main {
 
 <div class="container">
-    <h1 class="grey-text">Atualizar Endereco</h1>
+    <h3 class="center-align">Atualizar Endereco</h3>
 
     @helper.form(routes.EnderecoController.atualizarEndereco) {
         @helper.CSRF.formField
@@ -22,9 +22,11 @@
             <div class="col s4">
                     <select name="pessoa.id">
                         <option value="@endereco.getPessoa.getId">@endereco.getPessoa.getNome</option>
-@*                            @for(pessoa <- pessoas){*@
-@*                                <option value="@pessooa.getId">@pessoa.getNome</option>*@
-@*                            }*@
+                            @for(pessoa <- pessoas){
+                                @if(endereco.getPessoa.getId != pessoa.getId) {
+                                    <option value="@pessoa.getId">@pessoa.getNome</option>
+                                }
+                            }
                     </select>
             </div>
         </div>

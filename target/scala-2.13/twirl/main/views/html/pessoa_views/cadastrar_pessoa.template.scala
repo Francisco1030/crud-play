@@ -31,16 +31,18 @@ object cadastrar_pessoa extends _root_.play.twirl.api.BaseScalaTemplate[play.twi
 
 
 Seq[Any](_display_(/*1.2*/main/*1.6*/ {_display_(Seq[Any](format.raw/*1.8*/("""
-    """),format.raw/*2.5*/("""<h1>Cadastrar Pessoa</h1>
+    """),format.raw/*2.5*/("""<div class="container">
+    <h3 class="center-align">Cadastrar Pessoa</h3>
 
-    """),_display_(/*4.6*/helper/*4.12*/.form(routes.PessoaController.cadastrarPessoa())/*4.60*/ {_display_(Seq[Any](format.raw/*4.62*/("""
-        """),_display_(/*5.10*/helper/*5.16*/.CSRF.formField),format.raw/*5.31*/("""
-        """),format.raw/*6.9*/("""<lable>Nome:</lable>
+    """),_display_(/*5.6*/helper/*5.12*/.form(routes.PessoaController.cadastrarPessoa())/*5.60*/ {_display_(Seq[Any](format.raw/*5.62*/("""
+        """),_display_(/*6.10*/helper/*6.16*/.CSRF.formField),format.raw/*6.31*/("""
+        """),format.raw/*7.9*/("""<lable>Nome:</lable>
         <input type="text" name="nome">
         <label>E-mail</label>
         <input type="text" name="email">
-        <input type="submit" value="Enviar">
-    """)))}),format.raw/*11.6*/("""
+        <input class="waves-effect waves-light white-text btn" type="submit" value="Enviar">
+    """)))}),format.raw/*12.6*/("""
+    """),format.raw/*13.5*/("""</div>
 """)))}))
       }
     }
@@ -57,11 +59,11 @@ Seq[Any](_display_(/*1.2*/main/*1.6*/ {_display_(Seq[Any](format.raw/*1.8*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-07-30T14:20:13.833042
+                  DATE: 2019-08-01T13:20:49.569418
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/cadastrar_pessoa.scala.html
-                  HASH: 32b4c3f7b5bfc0eea5f6ff24835bb955abd9e410
-                  MATRIX: 1054->1|1065->5|1103->7|1134->12|1191->44|1205->50|1261->98|1300->100|1336->110|1350->116|1385->131|1420->140|1632->322
-                  LINES: 33->1|33->1|33->1|34->2|36->4|36->4|36->4|36->4|37->5|37->5|37->5|38->6|43->11
+                  HASH: ff1a0fb603671cc81db595e8426db51f949c7ab5
+                  MATRIX: 1054->1|1065->5|1103->7|1134->12|1240->93|1254->99|1310->147|1349->149|1385->159|1399->165|1434->180|1469->189|1729->419|1761->424
+                  LINES: 33->1|33->1|33->1|34->2|37->5|37->5|37->5|37->5|38->6|38->6|38->6|39->7|44->12|45->13
                   -- GENERATED --
               */
           

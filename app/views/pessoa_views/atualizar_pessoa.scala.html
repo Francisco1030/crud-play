@@ -1,6 +1,7 @@
 @(pessoa: entidades.Pessoa)
 @main {
-    <h1>Atualizar Pessoa</h1>
+    <div class="container">
+    <h3 class="center-align">Atualizar Pessoa</h3>
 
     @helper.form(routes.PessoaController.atualizarPessoa) {
         @helper.CSRF.formField
@@ -9,6 +10,7 @@
         <input type="text" value="@pessoa.getNome" name="nome">
         <label>E-mail</label>
         <input type="text" value="@pessoa.getEmail" name="email">
-        <input type="submit" value="Enviar">
+        <input class="waves-effect waves-light white-text btn" type="submit" value="Enviar">
     }
+    </div>
 }
