@@ -39,15 +39,30 @@ public class PessoaController extends Controller {
 
     public CompletionStage<Result> atualizarPessoaPage(Long id){
         return pessoaDAO.buscarPorId(id).thenComposeAsync(pessoa -> {
-            return CompletableFuture.completedFuture(ok(views.html.pessoa_views.atualizar_pessoa.render(pessoa)));
+            return CompletableFuture.completedFuture(ok(views.html.pessoa_views.atualizar_pessoa.render(pessoa.get())));
         },executionContext.current());
     }
 
-    public CompletionStage<Result> pesquisarPessoaPage(Long id){
-            return pessoaDAO.buscarPorId(id).thenComposeAsync(pessoa -> {
-                return CompletableFuture.completedFuture(ok(views.html.pessoa_views.pesquisar_pessoa.render(pessoa)));
-            }, executionContext.current());
-        //return CompletableFuture.completedFuture(ok(Json.toJson(id)));
+    public CompletionStage<Result> pesquisarPessoaPage(Http.Request request){
+        Form<Pessoa> formulario = formFactory.form(Pessoa.class).bindFromRequest(request);
+        Pessoa pessoa = formulario.get();
+        System.err.println(pessoa.getNome());
+        /*if(pessoa.getId() <= 0){
+            return CompletableFuture.completedFuture(ok(views.html.pessoa_views.pesquisar_pessoa.render(new Pessoa())));
+        }else{ */
+            return pessoaDAO.buscarPorNome(pessoa.getNome()).thenComposeAsync(pessoas -> {
+                if(pessoas.isEmpty()){
+                    return CompletableFuture.completedFuture(ok(views.html.pessoa_views.pesquisar_pessoa.render(new Pessoa())));
+                }else{
+                    return CompletableFuture.completedFuture(ok(views.html.pessoa_views.pesquisar_pessoa.render(pessoas)));
+                }
+
+            },executionContext.current());
+        }
+    //}
+
+    public CompletionStage<Result> pesquisarPessoa(Http.Request request){
+        return pesquisarPessoaPage(request);
     }
 
     public CompletionStage<Result> cadastrarPessoa(Http.Request request){

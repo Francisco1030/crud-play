@@ -13,7 +13,7 @@ public class Pessoa {
     private Long id = 0L;
     private String nome = "";
     private String email = "";
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Endereco> enderecos = new ArrayList<>();
 
     public Pessoa(){

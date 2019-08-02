@@ -1,3 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m[Error] /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/gerenciar_pessoa.scala.html:20[0m
-[0m[[0m[31merror[0m] [0m[0m}: Expected '}' but found 'EOF'[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mtwirlCompileTemplates[0m) Twirl compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0m[Error] /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/pesquisar_pessoa.scala.html:6[0m
+[0m[[0m[31merror[0m] [0m[0m    <a class="btn-floating btn-large waves-effect waves-light red" href="@routes.PessoaController.cadastrarPessoaPage()"><i class="material-icons">add</i></a>*@: Expected '}' but found '@'[0m

@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.CompletionStage;
 import java.util.function.Function;
 import static java.util.concurrent.CompletableFuture.supplyAsync;
@@ -39,10 +40,20 @@ public class PessoaDAOImpl implements PessoaDAO{
         return pessoa;
     }
 
-    private Pessoa buscarPorIdImpl(EntityManager entityManager, Long id){
-        Query query = entityManager.createQuery("select p from Pessoa p where p.id = :id").setParameter("id",id);
-        Pessoa pessoa = (Pessoa) query.getSingleResult();
-        return pessoa;
+    private Optional<Pessoa> buscarPorIdImpl(EntityManager entityManager, Long id){
+        try{
+            Query query = entityManager.createQuery("select p from Pessoa p where p.id = :id").setParameter("id",id);
+            Pessoa pessoa = (Pessoa) query.getSingleResult();
+            return Optional.of(pessoa);
+        }catch (Exception e){
+            return Optional.empty();
+        }
+    }
+
+    private List<Pessoa> buscaPorNomeImpl(EntityManager entityManager, String nome){
+            Query query = entityManager.createQuery("select p from Pessoa p where p.nome like :nome").setParameter("nome","%"+ nome +"%");
+            List<Pessoa> pessoas = query.getResultList();
+            return pessoas;
     }
 
     private Pessoa deletarImpl(EntityManager entityManager, Long id){
@@ -77,7 +88,12 @@ public class PessoaDAOImpl implements PessoaDAO{
     }
 
     @Override
-    public CompletionStage<Pessoa> buscarPorId(Long id) {
+    public CompletionStage<Optional<Pessoa>> buscarPorId(Long id) {
         return supplyAsync(() -> wrap(entityManager -> buscarPorIdImpl(entityManager,id)),executionContext);
+    }
+
+    @Override
+    public CompletionStage<Optional<Pessoa>> buscarPorNome(String nome) {
+        return supplyAsync(() -> wrap(entityManager -> buscaPorNomeImpl(entityManager,nome)),executionContext);
     }
 }

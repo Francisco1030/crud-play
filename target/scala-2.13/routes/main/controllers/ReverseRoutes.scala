@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Thu Aug 01 17:21:56 BRT 2019
+// @DATE:Fri Aug 02 16:44:06 BRT 2019
 
 import play.api.mvc.Call
 
@@ -11,44 +11,44 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:19
+  // @LINE:21
   class ReverseEnderecoController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:21
+    // @LINE:23
     def atualizarEnderecoPage(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "atualizar-endereco" + play.core.routing.queryString(List(Some(implicitly[play.api.mvc.QueryStringBindable[Long]].unbind("id", id)))))
     }
   
-    // @LINE:24
+    // @LINE:26
     def cadastrarEndereco(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "cadastrar-endereco")
     }
   
-    // @LINE:22
+    // @LINE:24
     def removerEndereco(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "remover-endereco" + play.core.routing.queryString(List(Some(implicitly[play.api.mvc.QueryStringBindable[Long]].unbind("id", id)))))
     }
   
-    // @LINE:20
+    // @LINE:22
     def gerenciarEnderecoPage(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "gerenciar-endereco")
     }
   
-    // @LINE:25
+    // @LINE:27
     def atualizarEndereco(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "atualizar-endereco")
     }
   
-    // @LINE:19
+    // @LINE:21
     def cadastrarEnderecoPage(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "cadastrar-endereco")
@@ -71,14 +71,14 @@ package controllers {
   
   }
 
-  // @LINE:28
+  // @LINE:30
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:28
+    // @LINE:30
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -105,10 +105,10 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "gerenciar-pessoa")
     }
   
-    // @LINE:13
-    def pesquisarPessoaPage(id:Long): Call = {
+    // @LINE:17
+    def pesquisarPessoa(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "pesquisar-pessoa" + play.core.routing.queryString(List(Some(implicitly[play.api.mvc.QueryStringBindable[Long]].unbind("id", id)))))
+      Call("POST", _prefix + { _defaultPrefix } + "pesquisar-pessoa")
     }
   
     // @LINE:9
@@ -127,6 +127,12 @@ package controllers {
     def cadastrarPessoa(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "cadastrar-pessoa")
+    }
+  
+    // @LINE:13
+    def pesquisarPessoaPage(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "pesquisar-pessoa")
     }
   
     // @LINE:16
