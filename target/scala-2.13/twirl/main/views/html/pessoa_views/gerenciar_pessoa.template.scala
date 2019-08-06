@@ -31,38 +31,51 @@ object gerenciar_pessoa extends _root_.play.twirl.api.BaseScalaTemplate[play.twi
 
 
 Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
-    """),format.raw/*3.5*/("""<div class="container">
-    <h3 class="center-align">Gerenciador de Pessoas</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>E-mail</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            """),_display_(/*15.14*/if(pessoas.isEmpty)/*15.33*/{_display_(Seq[Any](format.raw/*15.34*/("""
-                """),format.raw/*16.17*/("""<tr>
-                    <td colspan="4">
-                        Nenhuma pessoa cadastrada!
-                    </td>
-                </tr>
-            """)))}),format.raw/*21.14*/("""
-            """),_display_(/*22.14*/for(pessoa <- pessoas) yield /*22.36*/ {_display_(Seq[Any](format.raw/*22.38*/("""
-                """),format.raw/*23.17*/("""<tr>
-                    <td>"""),_display_(/*24.26*/pessoa/*24.32*/.getId),format.raw/*24.38*/("""</td>
-                    <td>"""),_display_(/*25.26*/pessoa/*25.32*/.getNome),format.raw/*25.40*/("""</td>
-                    <td>"""),_display_(/*26.26*/pessoa/*26.32*/.getEmail),format.raw/*26.41*/("""</td>
-                    <td>
-                        <a class="waves-effect waves-light btn blue" href=""""),_display_(/*28.77*/routes/*28.83*/.PessoaController.atualizarPessoaPage(pessoa.getId())),format.raw/*28.136*/(""""><i class="material-icons">create</i></a>
-                        <a class="waves-effect waves-light btn red"  href=""""),_display_(/*29.77*/routes/*29.83*/.PessoaController.removerPessoa(pessoa.getId())),format.raw/*29.130*/(""""><i class="material-icons">delete</i></a>
-                    </td>
-                </tr>
-            """)))}),format.raw/*32.14*/("""
-        """),format.raw/*33.9*/("""</tbody>
-    </table>
+    """),format.raw/*3.5*/("""<div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title blue-grey-text text-darken-2 center-align">
+                            <h4>Gerenciador de Pessoas</h4>
+                        </span>
+                        <table class="styleTable bordered striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>E-mail</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                """),_display_(/*22.34*/if(pessoas.isEmpty)/*22.53*/{_display_(Seq[Any](format.raw/*22.54*/("""
+                                    """),format.raw/*23.37*/("""<tr>
+                                        <td colspan="4">
+                                            Nenhuma pessoa cadastrada!
+                                        </td>
+                                    </tr>
+                                """)))}),format.raw/*28.34*/("""
+                                """),_display_(/*29.34*/for(pessoa <- pessoas) yield /*29.56*/ {_display_(Seq[Any](format.raw/*29.58*/("""
+                                    """),format.raw/*30.37*/("""<tr>
+                                        <td>"""),_display_(/*31.46*/pessoa/*31.52*/.getId),format.raw/*31.58*/("""</td>
+                                        <td>"""),_display_(/*32.46*/pessoa/*32.52*/.getNome),format.raw/*32.60*/("""</td>
+                                        <td>"""),_display_(/*33.46*/pessoa/*33.52*/.getEmail),format.raw/*33.61*/("""</td>
+                                        <td>
+                                            <a class="waves-effect waves-light btn orange" href=""""),_display_(/*35.99*/routes/*35.105*/.PessoaController.atualizarPessoaPage(pessoa.getId())),format.raw/*35.158*/(""""><i class="material-icons">create</i></a>
+                                            <a class="waves-effect waves-light btn red"  href=""""),_display_(/*36.97*/routes/*36.103*/.PessoaController.removerPessoa(pessoa.getId())),format.raw/*36.150*/(""""><i class="material-icons">delete</i></a>
+                                        </td>
+                                    </tr>
+                                """)))}),format.raw/*39.34*/("""
+                            """),format.raw/*40.29*/("""</tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 """)))}))
       }
@@ -80,11 +93,11 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-01T15:35:43.305267
+                  DATE: 2019-08-06T16:05:05.878376
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/gerenciar_pessoa.scala.html
-                  HASH: c4983c93218f28369bf0fe43586ce664df9ab77c
-                  MATRIX: 988->1|1115->36|1126->40|1163->41|1194->46|1532->357|1560->376|1599->377|1644->394|1829->548|1870->562|1908->584|1948->586|1993->603|2050->633|2065->639|2092->645|2150->676|2165->682|2194->690|2252->721|2267->727|2297->736|2431->843|2446->849|2521->902|2667->1021|2682->1027|2751->1074|2886->1178|2922->1187
-                  LINES: 28->1|33->2|33->2|33->2|34->3|46->15|46->15|46->15|47->16|52->21|53->22|53->22|53->22|54->23|55->24|55->24|55->24|56->25|56->25|56->25|57->26|57->26|57->26|59->28|59->28|59->28|60->29|60->29|60->29|63->32|64->33
+                  HASH: 5d2e2a2361406a86dde995b26a60aa71569a3310
+                  MATRIX: 988->1|1115->36|1126->40|1163->41|1194->46|2044->869|2072->888|2111->889|2176->926|2461->1180|2522->1214|2560->1236|2600->1238|2665->1275|2742->1325|2757->1331|2784->1337|2862->1388|2877->1394|2906->1402|2984->1453|2999->1459|3029->1468|3205->1617|3221->1623|3296->1676|3462->1815|3478->1821|3547->1868|3742->2032|3799->2061
+                  LINES: 28->1|33->2|33->2|33->2|34->3|53->22|53->22|53->22|54->23|59->28|60->29|60->29|60->29|61->30|62->31|62->31|62->31|63->32|63->32|63->32|64->33|64->33|64->33|66->35|66->35|66->35|67->36|67->36|67->36|70->39|71->40
                   -- GENERATED --
               */
           

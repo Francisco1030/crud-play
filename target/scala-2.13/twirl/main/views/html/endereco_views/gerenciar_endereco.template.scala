@@ -31,40 +31,53 @@ object gerenciar_endereco extends _root_.play.twirl.api.BaseScalaTemplate[play.t
 
 
 Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
-    """),format.raw/*3.5*/("""<div class="container">
-    <h3 class="center-align">Gerenciar Endereco</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Rua</th>
-                <th>Numero</th>
-                <th>Pessoa</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            """),_display_(/*16.14*/if(enderecos.isEmpty)/*16.35*/{_display_(Seq[Any](format.raw/*16.36*/("""
-                """),format.raw/*17.17*/("""<tr>
-                    <td colspan="4">
-                        Nenhum endereço cadastrado!
-                    </td>
-                </tr>
-            """)))}),format.raw/*22.14*/("""
-            """),_display_(/*23.14*/for(endereco <- enderecos) yield /*23.40*/ {_display_(Seq[Any](format.raw/*23.42*/("""
-                """),format.raw/*24.17*/("""<tr>
-                    <td>"""),_display_(/*25.26*/endereco/*25.34*/.getId),format.raw/*25.40*/("""</td>
-                    <td>"""),_display_(/*26.26*/endereco/*26.34*/.getRua),format.raw/*26.41*/("""</td>
-                    <td>"""),_display_(/*27.26*/endereco/*27.34*/.getNumero),format.raw/*27.44*/("""</td>
-                    <td>"""),_display_(/*28.26*/endereco/*28.34*/.getPessoa.getNome),format.raw/*28.52*/("""</td>
-                    <td>
-                        <a class="waves-effect waves-light btn blue" href=""""),_display_(/*30.77*/routes/*30.83*/.EnderecoController.atualizarEnderecoPage(endereco.getId)),format.raw/*30.140*/(""""><i class="material-icons">create</i></a>
-                        <a class="waves-effect waves-light btn red"  href=""""),_display_(/*31.77*/routes/*31.83*/.EnderecoController.removerEndereco(endereco.getId)),format.raw/*31.134*/(""""><i class="material-icons">delete</i></a>
-                    </td>
-                </tr>
-            """)))}),format.raw/*34.14*/("""
-        """),format.raw/*35.9*/("""</tbody>
-    </table>
+    """),format.raw/*3.5*/("""<div>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title blue-grey-text text-darken-2 center-align">
+                            <h4>Gerenciar Endereco</h4>
+                        </span>
+                        <table class="styleTable bordered striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Rua</th>
+                                    <th>Numero</th>
+                                    <th>Pessoa</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                """),_display_(/*23.34*/if(enderecos.isEmpty)/*23.55*/{_display_(Seq[Any](format.raw/*23.56*/("""
+                                    """),format.raw/*24.37*/("""<tr>
+                                        <td colspan="4">
+                                            Nenhum endereço cadastrado!
+                                        </td>
+                                    </tr>
+                                """)))}),format.raw/*29.34*/("""
+                                """),_display_(/*30.34*/for(endereco <- enderecos) yield /*30.60*/ {_display_(Seq[Any](format.raw/*30.62*/("""
+                                    """),format.raw/*31.37*/("""<tr>
+                                        <td>"""),_display_(/*32.46*/endereco/*32.54*/.getId),format.raw/*32.60*/("""</td>
+                                        <td>"""),_display_(/*33.46*/endereco/*33.54*/.getRua),format.raw/*33.61*/("""</td>
+                                        <td>"""),_display_(/*34.46*/endereco/*34.54*/.getNumero),format.raw/*34.64*/("""</td>
+                                        <td>"""),_display_(/*35.46*/endereco/*35.54*/.getPessoa.getNome),format.raw/*35.72*/("""</td>
+                                        <td>
+                                            <a class="waves-effect waves-light btn orange" href=""""),_display_(/*37.99*/routes/*37.105*/.EnderecoController.atualizarEnderecoPage(endereco.getId)),format.raw/*37.162*/(""""><i class="material-icons">create</i></a>
+                                            <a class="waves-effect waves-light btn red"  href=""""),_display_(/*38.97*/routes/*38.103*/.EnderecoController.removerEndereco(endereco.getId)),format.raw/*38.154*/(""""><i class="material-icons">delete</i></a>
+                                        </td>
+                                    </tr>
+                                """)))}),format.raw/*41.34*/("""
+                            """),format.raw/*42.29*/("""</tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 """)))}))
       }
@@ -82,11 +95,11 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-01T13:23:11.209765
+                  DATE: 2019-08-06T16:07:19.011558
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/endereco_views/gerenciar_endereco.scala.html
-                  HASH: 7cc718384a7ce02c1433b6d6bf4549fdf1727585
-                  MATRIX: 994->1|1125->40|1136->44|1173->45|1204->50|1569->388|1599->409|1638->410|1683->427|1869->582|1910->596|1952->622|1992->624|2037->641|2094->671|2111->679|2138->685|2196->716|2213->724|2241->731|2299->762|2316->770|2347->780|2405->811|2422->819|2461->837|2595->944|2610->950|2689->1007|2835->1126|2850->1132|2923->1183|3058->1287|3094->1296
-                  LINES: 28->1|33->2|33->2|33->2|34->3|47->16|47->16|47->16|48->17|53->22|54->23|54->23|54->23|55->24|56->25|56->25|56->25|57->26|57->26|57->26|58->27|58->27|58->27|59->28|59->28|59->28|61->30|61->30|61->30|62->31|62->31|62->31|65->34|66->35
+                  HASH: 5bffd660488ce103b439226a636c251d789a5e9a
+                  MATRIX: 994->1|1125->40|1136->44|1173->45|1204->50|2101->920|2131->941|2170->942|2235->979|2521->1234|2582->1268|2624->1294|2664->1296|2729->1333|2806->1383|2823->1391|2850->1397|2928->1448|2945->1456|2973->1463|3051->1514|3068->1522|3099->1532|3177->1583|3194->1591|3233->1609|3409->1758|3425->1764|3504->1821|3670->1960|3686->1966|3759->2017|3954->2181|4011->2210
+                  LINES: 28->1|33->2|33->2|33->2|34->3|54->23|54->23|54->23|55->24|60->29|61->30|61->30|61->30|62->31|63->32|63->32|63->32|64->33|64->33|64->33|65->34|65->34|65->34|66->35|66->35|66->35|68->37|68->37|68->37|69->38|69->38|69->38|72->41|73->42
                   -- GENERATED --
               */
           

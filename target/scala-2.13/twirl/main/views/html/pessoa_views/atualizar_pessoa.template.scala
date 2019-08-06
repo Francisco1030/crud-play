@@ -32,19 +32,31 @@ object atualizar_pessoa extends _root_.play.twirl.api.BaseScalaTemplate[play.twi
 
 Seq[Any](_display_(/*2.2*/main/*2.6*/ {_display_(Seq[Any](format.raw/*2.8*/("""
     """),format.raw/*3.5*/("""<div class="container">
-    <h3 class="center-align">Atualizar Pessoa</h3>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title blue-grey-text text-darken-2 center-align">
+                            <h4>Atualizar Pessoa</h4>
+                        </span>
+                        """),_display_(/*11.26*/helper/*11.32*/.form(routes.PessoaController.atualizarPessoa)/*11.78*/ {_display_(Seq[Any](format.raw/*11.80*/("""
+                            """),_display_(/*12.30*/helper/*12.36*/.CSRF.formField),format.raw/*12.51*/("""
+                            """),format.raw/*13.29*/("""<input type="hidden" value=""""),_display_(/*13.58*/pessoa/*13.64*/.getId),format.raw/*13.70*/("""" name="id">
+                            <lable>Nome:</lable>
+                            <input type="text" value=""""),_display_(/*15.56*/pessoa/*15.62*/.getNome),format.raw/*15.70*/("""" name="nome">
+                            <label>E-mail</label>
+                            <input type="text" value=""""),_display_(/*17.56*/pessoa/*17.62*/.getEmail),format.raw/*17.71*/("""" name="email">
+                            <button class="waves-effect waves-light btn green" type="submit" value="Enviar">Atualizar</button>
+                        """)))}),format.raw/*19.26*/("""
+                    """),format.raw/*20.21*/("""</div>
+                </div>
+            </div>
+        </div>
 
-    """),_display_(/*6.6*/helper/*6.12*/.form(routes.PessoaController.atualizarPessoa)/*6.58*/ {_display_(Seq[Any](format.raw/*6.60*/("""
-        """),_display_(/*7.10*/helper/*7.16*/.CSRF.formField),format.raw/*7.31*/("""
-        """),format.raw/*8.9*/("""<input type="hidden" value=""""),_display_(/*8.38*/pessoa/*8.44*/.getId),format.raw/*8.50*/("""" name="id">
-        <lable>Nome:</lable>
-        <input type="text" value=""""),_display_(/*10.36*/pessoa/*10.42*/.getNome),format.raw/*10.50*/("""" name="nome">
-        <label>E-mail</label>
-        <input type="text" value=""""),_display_(/*12.36*/pessoa/*12.42*/.getEmail),format.raw/*12.51*/("""" name="email">
-        <input class="waves-effect waves-light white-text btn" type="submit" value="Enviar">
-    """)))}),format.raw/*14.6*/("""
-    """),format.raw/*15.5*/("""</div>
-""")))}))
+    </div>
+""")))}),format.raw/*26.2*/("""
+
+"""))
       }
     }
   }
@@ -60,11 +72,11 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/ {_display_(Seq[Any](format.raw/*2.8*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-01T13:24:38.940837
+                  DATE: 2019-08-06T15:32:16.947189
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/atualizar_pessoa.scala.html
-                  HASH: 7ef63b47035b9ffe9f5b107324fc6d3e46c0f007
-                  MATRIX: 982->1|1102->29|1113->33|1151->35|1182->40|1288->121|1302->127|1356->173|1395->175|1431->185|1445->191|1480->206|1515->215|1570->244|1584->250|1610->256|1714->333|1729->339|1758->347|1865->427|1880->433|1910->442|2054->556|2086->561
-                  LINES: 28->1|33->2|33->2|33->2|34->3|37->6|37->6|37->6|37->6|38->7|38->7|38->7|39->8|39->8|39->8|39->8|41->10|41->10|41->10|43->12|43->12|43->12|45->14|46->15
+                  HASH: 4e1c746945f7f1eacdfde5458a1cb718810c3229
+                  MATRIX: 982->1|1102->29|1113->33|1151->35|1182->40|1582->413|1597->419|1652->465|1692->467|1749->497|1764->503|1800->518|1857->547|1913->576|1928->582|1955->588|2099->705|2114->711|2143->719|2290->839|2305->845|2335->854|2534->1022|2583->1043|2690->1120
+                  LINES: 28->1|33->2|33->2|33->2|34->3|42->11|42->11|42->11|42->11|43->12|43->12|43->12|44->13|44->13|44->13|44->13|46->15|46->15|46->15|48->17|48->17|48->17|50->19|51->20|57->26
                   -- GENERATED --
               */
           

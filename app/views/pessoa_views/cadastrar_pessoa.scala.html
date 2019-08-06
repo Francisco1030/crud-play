@@ -1,14 +1,26 @@
 @main {
     <div class="container">
-    <h3 class="center-align">Cadastrar Pessoa</h3>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title blue-grey-text text-darken-2 center-align">
+                            <h4>Cadastrar Pessoa</h4>
+                        </span>
+                        @helper.form(routes.PessoaController.cadastrarPessoa()) {
+                            @helper.CSRF.formField
+                            <lable>Nome:</lable>
+                            <input type="text" name="nome">
+                            <label>E-mail</label>
+                            <input type="text" name="email">
+                            <button class="waves-effect waves-light btn green" type="submit" value="Enviar">Cadastrar</button>
+                            }
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    @helper.form(routes.PessoaController.cadastrarPessoa()) {
-        @helper.CSRF.formField
-        <lable>Nome:</lable>
-        <input type="text" name="nome">
-        <label>E-mail</label>
-        <input type="text" name="email">
-        <input class="waves-effect waves-light white-text btn" type="submit" value="Enviar">
-    }
     </div>
 }
+
+

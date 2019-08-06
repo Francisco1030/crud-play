@@ -61,6 +61,7 @@ Seq[Any](format.raw/*8.1*/("""
 
                     <!-- MENU DESKTOP -->
                 <ul class="right hide-on-med-and-down">
+                    <li><a href=""""),_display_(/*34.35*/routes/*34.41*/.HomeController.index()),format.raw/*34.64*/("""">Home</a></li>
                         <!-- Dropdown Trigger -->
                     <li><a href="#!" class="dropdown-button" data-target="dropdown1">Pessoa<i
                     class="material-icons right">arrow_drop_down</i></a></li>
@@ -70,6 +71,7 @@ Seq[Any](format.raw/*8.1*/("""
 
                     <!-- MENU MOBILE -->
                 <ul id="nav-mobile" class="sidenav">
+                    <li><a href=""""),_display_(/*44.35*/routes/*44.41*/.HomeController.index()),format.raw/*44.64*/("""">Home</a></li>
                         <!-- Dropdown Trigger -->
                     <li><a href="#!" class="dropdown-button" data-target="dropdown1">Pessoa<i
                     class="material-icons right">arrow_drop_down</i></a></li>
@@ -80,11 +82,11 @@ Seq[Any](format.raw/*8.1*/("""
             </div>
         </nav>
 
-        """),_display_(/*53.10*/content),format.raw/*53.17*/("""
+        """),_display_(/*55.10*/content),format.raw/*55.17*/("""
 
-        """),format.raw/*55.9*/("""<script src=""""),_display_(/*55.23*/routes/*55.29*/.Assets.versioned("javascripts/JQuery.js")),format.raw/*55.71*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*56.23*/routes/*56.29*/.Assets.versioned("materialize/js/materialize.min.js")),format.raw/*56.83*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*57.23*/routes/*57.29*/.Assets.versioned("javascripts/main.js")),format.raw/*57.69*/("""" type="text/javascript"></script>
+        """),format.raw/*57.9*/("""<script src=""""),_display_(/*57.23*/routes/*57.29*/.Assets.versioned("javascripts/JQuery.js")),format.raw/*57.71*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*58.23*/routes/*58.29*/.Assets.versioned("materialize/js/materialize.min.js")),format.raw/*58.83*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*59.23*/routes/*59.29*/.Assets.versioned("javascripts/main.js")),format.raw/*59.69*/("""" type="text/javascript"></script>
     </body>
 </html>
 """))
@@ -103,11 +105,11 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-06T15:00:25.245254
+                  DATE: 2019-08-06T15:36:43.103719
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/main.scala.html
-                  HASH: 277c57e84bacb1112b0e88d2c13d0ec9afadda48
-                  MATRIX: 1199->260|1308->276|1335->277|1490->405|1505->411|1568->452|1656->513|1671->519|1729->555|1797->596|1812->602|1885->654|2393->1135|2408->1141|2472->1184|2604->1289|2619->1295|2683->1338|2898->1526|2913->1532|2973->1571|3105->1676|3120->1682|3180->1721|4490->3004|4518->3011|4555->3021|4596->3035|4611->3041|4674->3083|4758->3140|4773->3146|4848->3200|4932->3257|4947->3263|5008->3303
-                  LINES: 33->7|38->8|39->9|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|54->24|54->24|54->24|55->25|55->25|55->25|58->28|58->28|58->28|59->29|59->29|59->29|83->53|83->53|85->55|85->55|85->55|85->55|86->56|86->56|86->56|87->57|87->57|87->57
+                  HASH: 5bfe1d6af13b88b6ed8ddde77f431e3de5f013bb
+                  MATRIX: 1199->260|1308->276|1335->277|1490->405|1505->411|1568->452|1656->513|1671->519|1729->555|1797->596|1812->602|1885->654|2393->1135|2408->1141|2472->1184|2604->1289|2619->1295|2683->1338|2898->1526|2913->1532|2973->1571|3105->1676|3120->1682|3180->1721|3433->1947|3448->1953|3492->1976|4082->2539|4097->2545|4141->2568|4762->3162|4790->3169|4827->3179|4868->3193|4883->3199|4946->3241|5030->3298|5045->3304|5120->3358|5204->3415|5219->3421|5280->3461
+                  LINES: 33->7|38->8|39->9|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|54->24|54->24|54->24|55->25|55->25|55->25|58->28|58->28|58->28|59->29|59->29|59->29|64->34|64->34|64->34|74->44|74->44|74->44|85->55|85->55|87->57|87->57|87->57|87->57|88->58|88->58|88->58|89->59|89->59|89->59
                   -- GENERATED --
               */
           

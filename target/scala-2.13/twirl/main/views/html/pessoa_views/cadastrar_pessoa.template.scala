@@ -32,18 +32,31 @@ object cadastrar_pessoa extends _root_.play.twirl.api.BaseScalaTemplate[play.twi
 
 Seq[Any](_display_(/*1.2*/main/*1.6*/ {_display_(Seq[Any](format.raw/*1.8*/("""
     """),format.raw/*2.5*/("""<div class="container">
-    <h3 class="center-align">Cadastrar Pessoa</h3>
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title blue-grey-text text-darken-2 center-align">
+                            <h4>Cadastrar Pessoa</h4>
+                        </span>
+                        """),_display_(/*10.26*/helper/*10.32*/.form(routes.PessoaController.cadastrarPessoa())/*10.80*/ {_display_(Seq[Any](format.raw/*10.82*/("""
+                            """),_display_(/*11.30*/helper/*11.36*/.CSRF.formField),format.raw/*11.51*/("""
+                            """),format.raw/*12.29*/("""<lable>Nome:</lable>
+                            <input type="text" name="nome">
+                            <label>E-mail</label>
+                            <input type="text" name="email">
+                            <button class="waves-effect waves-light btn green" type="submit" value="Enviar">Cadastrar</button>
+                            """)))}),format.raw/*17.30*/("""
+                    """),format.raw/*18.21*/("""</div>
+                </div>
+            </div>
+        </div>
 
-    """),_display_(/*5.6*/helper/*5.12*/.form(routes.PessoaController.cadastrarPessoa())/*5.60*/ {_display_(Seq[Any](format.raw/*5.62*/("""
-        """),_display_(/*6.10*/helper/*6.16*/.CSRF.formField),format.raw/*6.31*/("""
-        """),format.raw/*7.9*/("""<lable>Nome:</lable>
-        <input type="text" name="nome">
-        <label>E-mail</label>
-        <input type="text" name="email">
-        <input class="waves-effect waves-light white-text btn" type="submit" value="Enviar">
-    """)))}),format.raw/*12.6*/("""
-    """),format.raw/*13.5*/("""</div>
-""")))}))
+    </div>
+""")))}),format.raw/*24.2*/("""
+
+
+"""))
       }
     }
   }
@@ -59,11 +72,11 @@ Seq[Any](_display_(/*1.2*/main/*1.6*/ {_display_(Seq[Any](format.raw/*1.8*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-01T13:20:49.569418
+                  DATE: 2019-08-06T15:55:45.780782
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/cadastrar_pessoa.scala.html
-                  HASH: ff1a0fb603671cc81db595e8426db51f949c7ab5
-                  MATRIX: 1054->1|1065->5|1103->7|1134->12|1240->93|1254->99|1310->147|1349->149|1385->159|1399->165|1434->180|1469->189|1729->419|1761->424
-                  LINES: 33->1|33->1|33->1|34->2|37->5|37->5|37->5|37->5|38->6|38->6|38->6|39->7|44->12|45->13
+                  HASH: 69de711d9a7e983372b5eef276dcc4106a91f79d
+                  MATRIX: 1054->1|1065->5|1103->7|1134->12|1534->385|1549->391|1606->439|1646->441|1703->471|1718->477|1754->492|1811->521|2190->869|2239->890|2346->967
+                  LINES: 33->1|33->1|33->1|34->2|42->10|42->10|42->10|42->10|43->11|43->11|43->11|44->12|49->17|50->18|56->24
                   -- GENERATED --
               */
           
