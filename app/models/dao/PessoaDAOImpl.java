@@ -93,7 +93,7 @@ public class PessoaDAOImpl implements PessoaDAO{
     }
 
     @Override
-    public CompletionStage<Optional<Pessoa>> buscarPorNome(String nome) {
+    public CompletionStage<List<Pessoa>> buscarPorNome(String nome) {
         return supplyAsync(() -> wrap(entityManager -> buscaPorNomeImpl(entityManager,nome)),executionContext);
     }
 }

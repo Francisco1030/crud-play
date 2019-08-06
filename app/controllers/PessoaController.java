@@ -47,19 +47,10 @@ public class PessoaController extends Controller {
         Form<Pessoa> formulario = formFactory.form(Pessoa.class).bindFromRequest(request);
         Pessoa pessoa = formulario.get();
         System.err.println(pessoa.getNome());
-        /*if(pessoa.getId() <= 0){
-            return CompletableFuture.completedFuture(ok(views.html.pessoa_views.pesquisar_pessoa.render(new Pessoa())));
-        }else{ */
-            return pessoaDAO.buscarPorNome(pessoa.getNome()).thenComposeAsync(pessoas -> {
-                if(pessoas.isEmpty()){
-                    return CompletableFuture.completedFuture(ok(views.html.pessoa_views.pesquisar_pessoa.render(new Pessoa())));
-                }else{
-                    return CompletableFuture.completedFuture(ok(views.html.pessoa_views.pesquisar_pessoa.render(pessoas)));
-                }
-
+        return pessoaDAO.buscarPorNome(pessoa.getNome()).thenComposeAsync(pessoas -> {
+            return CompletableFuture.completedFuture(ok(views.html.pessoa_views.pesquisar_pessoa.render(pessoas)));
             },executionContext.current());
-        }
-    //}
+    }
 
     public CompletionStage<Result> pesquisarPessoa(Http.Request request){
         return pesquisarPessoaPage(request);

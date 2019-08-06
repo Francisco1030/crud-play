@@ -7,29 +7,48 @@
 @(content: Html)
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
-        @* Here's where we render the page title `String`. *@
-        <title>Titulo</title>
+        <title>CRUD</title>
         <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/icon.png")">
         <link rel="stylesheet" href="@routes.Assets.versioned("materialize/css/materialize.css")">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        @* And here's where we render the `Html` object containing
-         * the page content. *@
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="@routes.PessoaController.cadastrarPessoaPage()">Cadastrar Pessoa</a></li>
-                <li><a href="@routes.PessoaController.gerenciarPessoaPage()">Gerenciar Pessoas</a></li>
-                <li><a href="@routes.EnderecoController.cadastrarEnderecoPage()">Cadastrar Endereço</a></li>
-                <li><a href="@routes.EnderecoController.gerenciarEnderecoPage()">Gerenciar Endereços</a></li>
-            </ul>
-        </div>
-    </nav>
+        <nav class="blue-grey darken-4" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo"><i class="material-icons">settings_input_component</i>CRUD</a>
+                    <!-- Dropdown Structure -->
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="@routes.EnderecoController.cadastrarEnderecoPage()"><span class="blue-grey-text text-darken-2">Cadastrar</span></a></li>
+                    <li><a href="@routes.EnderecoController.gerenciarEnderecoPage()"><span class="blue-grey-text text-darken-2">Gerenciar</span></a></li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="@routes.PessoaController.cadastrarPessoaPage()"><span class="blue-grey-text text-darken-2">Cadastrar</span></a></li>
+                    <li><a href="@routes.PessoaController.gerenciarPessoaPage()"><span class="blue-grey-text text-darken-2">Gerenciar</span></a></li>
+                </ul>
+
+                    <!-- MENU DESKTOP -->
+                <ul class="right hide-on-med-and-down">
+                        <!-- Dropdown Trigger -->
+                    <li><a href="#!" class="dropdown-button" data-target="dropdown1">Pessoa<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#!" class="dropdown-button" data-target="dropdown2">Endereço<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+
+                    <!-- MENU MOBILE -->
+                <ul id="nav-mobile" class="sidenav">
+                        <!-- Dropdown Trigger -->
+                    <li><a href="#!" class="dropdown-button" data-target="dropdown1">Pessoa<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#!" class="dropdown-button" data-target="dropdown2">Endereço<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
 
         @content
 

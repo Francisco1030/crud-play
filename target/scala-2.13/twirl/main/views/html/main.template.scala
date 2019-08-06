@@ -37,34 +37,54 @@ object main extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlF
 
 Seq[Any](format.raw/*8.1*/("""
 """),format.raw/*9.1*/("""<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
-        """),format.raw/*12.62*/("""
-        """),format.raw/*13.9*/("""<title>Titulo</title>
-        <link rel="stylesheet" media="screen" href=""""),_display_(/*14.54*/routes/*14.60*/.Assets.versioned("stylesheets/main.css")),format.raw/*14.101*/("""">
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*15.59*/routes/*15.65*/.Assets.versioned("images/favicon.png")),format.raw/*15.104*/("""">
-        <link rel="stylesheet" href=""""),_display_(/*16.39*/routes/*16.45*/.Assets.versioned("materialize/css/materialize.css")),format.raw/*16.97*/("""">
+        <title>CRUD</title>
+        <link rel="stylesheet" media="screen" href=""""),_display_(/*13.54*/routes/*13.60*/.Assets.versioned("stylesheets/main.css")),format.raw/*13.101*/("""">
+        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*14.59*/routes/*14.65*/.Assets.versioned("images/icon.png")),format.raw/*14.101*/("""">
+        <link rel="stylesheet" href=""""),_display_(/*15.39*/routes/*15.45*/.Assets.versioned("materialize/css/materialize.css")),format.raw/*15.97*/("""">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        """),format.raw/*21.32*/("""
-    """),format.raw/*22.5*/("""<nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href=""""),_display_(/*26.31*/routes/*26.37*/.PessoaController.cadastrarPessoaPage()),format.raw/*26.76*/("""">Cadastrar Pessoa</a></li>
-                <li><a href=""""),_display_(/*27.31*/routes/*27.37*/.PessoaController.gerenciarPessoaPage()),format.raw/*27.76*/("""">Gerenciar Pessoas</a></li>
-                <li><a href=""""),_display_(/*28.31*/routes/*28.37*/.EnderecoController.cadastrarEnderecoPage()),format.raw/*28.80*/("""">Cadastrar Endereço</a></li>
-                <li><a href=""""),_display_(/*29.31*/routes/*29.37*/.EnderecoController.gerenciarEnderecoPage()),format.raw/*29.80*/("""">Gerenciar Endereços</a></li>
-            </ul>
-        </div>
-    </nav>
+        <nav class="blue-grey darken-4" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo"><i class="material-icons">settings_input_component</i>CRUD</a>
+                    <!-- Dropdown Structure -->
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href=""""),_display_(/*24.35*/routes/*24.41*/.EnderecoController.cadastrarEnderecoPage()),format.raw/*24.84*/(""""><span class="blue-grey-text text-darken-2">Cadastrar</span></a></li>
+                    <li><a href=""""),_display_(/*25.35*/routes/*25.41*/.EnderecoController.gerenciarEnderecoPage()),format.raw/*25.84*/(""""><span class="blue-grey-text text-darken-2">Gerenciar</span></a></li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href=""""),_display_(/*28.35*/routes/*28.41*/.PessoaController.cadastrarPessoaPage()),format.raw/*28.80*/(""""><span class="blue-grey-text text-darken-2">Cadastrar</span></a></li>
+                    <li><a href=""""),_display_(/*29.35*/routes/*29.41*/.PessoaController.gerenciarPessoaPage()),format.raw/*29.80*/(""""><span class="blue-grey-text text-darken-2">Gerenciar</span></a></li>
+                </ul>
 
-        """),_display_(/*34.10*/content),format.raw/*34.17*/("""
+                    <!-- MENU DESKTOP -->
+                <ul class="right hide-on-med-and-down">
+                        <!-- Dropdown Trigger -->
+                    <li><a href="#!" class="dropdown-button" data-target="dropdown1">Pessoa<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#!" class="dropdown-button" data-target="dropdown2">Endereço<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
 
-        """),format.raw/*36.9*/("""<script src=""""),_display_(/*36.23*/routes/*36.29*/.Assets.versioned("javascripts/JQuery.js")),format.raw/*36.71*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*37.23*/routes/*37.29*/.Assets.versioned("materialize/js/materialize.min.js")),format.raw/*37.83*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*38.23*/routes/*38.29*/.Assets.versioned("javascripts/main.js")),format.raw/*38.69*/("""" type="text/javascript"></script>
+                    <!-- MENU MOBILE -->
+                <ul id="nav-mobile" class="sidenav">
+                        <!-- Dropdown Trigger -->
+                    <li><a href="#!" class="dropdown-button" data-target="dropdown1">Pessoa<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#!" class="dropdown-button" data-target="dropdown2">Endereço<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+
+        """),_display_(/*53.10*/content),format.raw/*53.17*/("""
+
+        """),format.raw/*55.9*/("""<script src=""""),_display_(/*55.23*/routes/*55.29*/.Assets.versioned("javascripts/JQuery.js")),format.raw/*55.71*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*56.23*/routes/*56.29*/.Assets.versioned("materialize/js/materialize.min.js")),format.raw/*56.83*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*57.23*/routes/*57.29*/.Assets.versioned("javascripts/main.js")),format.raw/*57.69*/("""" type="text/javascript"></script>
     </body>
 </html>
 """))
@@ -83,11 +103,11 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-07-31T15:20:19.692936
+                  DATE: 2019-08-06T15:00:25.245254
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/main.scala.html
-                  HASH: b974b4eea3051e476de697c467b47b1e480f59e7
-                  MATRIX: 1199->260|1308->276|1335->277|1415->382|1451->391|1553->466|1568->472|1631->513|1719->574|1734->580|1795->619|1863->660|1878->666|1951->718|2108->937|2140->942|2357->1132|2372->1138|2432->1177|2517->1235|2532->1241|2592->1280|2678->1339|2693->1345|2757->1388|2844->1448|2859->1454|2923->1497|3035->1582|3063->1589|3100->1599|3141->1613|3156->1619|3219->1661|3303->1718|3318->1724|3393->1778|3477->1835|3492->1841|3553->1881
-                  LINES: 33->7|38->8|39->9|42->12|43->13|44->14|44->14|44->14|45->15|45->15|45->15|46->16|46->16|46->16|50->21|51->22|55->26|55->26|55->26|56->27|56->27|56->27|57->28|57->28|57->28|58->29|58->29|58->29|63->34|63->34|65->36|65->36|65->36|65->36|66->37|66->37|66->37|67->38|67->38|67->38
+                  HASH: 277c57e84bacb1112b0e88d2c13d0ec9afadda48
+                  MATRIX: 1199->260|1308->276|1335->277|1490->405|1505->411|1568->452|1656->513|1671->519|1729->555|1797->596|1812->602|1885->654|2393->1135|2408->1141|2472->1184|2604->1289|2619->1295|2683->1338|2898->1526|2913->1532|2973->1571|3105->1676|3120->1682|3180->1721|4490->3004|4518->3011|4555->3021|4596->3035|4611->3041|4674->3083|4758->3140|4773->3146|4848->3200|4932->3257|4947->3263|5008->3303
+                  LINES: 33->7|38->8|39->9|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|54->24|54->24|54->24|55->25|55->25|55->25|58->28|58->28|58->28|59->29|59->29|59->29|83->53|83->53|85->55|85->55|85->55|85->55|86->56|86->56|86->56|87->57|87->57|87->57
                   -- GENERATED --
               */
           
