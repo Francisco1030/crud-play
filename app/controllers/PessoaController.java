@@ -4,7 +4,6 @@ import models.dao.PessoaDAO;
 import models.entidades.Pessoa;
 import play.data.Form;
 import play.data.FormFactory;
-import play.libs.Json;
 import play.libs.concurrent.HttpExecutionContext;
 import play.mvc.Controller;
 import play.mvc.Http;
