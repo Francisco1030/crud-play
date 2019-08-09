@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="crud_2137" />
+    <profile name="sbt 1" modules="crud_6151" />
     <profile name="sbt 2" modules="crud">
       <option name="deprecationWarnings" value="true" />
       <option name="uncheckedWarnings" value="true" />

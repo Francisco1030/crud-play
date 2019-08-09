@@ -32,6 +32,18 @@ object gerenciar_pessoa extends _root_.play.twirl.api.BaseScalaTemplate[play.twi
 
 Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
     """),format.raw/*3.5*/("""<div>
+
+            <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h5>Dados da pessoa</h5>
+                <p>Nome: </p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col s12 m12">
                 <div class="card">
@@ -50,25 +62,26 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
                             </thead>
 
                             <tbody>
-                                """),_display_(/*22.34*/if(pessoas.isEmpty)/*22.53*/{_display_(Seq[Any](format.raw/*22.54*/("""
-                                    """),format.raw/*23.37*/("""<tr>
+                                """),_display_(/*34.34*/if(pessoas.isEmpty)/*34.53*/{_display_(Seq[Any](format.raw/*34.54*/("""
+                                    """),format.raw/*35.37*/("""<tr>
                                         <td colspan="4">
                                             Nenhuma pessoa cadastrada!
                                         </td>
                                     </tr>
-                                """)))}),format.raw/*28.34*/("""
-                                """),_display_(/*29.34*/for(pessoa <- pessoas) yield /*29.56*/ {_display_(Seq[Any](format.raw/*29.58*/("""
-                                    """),format.raw/*30.37*/("""<tr>
-                                        <td>"""),_display_(/*31.46*/pessoa/*31.52*/.getId),format.raw/*31.58*/("""</td>
-                                        <td>"""),_display_(/*32.46*/pessoa/*32.52*/.getNome),format.raw/*32.60*/("""</td>
-                                        <td>"""),_display_(/*33.46*/pessoa/*33.52*/.getEmail),format.raw/*33.61*/("""</td>
+                                """)))}),format.raw/*40.34*/("""
+                                """),_display_(/*41.34*/for(pessoa <- pessoas) yield /*41.56*/ {_display_(Seq[Any](format.raw/*41.58*/("""
+                                    """),format.raw/*42.37*/("""<tr>
+                                        <td>"""),_display_(/*43.46*/pessoa/*43.52*/.getId),format.raw/*43.58*/("""</td>
+                                        <td>"""),_display_(/*44.46*/pessoa/*44.52*/.getNome),format.raw/*44.60*/("""</td>
+                                        <td>"""),_display_(/*45.46*/pessoa/*45.52*/.getEmail),format.raw/*45.61*/("""</td>
                                         <td>
-                                            <a class="waves-effect waves-light btn orange" href=""""),_display_(/*35.99*/routes/*35.105*/.PessoaController.atualizarPessoaPage(pessoa.getId())),format.raw/*35.158*/(""""><i class="material-icons">create</i></a>
-                                            <a class="waves-effect waves-light btn red"  href=""""),_display_(/*36.97*/routes/*36.103*/.PessoaController.removerPessoa(pessoa.getId())),format.raw/*36.150*/(""""><i class="material-icons">delete</i></a>
+                                            <a class="waves-effect waves-light btn blue modal-trigger" data-target="modal1" href=""><i class="material-icons">visibility</i></a>
+                                            <a class="waves-effect waves-light btn orange" href=""""),_display_(/*48.99*/routes/*48.105*/.PessoaController.atualizarPessoaPage(pessoa.getId())),format.raw/*48.158*/(""""><i class="material-icons">create</i></a>
+                                            <a class="waves-effect waves-light btn red"  href=""""),_display_(/*49.97*/routes/*49.103*/.PessoaController.removerPessoa(pessoa.getId())),format.raw/*49.150*/(""""><i class="material-icons">delete</i></a>
                                         </td>
                                     </tr>
-                                """)))}),format.raw/*39.34*/("""
-                            """),format.raw/*40.29*/("""</tbody>
+                                """)))}),format.raw/*52.34*/("""
+                            """),format.raw/*53.29*/("""</tbody>
                         </table>
 
                     </div>
@@ -93,11 +106,11 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-08T14:13:45.599775
+                  DATE: 2019-08-08T18:03:16.387743
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/gerenciar_pessoa.scala.html
-                  HASH: adf76514a24a796652c5e5ad0ff002a9652349f6
-                  MATRIX: 988->1|1115->36|1126->40|1163->41|1194->46|2066->891|2094->910|2133->911|2198->948|2483->1202|2544->1236|2582->1258|2622->1260|2687->1297|2764->1347|2779->1353|2806->1359|2884->1410|2899->1416|2928->1424|3006->1475|3021->1481|3051->1490|3227->1639|3243->1645|3318->1698|3484->1837|3500->1843|3569->1890|3764->2054|3821->2083
-                  LINES: 28->1|33->2|33->2|33->2|34->3|53->22|53->22|53->22|54->23|59->28|60->29|60->29|60->29|61->30|62->31|62->31|62->31|63->32|63->32|63->32|64->33|64->33|64->33|66->35|66->35|66->35|67->36|67->36|67->36|70->39|71->40
+                  HASH: 2481acc6707cc73f107af7f993ba82a31f13fc96
+                  MATRIX: 988->1|1115->36|1126->40|1163->41|1194->46|2442->1267|2470->1286|2509->1287|2574->1324|2859->1578|2920->1612|2958->1634|2998->1636|3063->1673|3140->1723|3155->1729|3182->1735|3260->1786|3275->1792|3304->1800|3382->1851|3397->1857|3427->1866|3780->2192|3796->2198|3871->2251|4037->2390|4053->2396|4122->2443|4317->2607|4374->2636
+                  LINES: 28->1|33->2|33->2|33->2|34->3|65->34|65->34|65->34|66->35|71->40|72->41|72->41|72->41|73->42|74->43|74->43|74->43|75->44|75->44|75->44|76->45|76->45|76->45|79->48|79->48|79->48|80->49|80->49|80->49|83->52|84->53
                   -- GENERATED --
               */
           
