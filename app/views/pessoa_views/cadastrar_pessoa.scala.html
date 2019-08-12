@@ -7,12 +7,16 @@
                         <span class="card-title blue-grey-text text-darken-2 center-align">
                             <h4>Cadastrar Pessoa</h4>
                         </span>
-                        @helper.form(routes.PessoaController.cadastrarPessoa()) {
+                        @helper.form(routes.PessoaController.cadastrarPessoa(), 'id -> "form-cadastro") {
                             @helper.CSRF.formField
-                            <lable>Nome:</lable>
-                            <input type="text" name="nome">
-                            <label>E-mail</label>
-                            <input type="text" name="email">
+                            <div class="row">
+                                <lable>Nome:</lable>
+                                <input type="text" id="nome" name="nome" class="validate">
+                            </div>
+                            <div class="row">
+                                <label>E-mail</label>
+                                <input type="text" id="email" name="email">
+                            </div>
                             <button class="waves-effect waves-light btn green" type="submit" value="Enviar">Cadastrar</button>
                             }
                     </div>

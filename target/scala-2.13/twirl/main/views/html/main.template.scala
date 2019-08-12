@@ -40,6 +40,8 @@ Seq[Any](format.raw/*2.1*/("""
         <link rel="stylesheet" href=""""),_display_(/*9.39*/routes/*9.45*/.Assets.versioned("materialize/css/materialize.css")),format.raw/*9.97*/("""">
         <link rel="stylesheet" href=""""),_display_(/*10.39*/routes/*10.45*/.Assets.versioned("stylesheets/data-table.css")),format.raw/*10.92*/("""">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src=""""),_display_(/*12.23*/routes/*12.29*/.Assets.versioned("javascripts/JQuery.js")),format.raw/*12.71*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*13.23*/routes/*13.29*/.Assets.versioned("javascripts/jquery.validate.min.js")),format.raw/*13.84*/("""" type="text/javascript"></script>
     </head>
     <body>
         <nav class="blue-grey darken-4" role="navigation">
@@ -47,17 +49,17 @@ Seq[Any](format.raw/*2.1*/("""
                 <a href="#" class="brand-logo"><i class="material-icons">settings_input_component</i>CRUD</a>
                     <!-- Dropdown Structure -->
                 <ul id="dropdown2" class="dropdown-content">
-                    <li><a href=""""),_display_(/*19.35*/routes/*19.41*/.EnderecoController.cadastrarEnderecoPage()),format.raw/*19.84*/(""""><span class="blue-grey-text text-darken-2">Cadastrar</span></a></li>
-                    <li><a href=""""),_display_(/*20.35*/routes/*20.41*/.EnderecoController.gerenciarEnderecoPage()),format.raw/*20.84*/(""""><span class="blue-grey-text text-darken-2">Gerenciar</span></a></li>
+                    <li><a href=""""),_display_(/*21.35*/routes/*21.41*/.EnderecoController.cadastrarEnderecoPage()),format.raw/*21.84*/(""""><span class="blue-grey-text text-darken-2">Cadastrar</span></a></li>
+                    <li><a href=""""),_display_(/*22.35*/routes/*22.41*/.EnderecoController.gerenciarEnderecoPage()),format.raw/*22.84*/(""""><span class="blue-grey-text text-darken-2">Gerenciar</span></a></li>
                 </ul>
                 <ul id="dropdown1" class="dropdown-content">
-                    <li><a href=""""),_display_(/*23.35*/routes/*23.41*/.PessoaController.cadastrarPessoaPage()),format.raw/*23.80*/(""""><span class="blue-grey-text text-darken-2">Cadastrar</span></a></li>
-                    <li><a href=""""),_display_(/*24.35*/routes/*24.41*/.PessoaController.gerenciarPessoaPage()),format.raw/*24.80*/(""""><span class="blue-grey-text text-darken-2">Gerenciar</span></a></li>
+                    <li><a href=""""),_display_(/*25.35*/routes/*25.41*/.PessoaController.cadastrarPessoaPage()),format.raw/*25.80*/(""""><span class="blue-grey-text text-darken-2">Cadastrar</span></a></li>
+                    <li><a href=""""),_display_(/*26.35*/routes/*26.41*/.PessoaController.gerenciarPessoaPage()),format.raw/*26.80*/(""""><span class="blue-grey-text text-darken-2">Gerenciar</span></a></li>
                 </ul>
 
                     <!-- MENU DESKTOP -->
                 <ul class="right hide-on-med-and-down">
-                    <li><a href=""""),_display_(/*29.35*/routes/*29.41*/.HomeController.index()),format.raw/*29.64*/("""">Home</a></li>
+                    <li><a href=""""),_display_(/*31.35*/routes/*31.41*/.HomeController.index()),format.raw/*31.64*/("""">Home</a></li>
                         <!-- Dropdown Trigger -->
                     <li><a href="#!" class="dropdown-button" data-target="dropdown1">Pessoa<i
                     class="material-icons right">arrow_drop_down</i></a></li>
@@ -67,7 +69,7 @@ Seq[Any](format.raw/*2.1*/("""
 
                     <!-- MENU MOBILE -->
                 <ul id="nav-mobile" class="sidenav">
-                    <li><a href=""""),_display_(/*39.35*/routes/*39.41*/.HomeController.index()),format.raw/*39.64*/("""">Home</a></li>
+                    <li><a href=""""),_display_(/*41.35*/routes/*41.41*/.HomeController.index()),format.raw/*41.64*/("""">Home</a></li>
                         <!-- Dropdown Trigger -->
                     <li><a href="#!" class="dropdown-button" data-target="dropdown1">Pessoa<i
                     class="material-icons right">arrow_drop_down</i></a></li>
@@ -78,12 +80,11 @@ Seq[Any](format.raw/*2.1*/("""
             </div>
         </nav>
 
-        """),_display_(/*50.10*/content),format.raw/*50.17*/("""
+        """),_display_(/*52.10*/content),format.raw/*52.17*/("""
 
-        """),format.raw/*52.9*/("""<script src=""""),_display_(/*52.23*/routes/*52.29*/.Assets.versioned("javascripts/JQuery.js")),format.raw/*52.71*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*53.23*/routes/*53.29*/.Assets.versioned("materialize/js/materialize.min.js")),format.raw/*53.83*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*54.23*/routes/*54.29*/.Assets.versioned("javascripts/main.js")),format.raw/*54.69*/("""" type="text/javascript"></script>
-        <script src=""""),_display_(/*55.23*/routes/*55.29*/.Assets.versioned("javascripts/data-table.js")),format.raw/*55.75*/("""" type="text/javascript"></script>
+        """),format.raw/*54.9*/("""<script src=""""),_display_(/*54.23*/routes/*54.29*/.Assets.versioned("materialize/js/materialize.min.js")),format.raw/*54.83*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*55.23*/routes/*55.29*/.Assets.versioned("javascripts/main.js")),format.raw/*55.69*/("""" type="text/javascript"></script>
+        <script src=""""),_display_(/*56.23*/routes/*56.29*/.Assets.versioned("javascripts/data-table.js")),format.raw/*56.75*/("""" type="text/javascript"></script>
     </body>
 </html>
 """))
@@ -102,11 +103,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-08T14:00:00.825511
+                  DATE: 2019-08-12T15:32:05.864876
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/main.scala.html
-                  HASH: 589ba9515ec12946010c71a12e79dad3ea655fba
-                  MATRIX: 945->1|1054->17|1081->18|1235->146|1249->152|1311->193|1398->254|1412->260|1469->296|1536->337|1550->343|1622->395|1690->436|1705->442|1773->489|2281->970|2296->976|2360->1019|2492->1124|2507->1130|2571->1173|2786->1361|2801->1367|2861->1406|2993->1511|3008->1517|3068->1556|3321->1782|3336->1788|3380->1811|3970->2374|3985->2380|4029->2403|4650->2997|4678->3004|4715->3014|4756->3028|4771->3034|4834->3076|4918->3133|4933->3139|5008->3193|5092->3250|5107->3256|5168->3296|5252->3353|5267->3359|5334->3405
-                  LINES: 28->1|33->2|34->3|38->7|38->7|38->7|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|50->19|50->19|50->19|51->20|51->20|51->20|54->23|54->23|54->23|55->24|55->24|55->24|60->29|60->29|60->29|70->39|70->39|70->39|81->50|81->50|83->52|83->52|83->52|83->52|84->53|84->53|84->53|85->54|85->54|85->54|86->55|86->55|86->55
+                  HASH: 367d73d3a01109b37c85438e6587117287b1647a
+                  MATRIX: 945->1|1054->17|1081->18|1235->146|1249->152|1311->193|1398->254|1412->260|1469->296|1536->337|1550->343|1622->395|1690->436|1705->442|1773->489|1920->609|1935->615|1998->657|2082->714|2097->720|2173->775|2618->1193|2633->1199|2697->1242|2829->1347|2844->1353|2908->1396|3123->1584|3138->1590|3198->1629|3330->1734|3345->1740|3405->1779|3658->2005|3673->2011|3717->2034|4307->2597|4322->2603|4366->2626|4987->3220|5015->3227|5052->3237|5093->3251|5108->3257|5183->3311|5267->3368|5282->3374|5343->3414|5427->3471|5442->3477|5509->3523
+                  LINES: 28->1|33->2|34->3|38->7|38->7|38->7|39->8|39->8|39->8|40->9|40->9|40->9|41->10|41->10|41->10|43->12|43->12|43->12|44->13|44->13|44->13|52->21|52->21|52->21|53->22|53->22|53->22|56->25|56->25|56->25|57->26|57->26|57->26|62->31|62->31|62->31|72->41|72->41|72->41|83->52|83->52|85->54|85->54|85->54|85->54|86->55|86->55|86->55|87->56|87->56|87->56
                   -- GENERATED --
               */
           

@@ -8,13 +8,17 @@
                         <span class="card-title blue-grey-text text-darken-2 center-align">
                             <h4>Atualizar Pessoa</h4>
                         </span>
-                        @helper.form(routes.PessoaController.atualizarPessoa) {
+                        @helper.form(routes.PessoaController.atualizarPessoa, 'id -> "form-cadastro") {
                             @helper.CSRF.formField
-                            <input type="hidden" value="@pessoa.getId" name="id">
-                            <lable>Nome:</lable>
-                            <input type="text" value="@pessoa.getNome" name="nome">
-                            <label>E-mail</label>
-                            <input type="text" value="@pessoa.getEmail" name="email">
+                            <div class="row">
+                                <input type="hidden" value="@pessoa.getId" name="id">
+                                <lable>Nome:</lable>
+                                <input type="text" id="nome" value="@pessoa.getNome" name="nome">
+                            </div>
+                            <div class="row">
+                                <label>E-mail</label>
+                                <input type="text" id="email" value="@pessoa.getEmail" name="email">
+                            </div>
                             <button class="waves-effect waves-light btn green" type="submit" value="Enviar">Atualizar</button>
                         }
                     </div>

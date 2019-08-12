@@ -39,21 +39,25 @@ Seq[Any](_display_(/*1.2*/main/*1.6*/ {_display_(Seq[Any](format.raw/*1.8*/("""
                         <span class="card-title blue-grey-text text-darken-2 center-align">
                             <h4>Cadastrar Pessoa</h4>
                         </span>
-                        """),_display_(/*10.26*/helper/*10.32*/.form(routes.PessoaController.cadastrarPessoa())/*10.80*/ {_display_(Seq[Any](format.raw/*10.82*/("""
+                        """),_display_(/*10.26*/helper/*10.32*/.form(routes.PessoaController.cadastrarPessoa(), 'id -> "form-cadastro")/*10.104*/ {_display_(Seq[Any](format.raw/*10.106*/("""
                             """),_display_(/*11.30*/helper/*11.36*/.CSRF.formField),format.raw/*11.51*/("""
-                            """),format.raw/*12.29*/("""<lable>Nome:</lable>
-                            <input type="text" name="nome">
-                            <label>E-mail</label>
-                            <input type="text" name="email">
+                            """),format.raw/*12.29*/("""<div class="row">
+                                <lable>Nome:</lable>
+                                <input type="text" id="nome" name="nome" class="validate">
+                            </div>
+                            <div class="row">
+                                <label>E-mail</label>
+                                <input type="text" id="email" name="email">
+                            </div>
                             <button class="waves-effect waves-light btn green" type="submit" value="Enviar">Cadastrar</button>
-                            """)))}),format.raw/*17.30*/("""
-                    """),format.raw/*18.21*/("""</div>
+                            """)))}),format.raw/*21.30*/("""
+                    """),format.raw/*22.21*/("""</div>
                 </div>
             </div>
         </div>
 
     </div>
-""")))}),format.raw/*24.2*/("""
+""")))}),format.raw/*28.2*/("""
 
 
 """))
@@ -72,11 +76,11 @@ Seq[Any](_display_(/*1.2*/main/*1.6*/ {_display_(Seq[Any](format.raw/*1.8*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-09T15:30:40.433197
+                  DATE: 2019-08-12T15:52:16.945862
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/cadastrar_pessoa.scala.html
-                  HASH: 69de711d9a7e983372b5eef276dcc4106a91f79d
-                  MATRIX: 1054->1|1065->5|1103->7|1134->12|1534->385|1549->391|1606->439|1646->441|1703->471|1718->477|1754->492|1811->521|2190->869|2239->890|2346->967
-                  LINES: 33->1|33->1|33->1|34->2|42->10|42->10|42->10|42->10|43->11|43->11|43->11|44->12|49->17|50->18|56->24
+                  HASH: 02eb07169caeba9e9b6c181ef801437c3736029c
+                  MATRIX: 1054->1|1065->5|1103->7|1134->12|1534->385|1549->391|1631->463|1672->465|1729->495|1744->501|1780->516|1837->545|2432->1109|2481->1130|2588->1207
+                  LINES: 33->1|33->1|33->1|34->2|42->10|42->10|42->10|42->10|43->11|43->11|43->11|44->12|53->21|54->22|60->28
                   -- GENERATED --
               */
           

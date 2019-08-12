@@ -12,6 +12,33 @@ $( document ).ready(function() {
     $('.modal').modal();
 });
 
+$(function(){
+    $("#form-cadastro").validate({
+        rules: {
+            nome: {
+                required: true,
+                minlength: 3,
+                maxlength: 10
+            },
+            email:{
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            nome: {
+                required: "Informe o nome!",
+                minlength: "Deve ter no mínimo 3 letras!",
+                maxlength: "Deve ter no máximo 10 letras!"
+            },
+            email: {
+                required: "Informe o E-mail!",
+                email: "Informe um E-mail válido!"
+            }
+        }
+    });
+});
+
 $(document).ready(function () {
     $('#tabela-paginacao').DataTable({
         "language":{

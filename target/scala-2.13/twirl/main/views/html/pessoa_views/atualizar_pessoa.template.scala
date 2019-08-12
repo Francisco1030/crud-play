@@ -39,22 +39,26 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/ {_display_(Seq[Any](format.raw/*2.8*/("""
                         <span class="card-title blue-grey-text text-darken-2 center-align">
                             <h4>Atualizar Pessoa</h4>
                         </span>
-                        """),_display_(/*11.26*/helper/*11.32*/.form(routes.PessoaController.atualizarPessoa)/*11.78*/ {_display_(Seq[Any](format.raw/*11.80*/("""
+                        """),_display_(/*11.26*/helper/*11.32*/.form(routes.PessoaController.atualizarPessoa, 'id -> "form-cadastro")/*11.102*/ {_display_(Seq[Any](format.raw/*11.104*/("""
                             """),_display_(/*12.30*/helper/*12.36*/.CSRF.formField),format.raw/*12.51*/("""
-                            """),format.raw/*13.29*/("""<input type="hidden" value=""""),_display_(/*13.58*/pessoa/*13.64*/.getId),format.raw/*13.70*/("""" name="id">
-                            <lable>Nome:</lable>
-                            <input type="text" value=""""),_display_(/*15.56*/pessoa/*15.62*/.getNome),format.raw/*15.70*/("""" name="nome">
-                            <label>E-mail</label>
-                            <input type="text" value=""""),_display_(/*17.56*/pessoa/*17.62*/.getEmail),format.raw/*17.71*/("""" name="email">
+                            """),format.raw/*13.29*/("""<div class="row">
+                                <input type="hidden" value=""""),_display_(/*14.62*/pessoa/*14.68*/.getId),format.raw/*14.74*/("""" name="id">
+                                <lable>Nome:</lable>
+                                <input type="text" id="nome" value=""""),_display_(/*16.70*/pessoa/*16.76*/.getNome),format.raw/*16.84*/("""" name="nome">
+                            </div>
+                            <div class="row">
+                                <label>E-mail</label>
+                                <input type="text" id="email" value=""""),_display_(/*20.71*/pessoa/*20.77*/.getEmail),format.raw/*20.86*/("""" name="email">
+                            </div>
                             <button class="waves-effect waves-light btn green" type="submit" value="Enviar">Atualizar</button>
-                        """)))}),format.raw/*19.26*/("""
-                    """),format.raw/*20.21*/("""</div>
+                        """)))}),format.raw/*23.26*/("""
+                    """),format.raw/*24.21*/("""</div>
                 </div>
             </div>
         </div>
 
     </div>
-""")))}),format.raw/*26.2*/("""
+""")))}),format.raw/*30.2*/("""
 
 """))
       }
@@ -72,11 +76,11 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/ {_display_(Seq[Any](format.raw/*2.8*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-06T15:32:16.947189
+                  DATE: 2019-08-12T16:29:49.557510
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/atualizar_pessoa.scala.html
-                  HASH: 4e1c746945f7f1eacdfde5458a1cb718810c3229
-                  MATRIX: 982->1|1102->29|1113->33|1151->35|1182->40|1582->413|1597->419|1652->465|1692->467|1749->497|1764->503|1800->518|1857->547|1913->576|1928->582|1955->588|2099->705|2114->711|2143->719|2290->839|2305->845|2335->854|2534->1022|2583->1043|2690->1120
-                  LINES: 28->1|33->2|33->2|33->2|34->3|42->11|42->11|42->11|42->11|43->12|43->12|43->12|44->13|44->13|44->13|44->13|46->15|46->15|46->15|48->17|48->17|48->17|50->19|51->20|57->26
+                  HASH: 4b63b163d41eb80e9108fcd50508cb9d20246808
+                  MATRIX: 982->1|1102->29|1113->33|1151->35|1182->40|1582->413|1597->419|1677->489|1718->491|1775->521|1790->527|1826->542|1883->571|1989->650|2004->656|2031->662|2193->797|2208->803|2237->811|2484->1031|2499->1037|2529->1046|2763->1249|2812->1270|2919->1347
+                  LINES: 28->1|33->2|33->2|33->2|34->3|42->11|42->11|42->11|42->11|43->12|43->12|43->12|44->13|45->14|45->14|45->14|47->16|47->16|47->16|51->20|51->20|51->20|54->23|55->24|61->30
                   -- GENERATED --
               */
           

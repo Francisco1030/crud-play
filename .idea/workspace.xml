@@ -2,101 +2,145 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5362ab7-27f5-442d-bf70-835c2b67f584" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/crud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/crud.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/play2_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/play2_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pessoa_views/gerenciar_pessoa.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pessoa_views/gerenciar_pessoa.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pessoa_views/atualizar_pessoa.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pessoa_views/atualizar_pessoa.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pessoa_views/cadastrar_pessoa.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pessoa_views/cadastrar_pessoa.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-02956bba-c8e6-45c2-ac11-f75de01844dc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-02f2c42f-e7b0-403f-9e1b-754e28ea1739" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-04ce4e29-c5eb-4333-969f-88b2d86c40b6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-0baab77a-e9bd-4a75-be01-2271d21f03ba" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-0bdea68f-e3d1-4f42-922e-64262bfdb4ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-1c1f2c81-ef62-4f92-8916-5757b0609d1c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-1ffc65ae-b3c9-4539-84e7-e3a17b853521" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-21fd7f39-dba3-465a-bd47-a369d6395046" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-2a177e0a-77f6-446c-b6d7-90775f3b1329" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-2c4cb38d-2dc9-4de7-8c0c-b7542bb639d7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-2e67ce56-baad-4027-bd72-1a353e48d562" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-2f39c135-1d6e-42ce-8074-499211efdc93" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-30d07e56-5f25-47b3-a5a1-ac5ca6fa1a09" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-36d82652-4f92-4420-8c8e-160ef91ac29c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-41e86255-5ec4-42d7-8400-acbf6f156a1e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-48f7dcc5-3c59-42fb-a30f-feda1ee65011" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-5229acfa-62b5-4c68-bcda-4b6cee24e95e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-529e71bc-d7ba-4d96-b924-b0dd7d9c2255" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-54923d17-ce15-4f49-a9b8-b69f47947cb1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-564afd7b-8889-4e40-9adf-fd0ab1054698" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-58026454-a842-4296-a0b9-767179eb5a82" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-58556e57-ac16-4cb2-b574-95b1c9608f5e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-62ce2a7d-140a-4478-a5ff-2b3263591a89" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-6725489c-d8fd-4428-b5ee-f9d24bdc7893" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-67708612-e0d7-4555-8e60-b80492823492" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-6f867f23-b602-4126-a21c-892d34e75054" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-6fb6ca98-4cf1-4f0c-b1c8-b30e0796f3f0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-71acd235-9c34-4424-b611-4a86ce8dc2b0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-7421afc1-b97e-4484-b79f-289b984749b5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-74317d4c-3342-4a4e-8827-bd24fb06cef3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-7ff50183-417e-4f9e-bd28-794ea6a4e3c4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-80b0292c-3a81-4a9c-a2f5-0f038f23db1f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-81691ea4-114d-4847-8375-5c0c88b98d98" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-827a2d87-6a41-4128-85d9-08e5b1b98076" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-85dcd291-5d4a-40cf-973e-93881a00b27d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-8fdb81ef-f31a-4fa2-b9a0-4fb8f28224d3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-9efd4f38-5bfb-4012-ae4d-928c6001c31c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-a40b082b-1e33-4f2b-b5b8-5e6800d5e16a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-a7e37aef-d68a-49ef-8e6a-01ccc95fa0e7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-a8773011-4cf2-44b9-9d82-5d75f0e561cd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-a87fdaf5-cf24-4311-b299-e9a8986cc054" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-abab313e-5e17-48f1-b556-07c33162bb83" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-b0dcaeee-d403-4445-bdf4-4d0a16b90e6c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-b3b67727-74df-45b5-968a-704bd5535289" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-b3d8561f-28ba-40b8-bf8f-019e95fec0d1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-bb74eeca-c19b-47b4-ae75-e6064b4c94c9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-bc273599-7d8d-4d2c-ad11-71be77ec564f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-c75d8a98-3c32-4a3f-b1d6-a0d17c582cab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-dd242359-0076-40b0-9870-e32973df8e57" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-e03acaee-b2f7-4cc9-a9ac-04e04f6a71a2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-e19c5374-7460-4de7-a8c9-904dbcdaf824" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-e9cfedc2-ba8c-445e-bb52-08516a3a89b5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-e9ee57da-dc70-4c88-adbe-e3f94513bd72" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-eb3100ea-6e30-48d2-8ce6-ad0b7be85dc2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-eb85a504-0967-488f-a9b2-1a3effee0b03" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f1a630bb-cea8-48e2-9d3a-618d4a2a6c94" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f1a88f0e-d74d-4023-b338-7988f50e85ff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f2105434-30f6-4605-b273-530927e03708" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f604872c-2203-4094-a068-e2bc8ce402ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-fad10a8a-ed82-4b69-b697-e8463882cf40" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a64365c45e843f753691$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a64365c45e843f753691.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a64365c45e843f753691.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/crud-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/crud-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/crud-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/default/crud-build/scala_2.12/sbt_1.0/0.1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-compile-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-compile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-compile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-optional.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-optional.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-provided.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-provided.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-runtime-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-runtime-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-runtime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-runtime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-scala-tool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-scala-tool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-test-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-test-internal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/resolution-cache/reports/default-crud-build-test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/materialize/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/materialize/css/materialize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/data-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/data-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-043b7ae3-1ed5-4bc8-b7a3-4070f618bf2a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-05454afa-48d1-4d55-8953-141aad32d347" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-05d06e7a-2974-483e-9b11-90bc9d4e81a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-0942ab1b-bd40-42b3-b184-4642fc9de160" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-0ad12f28-e738-47bd-a74d-66907dc8e28b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-0dacf835-ab2a-4bce-8dd5-b481f6ffea40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-11b04932-5bf7-4c0e-8d62-b414a409742f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-13c64a25-428c-4e61-bb02-9f4e4a952ddb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-15418b9e-5eea-4f84-bc37-2e1b96a76564" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-198aec97-ff87-456a-9284-3e21acb5d6a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-19e52477-4741-4c83-bad2-fdd38d6cd6fc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-1a46b58b-2ac7-41bc-98bd-dc613f8a8b55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-1b27930e-0a37-4a28-b1ea-e1617a93ecd5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-1dcca9ce-34d9-4612-ad74-21def17ed10e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-1ee98ad4-0a43-408f-89d5-28f43534495a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-21300371-0f58-46b4-b754-d6d6de4fbfea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-21aaedea-873e-4445-8a7c-cb776defeded" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-2336a6c0-3d90-4b7c-9c5e-c542974951fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-2624cd9e-17a2-4907-bea6-e32b3fd0092a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-26ce8e38-4c29-4cbc-8f8d-7673f03f95c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-289b7fbf-4f7e-45f0-9098-2301b4f08194" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-28a85c50-8483-4092-a413-7cb7b3c72276" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-2d2fd3e9-83ac-4c61-ba3d-1780ba98b8ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-3191dfb0-daeb-413c-8811-ed2bfbc5b49c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-36bc8adb-1d5b-4fca-b5bc-6ed57d084d83" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-3a80753d-3e0e-4994-9e56-d4e0d9ed9f2a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-3d7b5577-8727-4617-9c2b-80f53a6c3e7b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-3f046b13-ef21-4f32-90dd-1c5a598ebdb4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-414a2efe-ffb7-4f60-b575-0d0c18708aff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-43da1c38-2aa5-489f-aef8-507604daa227" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-43ddc2f1-7728-473e-81a8-dd31a736ce13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-49fafb90-d408-4ec6-8402-471749b7261e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-4a2cecf9-dbb2-4fe1-99d4-53b57f323758" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-4d1ee1bd-1baa-46fc-807b-2e7f03bb1519" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-54826fe3-6217-4bdb-a9db-124ad4460522" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-566b4c9f-9597-40e5-80d0-36c5a60b1e3e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-56e7093c-e352-4235-9db4-d627309c2742" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-58a34a77-c790-416e-ab31-6c0a1b650acf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-5ab4eb6f-1f71-4ba1-87cf-0e80798a1276" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-5bc50790-1369-48d1-89db-1022d9b805e8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-5d78c351-a0e1-4c49-aa23-01dfcf7af852" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-5f279aba-f8c4-49c6-836d-465836e72a68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-612c30a4-af03-4a6a-92b5-5705388c61f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-62436279-bbb2-49ab-b4f3-b3e716ff6185" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-63322a3d-1337-4ed4-8fa4-aa116cdd370b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-64b30a16-8d59-4a52-a104-eddf28e6697c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-672dc816-890e-4c05-8304-6a59bc537cf0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-672de900-6407-4e53-a11e-66537d52159b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-6a099db4-db19-45e5-99e4-42d85e49e46d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-6c77a10a-6e04-4649-b0fd-f4bef19fbcaf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-70bebb60-2dcf-4f50-b57a-4280e6947c61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-738e674f-ded6-42d3-851a-72acd2bd4ab0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-741337d4-51ed-456e-b069-16e8a6568a09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-7902a263-be35-4f87-b498-5bc8ba4da7a3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-7d4cb400-6da0-4847-bfab-8b736ca78efd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-7d7a0581-84ce-4c0c-bd72-9aaee54776ef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-7e075ec0-9338-46b0-a5b8-9f1d35c9b2d0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-82b8016e-9b28-4b0e-8d8e-88916891abc9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-862af1c2-09a3-46c9-a145-431eda8229de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-87db2f6a-0201-4f62-8cb5-1508a2455015" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-8c677cd0-8dfd-42ff-9b02-2ebfb2c1c33c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-8dbd3035-c86a-41dc-9a2e-c7abf103f5e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-8e1a64a6-9744-40eb-828a-9a1003e488e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-939b5c4d-20dc-4972-9182-18f7a9df0f9c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-95a57d80-7355-460b-9559-c677b53d7edb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-97d1125f-cb5f-49a8-baf0-c1eba0d96ed7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-9dc5cddc-5e11-44f1-b3d2-8025ad43e6e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-9eec7060-75ca-4822-ac54-b80c90e09d37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-adf7c476-1931-4952-a2e0-5b2fdd657eed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-b0dad05c-85da-42bf-b234-3def3cd53e69" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-b2c31cb1-5b90-4dbb-81f4-5f0d973a2477" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-b9a04fb0-e2b9-4be8-8f81-0c63f7ef72b2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-baa6ae35-a644-49aa-a50d-95bbbc7a8a6a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-bd3869f6-7a28-4631-a759-d83eb1f50c39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-bf40ea7f-cbbc-4939-92b3-2b42ec7b189c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-c0f9a106-8cd6-4548-ac58-bd8da893a779" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-c2403f9a-50c8-4a15-90c9-aed175139b9a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-c3d9d146-b72d-4f3b-b84d-f7676139c68a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-cb4a06fa-8159-4970-8ec3-a0c5904a2e5e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-cd97407a-3786-4c02-8f60-b3cd9e41d5ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-d3a96d46-39d0-4056-b490-4074756c472d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-d6f30579-6800-4dab-ad03-a3dafcf694f4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-d8f9b46b-9b7b-40e2-83ec-fe596c17bd01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-d9660e0e-0486-43af-9390-6818238735c7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-da529dc1-ad70-4e89-9dfc-8f1d1905dc8f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-dc9fe2b8-f07e-4951-adab-01aac74cf668" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-de0e647f-c7a4-4fe0-8a06-32a789047c2f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-e0c69163-fd87-4d07-8c4c-5baddd7972f4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-e12f13ec-60c9-45dc-acab-b064b3f1a448" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-e1dbff43-8e49-44e5-a4d4-544169d46218" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-e383c0d6-4f1e-4aca-ac1d-a07c716c0b19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-e5b78bcf-3e62-4202-b9dd-fa8beeb40996" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-eb90b4e4-f504-4dfc-81cb-23a8ac64f04b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-ef04058b-70bf-4a1f-beeb-f15d2aabc4e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-efe7dc60-b007-46aa-9c1b-3968e4f0db40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f00d555b-96e6-47de-b1eb-a83db39432ab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f2b18c1e-d237-420d-8acb-dcf7c8cc45de" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f5b6b99d-474a-413b-b15f-0b21ba37bfe3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f6de118e-2bfd-4543-adfd-b16fc52b30e9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f6f6a071-bb53-4274-afca-14f588e47683" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-f82e7702-9c32-4ef7-83aa-a5ff58188659" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-fa18a289-2d66-407a-91e7-fc8a1c84d6c0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-fa50f700-9b28-452a-8a24-52ad2e4567e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-fc228c32-d4a9-4d78-8c97-89bdf10302ad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-fc8539a4-e0fa-4e2f-bece-4f49b4662ab5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/.sbt-compilation-infos/root-compile/compilation-info-fd542b95-50ff-4c7b-8bc1-144b7ae3e986" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$65b0b1eeb5941c19ee9b$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$65b0b1eeb5941c19ee9b.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$65b0b1eeb5941c19ee9b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c081b2245d89e7cf7f86$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c081b2245d89e7cf7f86.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$c081b2245d89e7cf7f86.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/pessoa_views/gerenciar_pessoa$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/pessoa_views/gerenciar_pessoa$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/main$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/pessoa_views/cadastrar_pessoa$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/pessoa_views/cadastrar_pessoa$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/controllers/routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/Routes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/routes/main/router/RoutesPrefix.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/main.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/main.template.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/pessoa_views/cadastrar_pessoa.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/pessoa_views/cadastrar_pessoa.template.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/pessoa_views/gerenciar_pessoa.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/pessoa_views/gerenciar_pessoa.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/playCommonClassloader/$global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/$global/projectDescriptors/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/projectDescriptors/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.13.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/twirlCompileTemplates/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/twirlCompileTemplates/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/crud/1.0-SNAPSHOT/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/crud/1.0-SNAPSHOT/javascripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/crud/1.0-SNAPSHOT/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/crud/1.0-SNAPSHOT/stylesheets/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/public/main/javascripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/public/main/stylesheets/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -196,6 +240,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="4693277980145" />
         <entry key="$PROJECT_DIR$/build.sbt" value="3520387142" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
         <entry key="$PROJECT_DIR$/project/plugins.sbt" value="1323128207" />
@@ -212,7 +257,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565369689438</updated>
-      <workItem from="1565369691274" duration="7447000" />
+      <workItem from="1565369691274" duration="10583000" />
+      <workItem from="1565627050899" duration="6518000" />
     </task>
     <servers />
   </component>
@@ -224,7 +270,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
