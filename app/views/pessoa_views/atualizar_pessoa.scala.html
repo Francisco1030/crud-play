@@ -8,7 +8,7 @@
                         <span class="card-title blue-grey-text text-darken-2 center-align">
                             <h4>Atualizar Pessoa</h4>
                         </span>
-                        @helper.form(routes.PessoaController.atualizarPessoa, 'id -> "form-cadastro") {
+                        @helper.form(routes.PessoaController.atualizarPessoa, 'id -> "form-pessoa") {
                             @helper.CSRF.formField
                             <div class="row">
                                 <input type="hidden" value="@pessoa.getId" name="id">

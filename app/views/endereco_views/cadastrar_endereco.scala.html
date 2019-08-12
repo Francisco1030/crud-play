@@ -8,20 +8,25 @@
                         <span class="card-title blue-grey-text text-darken-2 center-align">
                             <h4>Cadastrar Endereco</h4>
                         </span>
-                        @helper.form(routes.EnderecoController.cadastrarEndereco()) {
+                        @helper.form(routes.EnderecoController.cadastrarEndereco(), 'id -> "form-endereco") {
                             @helper.CSRF.formField
-                            <lable>Rua:</lable>
-                            <input type="text" name="rua" minlength="5" maxlength="200">
-                            <label>Numero</label>
-                            <input type="text" name="numero">
-
-                            <div class="input-field col s12">
-                                <select name="pessoa.id">
-                                    <option value="" disabled selected>Selecione</option>
-                                    @for(pessoa <- pessoas) {
-                                        <option value="@pessoa.getId">@pessoa.getNome</option>
-                                    }
-                                </select>
+                            <div class="row">
+                                <lable>Rua:</lable>
+                                <input type="text" id="rua" name="rua">
+                            </div>
+                            <div class="row">
+                                <label>Numero</label>
+                                <input type="text" id="numero" name="numero">
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select id="pessoa" name="pessoa.id">
+                                        <option value="" disabled selected required="true">Selecione</option>
+                                        @for(pessoa <- pessoas) {
+                                            <option value="@pessoa.getId">@pessoa.getNome</option>
+                                        }
+                                    </select>
+                                </div>
                             </div>
                             <button class="waves-effect waves-light btn green" type="submit" value="Enviar">Cadastrar</button>
                         }

@@ -39,30 +39,35 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
                         <span class="card-title blue-grey-text text-darken-2 center-align">
                             <h4>Cadastrar Endereco</h4>
                         </span>
-                        """),_display_(/*11.26*/helper/*11.32*/.form(routes.EnderecoController.cadastrarEndereco())/*11.84*/ {_display_(Seq[Any](format.raw/*11.86*/("""
+                        """),_display_(/*11.26*/helper/*11.32*/.form(routes.EnderecoController.cadastrarEndereco(), 'id -> "form-endereco")/*11.108*/ {_display_(Seq[Any](format.raw/*11.110*/("""
                             """),_display_(/*12.30*/helper/*12.36*/.CSRF.formField),format.raw/*12.51*/("""
-                            """),format.raw/*13.29*/("""<lable>Rua:</lable>
-                            <input type="text" name="rua" minlength="5" maxlength="200">
-                            <label>Numero</label>
-                            <input type="text" name="numero">
-
-                            <div class="input-field col s12">
-                                <select name="pessoa.id">
-                                    <option value="" disabled selected>Selecione</option>
-                                    """),_display_(/*21.38*/for(pessoa <- pessoas) yield /*21.60*/ {_display_(Seq[Any](format.raw/*21.62*/("""
-                                        """),format.raw/*22.41*/("""<option value=""""),_display_(/*22.57*/pessoa/*22.63*/.getId),format.raw/*22.69*/("""">"""),_display_(/*22.72*/pessoa/*22.78*/.getNome),format.raw/*22.86*/("""</option>
-                                    """)))}),format.raw/*23.38*/("""
-                                """),format.raw/*24.33*/("""</select>
+                            """),format.raw/*13.29*/("""<div class="row">
+                                <lable>Rua:</lable>
+                                <input type="text" id="rua" name="rua">
+                            </div>
+                            <div class="row">
+                                <label>Numero</label>
+                                <input type="text" id="numero" name="numero">
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select id="pessoa" name="pessoa.id">
+                                        <option value="" disabled selected required="true">Selecione</option>
+                                        """),_display_(/*25.42*/for(pessoa <- pessoas) yield /*25.64*/ {_display_(Seq[Any](format.raw/*25.66*/("""
+                                            """),format.raw/*26.45*/("""<option value=""""),_display_(/*26.61*/pessoa/*26.67*/.getId),format.raw/*26.73*/("""">"""),_display_(/*26.76*/pessoa/*26.82*/.getNome),format.raw/*26.90*/("""</option>
+                                        """)))}),format.raw/*27.42*/("""
+                                    """),format.raw/*28.37*/("""</select>
+                                </div>
                             </div>
                             <button class="waves-effect waves-light btn green" type="submit" value="Enviar">Cadastrar</button>
-                        """)))}),format.raw/*27.26*/("""
-                    """),format.raw/*28.21*/("""</div>
+                        """)))}),format.raw/*32.26*/("""
+                    """),format.raw/*33.21*/("""</div>
                 </div>
             </div>
         </div>
 
     </div>
-""")))}),format.raw/*34.2*/("""
+""")))}),format.raw/*39.2*/("""
 """))
       }
     }
@@ -79,11 +84,11 @@ Seq[Any](_display_(/*2.2*/main/*2.6*/{_display_(Seq[Any](format.raw/*2.7*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-06T15:55:45.789610
+                  DATE: 2019-08-12T17:27:19.522330
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/endereco_views/cadastrar_endereco.scala.html
-                  HASH: 85f73e30ceee5e4577f62d84817fa2f9b5b82912
-                  MATRIX: 992->1|1119->36|1130->40|1167->41|1198->46|1600->421|1615->427|1676->479|1716->481|1773->511|1788->517|1824->532|1881->561|2377->1030|2415->1052|2455->1054|2524->1095|2567->1111|2582->1117|2609->1123|2639->1126|2654->1132|2683->1140|2761->1187|2822->1220|3050->1417|3099->1438|3206->1515
-                  LINES: 28->1|33->2|33->2|33->2|34->3|42->11|42->11|42->11|42->11|43->12|43->12|43->12|44->13|52->21|52->21|52->21|53->22|53->22|53->22|53->22|53->22|53->22|53->22|54->23|55->24|58->27|59->28|65->34
+                  HASH: 6eec88d23ece7d92bc69d597599d7f369958acb2
+                  MATRIX: 992->1|1119->36|1130->40|1167->41|1198->46|1600->421|1615->427|1701->503|1742->505|1799->535|1814->541|1850->556|1907->585|2661->1312|2699->1334|2739->1336|2812->1381|2855->1397|2870->1403|2897->1409|2927->1412|2942->1418|2971->1426|3053->1477|3118->1514|3385->1750|3434->1771|3541->1848
+                  LINES: 28->1|33->2|33->2|33->2|34->3|42->11|42->11|42->11|42->11|43->12|43->12|43->12|44->13|56->25|56->25|56->25|57->26|57->26|57->26|57->26|57->26|57->26|57->26|58->27|59->28|63->32|64->33|70->39
                   -- GENERATED --
               */
           

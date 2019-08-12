@@ -7,7 +7,7 @@
                         <span class="card-title blue-grey-text text-darken-2 center-align">
                             <h4>Cadastrar Pessoa</h4>
                         </span>
-                        @helper.form(routes.PessoaController.cadastrarPessoa(), 'id -> "form-cadastro") {
+                        @helper.form(routes.PessoaController.cadastrarPessoa(), 'id -> "form-pessoa") {
                             @helper.CSRF.formField
                             <div class="row">
                                 <lable>Nome:</lable>

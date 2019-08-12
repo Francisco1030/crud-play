@@ -13,7 +13,7 @@ $( document ).ready(function() {
 });
 
 $(function(){
-    $("#form-cadastro").validate({
+    $("#form-pessoa").validate({
         rules: {
             nome: {
                 required: true,
@@ -37,6 +37,43 @@ $(function(){
             }
         }
     });
+    $("#form-endereco").validate({
+        rules: {
+            rua: {
+                required: true,
+                minlength: 3,
+                maxlength: 10
+            },
+            numero:{
+                required: true,
+                minlength: 1,
+                maxlength: 10
+            }
+        },
+        messages: {
+            rua: {
+                required: "Informe o rua!",
+                minlength: "Deve ter no mínimo 3 letras!",
+                maxlength: "Deve ter no máximo 10 letras!"
+            },
+            numero: {
+                required: "Informe o número!",
+                minlength: "Deve ter no mínimo 1 letras!",
+                maxlength: "Deve ter no máximo 10 letras!"
+            }
+        }
+    });
+
+    jQuery.validator.addMethod(
+        "select",
+        function(value, element) {
+            if (element.value == "") {
+                return false;
+            }
+            else return true;
+        },
+        "Please select an option."
+    );
 });
 
 $(document).ready(function () {

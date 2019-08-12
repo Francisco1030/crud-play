@@ -39,7 +39,7 @@ Seq[Any](_display_(/*1.2*/main/*1.6*/ {_display_(Seq[Any](format.raw/*1.8*/("""
                         <span class="card-title blue-grey-text text-darken-2 center-align">
                             <h4>Cadastrar Pessoa</h4>
                         </span>
-                        """),_display_(/*10.26*/helper/*10.32*/.form(routes.PessoaController.cadastrarPessoa(), 'id -> "form-cadastro")/*10.104*/ {_display_(Seq[Any](format.raw/*10.106*/("""
+                        """),_display_(/*10.26*/helper/*10.32*/.form(routes.PessoaController.cadastrarPessoa(), 'id -> "form-pessoa")/*10.102*/ {_display_(Seq[Any](format.raw/*10.104*/("""
                             """),_display_(/*11.30*/helper/*11.36*/.CSRF.formField),format.raw/*11.51*/("""
                             """),format.raw/*12.29*/("""<div class="row">
                                 <lable>Nome:</lable>
@@ -76,10 +76,10 @@ Seq[Any](_display_(/*1.2*/main/*1.6*/ {_display_(Seq[Any](format.raw/*1.8*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-08-12T15:52:16.945862
+                  DATE: 2019-08-12T16:35:05.891894
                   SOURCE: /home/smartcatolica/workspace-play/crud/app/views/pessoa_views/cadastrar_pessoa.scala.html
-                  HASH: 02eb07169caeba9e9b6c181ef801437c3736029c
-                  MATRIX: 1054->1|1065->5|1103->7|1134->12|1534->385|1549->391|1631->463|1672->465|1729->495|1744->501|1780->516|1837->545|2432->1109|2481->1130|2588->1207
+                  HASH: 021a00d6c9ac152838b2b1e79a301afee1c5f468
+                  MATRIX: 1054->1|1065->5|1103->7|1134->12|1534->385|1549->391|1629->461|1670->463|1727->493|1742->499|1778->514|1835->543|2430->1107|2479->1128|2586->1205
                   LINES: 33->1|33->1|33->1|34->2|42->10|42->10|42->10|42->10|43->11|43->11|43->11|44->12|53->21|54->22|60->28
                   -- GENERATED --
               */
