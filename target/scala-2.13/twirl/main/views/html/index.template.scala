@@ -32,8 +32,41 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 Seq[Any](format.raw/*2.1*/("""
 """),_display_(/*3.2*/main/*3.6*/ {_display_(Seq[Any](format.raw/*3.8*/("""
-  """),format.raw/*4.3*/("""<h1>Welcome to Play!</h1>
-""")))}),format.raw/*5.2*/("""
+    """),format.raw/*4.5*/("""<div id="ping"></div>
+          <input type="submit" id="enviar" />
+<script>
+
+        $(function() """),format.raw/*8.22*/("""{"""),format.raw/*8.23*/("""
+
+            """),format.raw/*10.13*/("""var websocket = new WebSocket(""""),_display_(/*10.45*/routes/*10.51*/.HomeController.socket().webSocketURL(request)),format.raw/*10.97*/("""")
+
+            var receiveEvent = function(event) """),format.raw/*12.48*/("""{"""),format.raw/*12.49*/("""
+                """),format.raw/*13.17*/("""$("#ping").html("Last ping: "+event.data);
+                //alert(event.data);
+            """),format.raw/*15.13*/("""}"""),format.raw/*15.14*/("""
+
+            """),format.raw/*17.13*/("""dateSocket.onmessage = receiveEvent
+
+
+            // var btnEnv = document.getElementById("#enviar");
+            //
+            // var createReceive = function() """),format.raw/*22.47*/("""{"""),format.raw/*22.48*/("""
+            """),format.raw/*23.13*/("""//     websocket.send(
+            //         alert("Enviado")
+            //     )
+            // """),format.raw/*26.16*/("""}"""),format.raw/*26.17*/("""
+            """),format.raw/*27.13*/("""//
+            // var receiveEvent = function(event) """),format.raw/*28.51*/("""{"""),format.raw/*28.52*/("""
+            """),format.raw/*29.13*/("""//     createReceive();
+            // """),format.raw/*30.16*/("""}"""),format.raw/*30.17*/("""
+
+            """),format.raw/*32.13*/("""//websocket.onmessage = receiveEvent
+
+            console.table(websocket);
+        """),format.raw/*35.9*/("""}"""),format.raw/*35.10*/(""")
+</script>
+
+""")))}),format.raw/*38.2*/("""
 """))
       }
     }
@@ -50,11 +83,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-07-30T14:01:45.947066
-                  SOURCE: /home/smartcatolica/workspace-play/crud/app/views/index.scala.html
-                  HASH: 8f279c0cd4e1cf0023fd36f11546b755a13e4c2d
-                  MATRIX: 941->1|1037->4|1064->6|1075->10|1113->12|1142->15|1198->42
-                  LINES: 28->1|33->2|34->3|34->3|34->3|35->4|36->5
+                  DATE: 2019-10-15T16:02:46.256
+                  SOURCE: /home/smartcatolica/workspace-play/crud-play/app/views/index.scala.html
+                  HASH: d3959dcff6ed83fdd4e3912b96e42e942166276d
+                  MATRIX: 941->1|1037->4|1064->6|1075->10|1113->12|1144->17|1270->116|1298->117|1340->131|1399->163|1414->169|1481->215|1560->266|1589->267|1634->284|1754->376|1783->377|1825->391|2016->554|2045->555|2086->568|2213->667|2242->668|2283->681|2364->734|2393->735|2434->748|2501->787|2530->788|2572->802|2683->886|2712->887|2756->901
+                  LINES: 28->1|33->2|34->3|34->3|34->3|35->4|39->8|39->8|41->10|41->10|41->10|41->10|43->12|43->12|44->13|46->15|46->15|48->17|53->22|53->22|54->23|57->26|57->26|58->27|59->28|59->28|60->29|61->30|61->30|63->32|66->35|66->35|69->38
                   -- GENERATED --
               */
           

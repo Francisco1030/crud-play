@@ -4,6 +4,7 @@
 
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
+GET     /socket                     controllers.HomeController.socket()
 
 #Bloco Pessoa
 GET     /cadastrar-pessoa           controllers.PessoaController.cadastrarPessoaPage

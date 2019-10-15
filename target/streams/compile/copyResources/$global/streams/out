@@ -1,6 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud/conf/logback.xml,/home/smartcatolica/workspace-play/crud/target/scala-2.13/classes/logback.xml)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud/conf/application.conf,/home/smartcatolica/workspace-play/crud/target/scala-2.13/classes/application.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud/conf/routes,/home/smartcatolica/workspace-play/crud/target/scala-2.13/classes/routes)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud/conf/META-INF,/home/smartcatolica/workspace-play/crud/target/scala-2.13/classes/META-INF)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud/conf/META-INF/persistence.xml,/home/smartcatolica/workspace-play/crud/target/scala-2.13/classes/META-INF/persistence.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud-play/conf/logback.xml,/home/smartcatolica/workspace-play/crud-play/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud-play/conf/application.conf,/home/smartcatolica/workspace-play/crud-play/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud-play/conf/routes,/home/smartcatolica/workspace-play/crud-play/target/scala-2.13/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud-play/conf/META-INF,/home/smartcatolica/workspace-play/crud-play/target/scala-2.13/classes/META-INF)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/smartcatolica/workspace-play/crud-play/conf/META-INF/persistence.xml,/home/smartcatolica/workspace-play/crud-play/target/scala-2.13/classes/META-INF/persistence.xml)[0m

@@ -7,277 +7,277 @@
 		revision="1.0-SNAPSHOT"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, web-assets, web-assets-test, web-plugin, universal, universal-docs, universal-src, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, docs"
-		date="20190729160503"/>
+		date="20191008144405"/>
 	<dependencies>
 		<module organisation="org.postgresql" name="postgresql">
-			<revision name="9.4-1200-jdbc41" status="release" pubdate="20150202160802" resolver="public" artresolver="public" homepage="http://jdbc.postgresql.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="81">
+			<revision name="9.4-1200-jdbc41" status="release" pubdate="20150202160802" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jdbc.postgresql.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="81">
 				<license name="The PostgreSQL License" url="http://www.postgresql.org/about/licence/"/>
-				<metadata-artifact status="successful" details="" size="2730" time="391" location="/home/smartcatolica/.ivy2/cache/org.postgresql/postgresql/ivy-9.4-1200-jdbc41.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.postgresql/postgresql/ivy-9.4-1200-jdbc41.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4-1200-jdbc41/postgresql-9.4-1200-jdbc41.pom"/>
+				<metadata-artifact status="no" details="" size="3554" time="0" location="/home/smartcatolica/.ivy2/cache/org.postgresql/postgresql/ivy-9.4-1200-jdbc41.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4-1200-jdbc41/postgresql-9.4-1200-jdbc41.pom"/>
 				<caller organisation="com.example" name="crud_2.13" conf="compile" rev="9.4-1200-jdbc41" rev-constraint-default="9.4-1200-jdbc41" rev-constraint-dynamic="9.4-1200-jdbc41" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="postgresql" type="jar" ext="jar" status="successful" details="" size="648508" time="1303" location="/home/smartcatolica/.ivy2/cache/org.postgresql/postgresql/jars/postgresql-9.4-1200-jdbc41.jar">
+					<artifact name="postgresql" type="jar" ext="jar" status="no" details="" size="648508" time="0" location="/home/smartcatolica/.ivy2/cache/org.postgresql/postgresql/jars/postgresql-9.4-1200-jdbc41.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/postgresql/postgresql/9.4-1200-jdbc41/postgresql-9.4-1200-jdbc41.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.github.dblock.waffle" name="waffle-jna">
-			<revision name="1.7" status="release" pubdate="20140925230847" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
+			<revision name="1.7" status="release" pubdate="20140925230847" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="82">
 				<license name="Eclipse Public License" url="https://raw.github.com/dblock/waffle/master/LICENSE"/>
-				<metadata-artifact status="successful" details="" size="2450" time="390" location="/home/smartcatolica/.ivy2/cache/com.github.dblock.waffle/waffle-jna/ivy-1.7.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/com.github.dblock.waffle/waffle-jna/ivy-1.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/dblock/waffle/waffle-jna/1.7/waffle-jna-1.7.pom"/>
+				<metadata-artifact status="no" details="" size="7226" time="0" location="/home/smartcatolica/.ivy2/cache/com.github.dblock.waffle/waffle-jna/ivy-1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/dblock/waffle/waffle-jna/1.7/waffle-jna-1.7.pom"/>
 				<caller organisation="org.postgresql" name="postgresql" conf="default, compile, runtime, master" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="9.4-1200-jdbc41"/>
 				<artifacts>
-					<artifact name="waffle-jna" type="jar" ext="jar" status="successful" details="" size="61182" time="1348" location="/home/smartcatolica/.ivy2/cache/com.github.dblock.waffle/waffle-jna/jars/waffle-jna-1.7.jar">
+					<artifact name="waffle-jna" type="jar" ext="jar" status="no" details="" size="61182" time="0" location="/home/smartcatolica/.ivy2/cache/com.github.dblock.waffle/waffle-jna/jars/waffle-jna-1.7.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/dblock/waffle/waffle-jna/1.7/waffle-jna-1.7.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.slf4j" name="slf4j-simple">
-			<revision name="1.7.7" status="release" pubdate="20140404081257" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="85">
+			<revision name="1.7.7" status="release" pubdate="20140404081257" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="85">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
-				<metadata-artifact status="successful" details="" size="1472" time="389" location="/home/smartcatolica/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.7.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.pom"/>
+				<metadata-artifact status="no" details="" size="4525" time="0" location="/home/smartcatolica/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.pom"/>
 				<caller organisation="org.postgresql" name="postgresql" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="9.4-1200-jdbc41"/>
 				<artifacts>
-					<artifact name="slf4j-simple" type="jar" ext="jar" status="successful" details="" size="10683" time="1141" location="/home/smartcatolica/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.7.jar">
+					<artifact name="slf4j-simple" type="jar" ext="jar" status="no" details="" size="10683" time="0" location="/home/smartcatolica/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.7.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="net.java.dev.jna" name="jna-platform">
-			<revision name="4.1.0" status="release" pubdate="20140306125822" resolver="public" artresolver="public" homepage="https://github.com/twall/jna" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
+			<revision name="4.1.0" status="release" pubdate="20140306125822" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="84">
 				<license name="LGPL, version 2.1" url="http://www.gnu.org/licenses/licenses.html"/>
 				<license name="ASL, version 2" url="http://www.apache.org/licenses/"/>
-				<metadata-artifact status="successful" details="" size="1497" time="390" location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna-platform/ivy-4.1.0.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna-platform/ivy-4.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.pom"/>
+				<metadata-artifact status="no" details="" size="2732" time="0" location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna-platform/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.pom"/>
 				<caller organisation="com.github.dblock.waffle" name="waffle-jna" conf="compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="1.7"/>
 				<artifacts>
-					<artifact name="jna-platform" type="jar" ext="jar" status="successful" details="" size="1464423" time="1446" location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna-platform/jars/jna-platform-4.1.0.jar">
+					<artifact name="jna-platform" type="jar" ext="jar" status="no" details="" size="1464423" time="0" location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna-platform/jars/jna-platform-4.1.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="net.java.dev.jna" name="jna">
-			<revision name="4.1.0" status="release" pubdate="20140306125605" resolver="public" artresolver="public" homepage="https://github.com/twall/jna" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
+			<revision name="4.1.0" status="release" pubdate="20140306125605" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/twall/jna" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="83">
 				<license name="LGPL, version 2.1" url="http://www.gnu.org/licenses/licenses.html"/>
 				<license name="ASL, version 2" url="http://www.apache.org/licenses/"/>
-				<metadata-artifact status="successful" details="" size="1276" time="388" location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna/ivy-4.1.0.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna/ivy-4.1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom"/>
+				<metadata-artifact status="no" details="" size="2534" time="0" location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna/ivy-4.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.pom"/>
 				<caller organisation="com.github.dblock.waffle" name="waffle-jna" conf="compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="1.7"/>
 				<caller organisation="net.java.dev.jna" name="jna-platform" conf="compile, runtime" rev="4.1.0" rev-constraint-default="4.1.0" rev-constraint-dynamic="4.1.0" callerrev="4.1.0"/>
 				<artifacts>
-					<artifact name="jna" type="jar" ext="jar" status="successful" details="" size="914597" time="1398" location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna/jars/jna-4.1.0.jar">
+					<artifact name="jna" type="jar" ext="jar" status="no" details="" size="914597" time="0" location="/home/smartcatolica/.ivy2/cache/net.java.dev.jna/jna/jars/jna-4.1.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.hibernate" name="hibernate-entitymanager">
-			<revision name="5.3.7.Final" status="release" pubdate="20181016211530" resolver="public" artresolver="public" homepage="http://hibernate.org/orm" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="71">
+			<revision name="5.3.7.Final" status="release" pubdate="20181016211530" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org/orm" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="71">
 				<license name="GNU Library General Public License v2.1 or later" url="http://www.opensource.org/licenses/LGPL-2.1"/>
-				<metadata-artifact status="successful" details="" size="4191" time="395" location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-entitymanager/ivy-5.3.7.Final.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-entitymanager/ivy-5.3.7.Final.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/5.3.7.Final/hibernate-entitymanager-5.3.7.Final.pom"/>
+				<metadata-artifact status="no" details="" size="4433" time="0" location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-entitymanager/ivy-5.3.7.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/5.3.7.Final/hibernate-entitymanager-5.3.7.Final.pom"/>
 				<caller organisation="com.example" name="crud_2.13" conf="compile" rev="5.3.7.Final" rev-constraint-default="5.3.7.Final" rev-constraint-dynamic="5.3.7.Final" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="hibernate-entitymanager" type="jar" ext="jar" status="successful" details="" size="591" time="824" location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-entitymanager/jars/hibernate-entitymanager-5.3.7.Final.jar">
+					<artifact name="hibernate-entitymanager" type="jar" ext="jar" status="no" details="" size="591" time="0" location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-entitymanager/jars/hibernate-entitymanager-5.3.7.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-entitymanager/5.3.7.Final/hibernate-entitymanager-5.3.7.Final.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.hibernate" name="hibernate-core">
-			<revision name="5.3.7.Final" status="release" pubdate="20181016211540" resolver="public" artresolver="public" homepage="http://hibernate.org/orm" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
+			<revision name="5.3.7.Final" status="release" pubdate="20181016211540" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org/orm" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="72">
 				<license name="GNU Library General Public License v2.1 or later" url="http://www.opensource.org/licenses/LGPL-2.1"/>
-				<metadata-artifact status="successful" details="" size="5453" time="389" location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-core/ivy-5.3.7.Final.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-core/ivy-5.3.7.Final.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-core/5.3.7.Final/hibernate-core-5.3.7.Final.pom"/>
+				<metadata-artifact status="no" details="" size="5364" time="0" location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-core/ivy-5.3.7.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-core/5.3.7.Final/hibernate-core-5.3.7.Final.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="5.3.7.Final" rev-constraint-default="5.3.7.Final" rev-constraint-dynamic="5.3.7.Final" callerrev="5.3.7.Final"/>
 				<artifacts>
-					<artifact name="hibernate-core" type="jar" ext="jar" status="successful" details="" size="6972337" time="2967" location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-core/jars/hibernate-core-5.3.7.Final.jar">
+					<artifact name="hibernate-core" type="jar" ext="jar" status="no" details="" size="6972337" time="0" location="/home/smartcatolica/.ivy2/cache/org.hibernate/hibernate-core/jars/hibernate-core-5.3.7.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-core/5.3.7.Final/hibernate-core-5.3.7.Final.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.hibernate.common" name="hibernate-commons-annotations">
-			<revision name="5.0.4.Final" status="release" pubdate="20180614190455" resolver="public" artresolver="public" homepage="http://hibernate.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="80">
+			<revision name="5.0.4.Final" status="release" pubdate="20180614190455" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="80">
 				<license name="GNU Lesser General Public License v2.1 or later" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
-				<metadata-artifact status="successful" details="" size="1921" time="389" location="/home/smartcatolica/.ivy2/cache/org.hibernate.common/hibernate-commons-annotations/ivy-5.0.4.Final.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.hibernate.common/hibernate-commons-annotations/ivy-5.0.4.Final.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.4.Final/hibernate-commons-annotations-5.0.4.Final.pom"/>
+				<metadata-artifact status="no" details="" size="2777" time="0" location="/home/smartcatolica/.ivy2/cache/org.hibernate.common/hibernate-commons-annotations/ivy-5.0.4.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.4.Final/hibernate-commons-annotations-5.0.4.Final.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="5.0.4.Final" rev-constraint-default="5.0.4.Final" rev-constraint-dynamic="5.0.4.Final" callerrev="5.3.7.Final"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="5.0.4.Final" rev-constraint-default="5.0.4.Final" rev-constraint-dynamic="5.0.4.Final" callerrev="5.3.7.Final"/>
 				<artifacts>
-					<artifact name="hibernate-commons-annotations" type="jar" ext="jar" status="successful" details="" size="76233" time="1628" location="/home/smartcatolica/.ivy2/cache/org.hibernate.common/hibernate-commons-annotations/jars/hibernate-commons-annotations-5.0.4.Final.jar">
+					<artifact name="hibernate-commons-annotations" type="jar" ext="jar" status="no" details="" size="76233" time="0" location="/home/smartcatolica/.ivy2/cache/org.hibernate.common/hibernate-commons-annotations/jars/hibernate-commons-annotations-5.0.4.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.4.Final/hibernate-commons-annotations-5.0.4.Final.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.dom4j" name="dom4j">
-			<revision name="2.1.1" status="release" pubdate="20180701123006" resolver="public" artresolver="public" homepage="http://dom4j.github.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
+			<revision name="2.1.1" status="release" pubdate="20180701123006" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dom4j.github.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="79">
 				<license name="BSD 3-clause New License" url="https://github.com/dom4j/dom4j/blob/master/LICENSE"/>
-				<metadata-artifact status="successful" details="" size="2396" time="389" location="/home/smartcatolica/.ivy2/cache/org.dom4j/dom4j/ivy-2.1.1.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.dom4j/dom4j/ivy-2.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.pom"/>
+				<metadata-artifact status="no" details="" size="3295" time="0" location="/home/smartcatolica/.ivy2/cache/org.dom4j/dom4j/ivy-2.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="5.3.7.Final"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="5.3.7.Final"/>
 				<artifacts>
-					<artifact name="dom4j" type="jar" ext="jar" status="successful" details="" size="323600" time="1740" location="/home/smartcatolica/.ivy2/cache/org.dom4j/dom4j/jars/dom4j-2.1.1.jar">
+					<artifact name="dom4j" type="jar" ext="jar" status="no" details="" size="323600" time="0" location="/home/smartcatolica/.ivy2/cache/org.dom4j/dom4j/jars/dom4j-2.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.jboss" name="jandex">
-			<revision name="2.0.5.Final" status="release" pubdate="20180306220225" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
+			<revision name="2.0.5.Final" status="release" pubdate="20180306220225" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="78">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="5726" time="388" location="/home/smartcatolica/.ivy2/cache/org.jboss/jandex/ivy-2.0.5.Final.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.jboss/jandex/ivy-2.0.5.Final.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.pom"/>
+				<metadata-artifact status="no" details="" size="8522" time="0" location="/home/smartcatolica/.ivy2/cache/org.jboss/jandex/ivy-2.0.5.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="2.0.5.Final" rev-constraint-default="2.0.5.Final" rev-constraint-dynamic="2.0.5.Final" callerrev="5.3.7.Final"/>
 				<artifacts>
-					<artifact name="jandex" type="bundle" ext="jar" status="successful" details="" size="187548" time="1352" location="/home/smartcatolica/.ivy2/cache/org.jboss/jandex/bundles/jandex-2.0.5.Final.jar">
+					<artifact name="jandex" type="bundle" ext="jar" status="no" details="" size="187548" time="0" location="/home/smartcatolica/.ivy2/cache/org.jboss/jandex/bundles/jandex-2.0.5.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.jboss.spec.javax.transaction" name="jboss-transaction-api_1.2_spec">
-			<revision name="1.1.1.Final" status="release" pubdate="20180119173508" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="77">
+			<revision name="1.1.1.Final" status="release" pubdate="20180119173508" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="77">
 				<license name="Common Development and Distribution License" url="http://repository.jboss.org/licenses/cddl.txt"/>
 				<license name="GNU General Public License, Version 2 with the Classpath Exception" url="http://repository.jboss.org/licenses/gpl-2.0-ce.txt"/>
-				<metadata-artifact status="successful" details="" size="5167" time="388" location="/home/smartcatolica/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/ivy-1.1.1.Final.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/ivy-1.1.1.Final.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.pom"/>
+				<metadata-artifact status="no" details="" size="9693" time="0" location="/home/smartcatolica/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/ivy-1.1.1.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="1.1.1.Final" rev-constraint-default="1.1.1.Final" rev-constraint-dynamic="1.1.1.Final" callerrev="5.3.7.Final"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="1.1.1.Final" rev-constraint-default="1.1.1.Final" rev-constraint-dynamic="1.1.1.Final" callerrev="5.3.7.Final"/>
 				<artifacts>
-					<artifact name="jboss-transaction-api_1.2_spec" type="jar" ext="jar" status="successful" details="" size="26290" time="1359" location="/home/smartcatolica/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/jars/jboss-transaction-api_1.2_spec-1.1.1.Final.jar">
+					<artifact name="jboss-transaction-api_1.2_spec" type="jar" ext="jar" status="no" details="" size="26290" time="0" location="/home/smartcatolica/.ivy2/cache/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/jars/jboss-transaction-api_1.2_spec-1.1.1.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="antlr" name="antlr">
-			<revision name="2.7.7" status="release" pubdate="20070113032839" resolver="public" artresolver="public" homepage="http://www.antlr.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
+			<revision name="2.7.7" status="release" pubdate="20070113032839" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.antlr.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="76">
 				<license name="BSD License" url="http://www.antlr.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="632" time="388" location="/home/smartcatolica/.ivy2/cache/antlr/antlr/ivy-2.7.7.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/antlr/antlr/ivy-2.7.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom"/>
+				<metadata-artifact status="no" details="" size="2565" time="0" location="/home/smartcatolica/.ivy2/cache/antlr/antlr/ivy-2.7.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="2.7.7" rev-constraint-default="2.7.7" rev-constraint-dynamic="2.7.7" callerrev="5.3.7.Final"/>
 				<artifacts>
-					<artifact name="antlr" type="jar" ext="jar" status="successful" details="" size="445288" time="1081" location="/home/smartcatolica/.ivy2/cache/antlr/antlr/jars/antlr-2.7.7.jar">
+					<artifact name="antlr" type="jar" ext="jar" status="no" details="" size="445288" time="0" location="/home/smartcatolica/.ivy2/cache/antlr/antlr/jars/antlr-2.7.7.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="net.bytebuddy" name="byte-buddy">
-			<revision name="1.8.17" status="release" pubdate="20180806162644" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
+			<revision name="1.8.17" status="release" pubdate="20180806162644" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="75">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="9332" time="693" location="/home/smartcatolica/.ivy2/cache/net.bytebuddy/byte-buddy/ivy-1.8.17.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/net.bytebuddy/byte-buddy/ivy-1.8.17.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.17/byte-buddy-1.8.17.pom"/>
+				<metadata-artifact status="no" details="" size="6746" time="0" location="/home/smartcatolica/.ivy2/cache/net.bytebuddy/byte-buddy/ivy-1.8.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.17/byte-buddy-1.8.17.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="1.8.17" rev-constraint-default="1.8.17" rev-constraint-dynamic="1.8.17" callerrev="5.3.7.Final"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="1.8.17" rev-constraint-default="1.8.17" rev-constraint-dynamic="1.8.17" callerrev="5.3.7.Final"/>
 				<artifacts>
-					<artifact name="byte-buddy" type="jar" ext="jar" status="successful" details="" size="2999801" time="2043" location="/home/smartcatolica/.ivy2/cache/net.bytebuddy/byte-buddy/jars/byte-buddy-1.8.17.jar">
+					<artifact name="byte-buddy" type="jar" ext="jar" status="no" details="" size="2999801" time="0" location="/home/smartcatolica/.ivy2/cache/net.bytebuddy/byte-buddy/jars/byte-buddy-1.8.17.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.17/byte-buddy-1.8.17.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.javassist" name="javassist">
-			<revision name="3.23.1-GA" status="release" pubdate="20180701150306" resolver="public" artresolver="public" homepage="http://www.javassist.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
+			<revision name="3.23.1-GA" status="release" pubdate="20180701150306" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="74">
 				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
 				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
 				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
-				<metadata-artifact status="successful" details="" size="10389" time="389" location="/home/smartcatolica/.ivy2/cache/org.javassist/javassist/ivy-3.23.1-GA.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.javassist/javassist/ivy-3.23.1-GA.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.pom"/>
+				<metadata-artifact status="no" details="" size="3418" time="0" location="/home/smartcatolica/.ivy2/cache/org.javassist/javassist/ivy-3.23.1-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="3.23.1-GA" rev-constraint-default="3.23.1-GA" rev-constraint-dynamic="3.23.1-GA" callerrev="5.3.7.Final"/>
 				<artifacts>
-					<artifact name="javassist" type="bundle" ext="jar" status="successful" details="" size="770452" time="1197" location="/home/smartcatolica/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.23.1-GA.jar">
+					<artifact name="javassist" type="bundle" ext="jar" status="no" details="" size="770452" time="0" location="/home/smartcatolica/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.23.1-GA.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-java-jpa_2.13">
-			<revision name="2.7.3" status="release" pubdate="20190619064937" resolver="public" artresolver="public" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="63">
+			<revision name="2.7.3" status="release" pubdate="20190619064937" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="2696" time="388" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jpa_2.13/ivy-2.7.3.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jpa_2.13/ivy-2.7.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jpa_2.13/2.7.3/play-java-jpa_2.13-2.7.3.pom"/>
+				<metadata-artifact status="no" details="" size="3607" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jpa_2.13/ivy-2.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jpa_2.13/2.7.3/play-java-jpa_2.13-2.7.3.pom"/>
 				<caller organisation="com.example" name="crud_2.13" conf="compile" rev="2.7.3" rev-constraint-default="2.7.3" rev-constraint-dynamic="2.7.3" callerrev="1.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="play-java-jpa_2.13" type="jar" ext="jar" status="successful" details="" size="14442" time="824" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jpa_2.13/jars/play-java-jpa_2.13-2.7.3.jar">
+					<artifact name="play-java-jpa_2.13" type="jar" ext="jar" status="no" details="" size="14442" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jpa_2.13/jars/play-java-jpa_2.13-2.7.3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jpa_2.13/2.7.3/play-java-jpa_2.13-2.7.3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.hibernate.javax.persistence" name="hibernate-jpa-2.1-api">
-			<revision name="1.0.2.Final" status="release" pubdate="20180123135607" resolver="public" artresolver="public" homepage="http://hibernate.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
+			<revision name="1.0.2.Final" status="release" pubdate="20180123135607" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hibernate.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
 				<license name="Eclipse Public License (EPL), Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<license name="Eclipse Distribution License (EDL), Version 1.0" url="http://www.eclipse.org/org/documents/edl-v10.php"/>
-				<metadata-artifact status="successful" details="" size="2208" time="388" location="/home/smartcatolica/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/ivy-1.0.2.Final.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/ivy-1.0.2.Final.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.pom"/>
+				<metadata-artifact status="no" details="" size="2760" time="0" location="/home/smartcatolica/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/ivy-1.0.2.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.pom"/>
 				<caller organisation="com.typesafe.play" name="play-java-jpa_2.13" conf="default, compile, runtime, master" rev="1.0.2.Final" rev-constraint-default="1.0.2.Final" rev-constraint-dynamic="1.0.2.Final" callerrev="2.7.3"/>
 				<artifacts>
-					<artifact name="hibernate-jpa-2.1-api" type="jar" ext="jar" status="successful" details="" size="113381" time="1058" location="/home/smartcatolica/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/jars/hibernate-jpa-2.1-api-1.0.2.Final.jar">
+					<artifact name="hibernate-jpa-2.1-api" type="jar" ext="jar" status="no" details="" size="113381" time="0" location="/home/smartcatolica/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/jars/hibernate-jpa-2.1-api-1.0.2.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.2.Final/hibernate-jpa-2.1-api-1.0.2.Final.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-java-jdbc_2.13">
-			<revision name="2.7.3" status="release" pubdate="20190619065037" resolver="public" artresolver="public" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+			<revision name="2.7.3" status="release" pubdate="20190619065037" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="2442" time="404" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.13/ivy-2.7.3.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.13/ivy-2.7.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.13/2.7.3/play-java-jdbc_2.13-2.7.3.pom"/>
+				<metadata-artifact status="no" details="" size="3439" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.13/ivy-2.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.13/2.7.3/play-java-jdbc_2.13-2.7.3.pom"/>
 				<caller organisation="com.typesafe.play" name="play-java-jpa_2.13" conf="default, compile, runtime, master" rev="2.7.3" rev-constraint-default="2.7.3" rev-constraint-dynamic="2.7.3" callerrev="2.7.3"/>
 				<artifacts>
-					<artifact name="play-java-jdbc_2.13" type="jar" ext="jar" status="successful" details="" size="11412" time="1060" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.13/jars/play-java-jdbc_2.13-2.7.3.jar">
+					<artifact name="play-java-jdbc_2.13" type="jar" ext="jar" status="no" details="" size="11412" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.13/jars/play-java-jdbc_2.13-2.7.3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.13/2.7.3/play-java-jdbc_2.13-2.7.3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-jdbc_2.13">
-			<revision name="2.7.3" status="release" pubdate="20190619064754" resolver="public" artresolver="public" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+			<revision name="2.7.3" status="release" pubdate="20190619064754" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="3787" time="391" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc_2.13/ivy-2.7.3.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc_2.13/ivy-2.7.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.13/2.7.3/play-jdbc_2.13-2.7.3.pom"/>
+				<metadata-artifact status="no" details="" size="4292" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc_2.13/ivy-2.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.13/2.7.3/play-jdbc_2.13-2.7.3.pom"/>
 				<caller organisation="com.typesafe.play" name="play-java-jdbc_2.13" conf="compile, runtime" rev="2.7.3" rev-constraint-default="2.7.3" rev-constraint-dynamic="2.7.3" callerrev="2.7.3"/>
 				<artifacts>
-					<artifact name="play-jdbc_2.13" type="jar" ext="jar" status="successful" details="" size="55409" time="1067" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc_2.13/jars/play-jdbc_2.13-2.7.3.jar">
+					<artifact name="play-jdbc_2.13" type="jar" ext="jar" status="no" details="" size="55409" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc_2.13/jars/play-jdbc_2.13-2.7.3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.13/2.7.3/play-jdbc_2.13-2.7.3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="tyrex" name="tyrex">
-			<revision name="1.0.1" status="release" pubdate="20051108192044" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
-				<metadata-artifact status="successful" details="" size="144" time="389" location="/home/smartcatolica/.ivy2/cache/tyrex/tyrex/ivy-1.0.1.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/tyrex/tyrex/ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/tyrex/tyrex/1.0.1/tyrex-1.0.1.pom"/>
+			<revision name="1.0.1" status="release" pubdate="20051108192044" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+				<metadata-artifact status="no" details="" size="2302" time="0" location="/home/smartcatolica/.ivy2/cache/tyrex/tyrex/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/tyrex/tyrex/1.0.1/tyrex-1.0.1.pom"/>
 				<caller organisation="com.typesafe.play" name="play-jdbc_2.13" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.7.3"/>
 				<artifacts>
-					<artifact name="tyrex" type="jar" ext="jar" status="successful" details="" size="201315" time="1264" location="/home/smartcatolica/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar">
+					<artifact name="tyrex" type="jar" ext="jar" status="no" details="" size="201315" time="0" location="/home/smartcatolica/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/tyrex/tyrex/1.0.1/tyrex-1.0.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.googlecode.usc" name="jdbcdslog">
-			<revision name="1.0.6.2" status="release" pubdate="20111225034305" resolver="public" artresolver="public" homepage="http://code.google.com/p/jdbcdslog-exp/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+			<revision name="1.0.6.2" status="release" pubdate="20111225034305" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/jdbcdslog-exp/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
 				<license name="Apache License,Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="successful" details="" size="7767" time="392" location="/home/smartcatolica/.ivy2/cache/com.googlecode.usc/jdbcdslog/ivy-1.0.6.2.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/com.googlecode.usc/jdbcdslog/ivy-1.0.6.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2.pom"/>
+				<metadata-artifact status="no" details="" size="4051" time="0" location="/home/smartcatolica/.ivy2/cache/com.googlecode.usc/jdbcdslog/ivy-1.0.6.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2.pom"/>
 				<caller organisation="com.typesafe.play" name="play-jdbc_2.13" conf="compile, runtime" rev="1.0.6.2" rev-constraint-default="1.0.6.2" rev-constraint-dynamic="1.0.6.2" callerrev="2.7.3"/>
 				<artifacts>
-					<artifact name="jdbcdslog" type="jar" ext="jar" status="successful" details="" size="34515" time="1213" location="/home/smartcatolica/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar">
+					<artifact name="jdbcdslog" type="jar" ext="jar" status="no" details="" size="34515" time="0" location="/home/smartcatolica/.ivy2/cache/com.googlecode.usc/jdbcdslog/jars/jdbcdslog-1.0.6.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.zaxxer" name="HikariCP">
-			<revision name="3.3.1" status="release" pubdate="20190208010239" resolver="public" artresolver="public" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+			<revision name="3.3.1" status="release" pubdate="20190208010239" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="19160" time="487" location="/home/smartcatolica/.ivy2/cache/com.zaxxer/HikariCP/ivy-3.3.1.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/com.zaxxer/HikariCP/ivy-3.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/3.3.1/HikariCP-3.3.1.pom"/>
+				<metadata-artifact status="no" details="" size="8026" time="0" location="/home/smartcatolica/.ivy2/cache/com.zaxxer/HikariCP/ivy-3.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/3.3.1/HikariCP-3.3.1.pom"/>
 				<caller organisation="com.typesafe.play" name="play-jdbc_2.13" conf="compile, runtime" rev="3.3.1" rev-constraint-default="3.3.1" rev-constraint-dynamic="3.3.1" callerrev="2.7.3"/>
 				<artifacts>
-					<artifact name="HikariCP" type="bundle" ext="jar" status="successful" details="" size="139168" time="1216" location="/home/smartcatolica/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-3.3.1.jar">
+					<artifact name="HikariCP" type="bundle" ext="jar" status="no" details="" size="139168" time="0" location="/home/smartcatolica/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-3.3.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/3.3.1/HikariCP-3.3.1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.play" name="play-jdbc-api_2.13">
-			<revision name="2.7.3" status="release" pubdate="20190619064533" resolver="public" artresolver="public" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+			<revision name="2.7.3" status="release" pubdate="20190619064533" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" extra-info.apiURL="https://www.playframework.com/documentation/2.7.3/api/scala/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
 				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="1824" time="393" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.13/ivy-2.7.3.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.13/ivy-2.7.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.13/2.7.3/play-jdbc-api_2.13-2.7.3.pom"/>
+				<metadata-artifact status="no" details="" size="3024" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.13/ivy-2.7.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.13/2.7.3/play-jdbc-api_2.13-2.7.3.pom"/>
 				<caller organisation="com.typesafe.play" name="play-jdbc_2.13" conf="compile, runtime" rev="2.7.3" rev-constraint-default="2.7.3" rev-constraint-dynamic="2.7.3" callerrev="2.7.3"/>
 				<artifacts>
-					<artifact name="play-jdbc-api_2.13" type="jar" ext="jar" status="successful" details="" size="15911" time="1066" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.13/jars/play-jdbc-api_2.13-2.7.3.jar">
+					<artifact name="play-jdbc-api_2.13" type="jar" ext="jar" status="no" details="" size="15911" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.13/jars/play-jdbc-api_2.13-2.7.3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.13/2.7.3/play-jdbc-api_2.13-2.7.3.jar"/>
 					</artifact>
 				</artifacts>
@@ -356,14 +356,14 @@
 			</revision>
 		</module>
 		<module organisation="javax.persistence" name="javax.persistence-api">
-			<revision name="2.2" status="release" pubdate="20170821115917" resolver="public" artresolver="public" homepage="https://github.com/javaee/jpa-spec" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
+			<revision name="2.2" status="release" pubdate="20170821115917" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/javaee/jpa-spec" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="73">
 				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
 				<license name="Eclipse Distribution License v. 1.0" url="http://www.eclipse.org/org/documents/edl-v10.php"/>
-				<metadata-artifact status="successful" details="" size="11227" time="390" location="/home/smartcatolica/.ivy2/cache/javax.persistence/javax.persistence-api/ivy-2.2.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/javax.persistence/javax.persistence-api/ivy-2.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.pom"/>
+				<metadata-artifact status="no" details="" size="3906" time="0" location="/home/smartcatolica/.ivy2/cache/javax.persistence/javax.persistence-api/ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.pom"/>
 				<caller organisation="org.hibernate" name="hibernate-entitymanager" conf="default, compile, runtime, master" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="5.3.7.Final"/>
 				<caller organisation="org.hibernate" name="hibernate-core" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="5.3.7.Final"/>
 				<artifacts>
-					<artifact name="javax.persistence-api" type="jar" ext="jar" status="successful" details="" size="164556" time="1645" location="/home/smartcatolica/.ivy2/cache/javax.persistence/javax.persistence-api/jars/javax.persistence-api-2.2.jar">
+					<artifact name="javax.persistence-api" type="jar" ext="jar" status="no" details="" size="164556" time="0" location="/home/smartcatolica/.ivy2/cache/javax.persistence/javax.persistence-api/jars/javax.persistence-api-2.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar"/>
 					</artifact>
 				</artifacts>
@@ -569,13 +569,13 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="ssl-config-core_2.13">
-			<revision name="0.3.8" status="release" pubdate="20190615092736" resolver="public" artresolver="public" homepage="https://github.com/lightbend/ssl-config" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+			<revision name="0.3.8" status="release" pubdate="20190615092736" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lightbend/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
 				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="3248" time="524" location="/home/smartcatolica/.ivy2/cache/com.typesafe/ssl-config-core_2.13/ivy-0.3.8.xml" searched="true" original-local-location="/home/smartcatolica/.ivy2/cache/com.typesafe/ssl-config-core_2.13/ivy-0.3.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.13/0.3.8/ssl-config-core_2.13-0.3.8.pom"/>
+				<metadata-artifact status="no" details="" size="3715" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe/ssl-config-core_2.13/ivy-0.3.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.13/0.3.8/ssl-config-core_2.13-0.3.8.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-stream_2.13" conf="null, compile, runtime" rev="0.4.0" rev-constraint-default="0.4.0" rev-constraint-dynamic="0.4.0" callerrev="2.5.23"/>
 				<caller organisation="com.typesafe.play" name="play_2.13" conf="compile, runtime" rev="0.3.8" rev-constraint-default="0.3.8" rev-constraint-dynamic="0.3.8" callerrev="2.7.3"/>
 				<artifacts>
-					<artifact name="ssl-config-core_2.13" type="bundle" ext="jar" status="successful" details="" size="271329" time="1299" location="/home/smartcatolica/.ivy2/cache/com.typesafe/ssl-config-core_2.13/bundles/ssl-config-core_2.13-0.3.8.jar">
+					<artifact name="ssl-config-core_2.13" type="bundle" ext="jar" status="no" details="" size="271329" time="0" location="/home/smartcatolica/.ivy2/cache/com.typesafe/ssl-config-core_2.13/bundles/ssl-config-core_2.13-0.3.8.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.13/0.3.8/ssl-config-core_2.13-0.3.8.jar"/>
 					</artifact>
 				</artifacts>

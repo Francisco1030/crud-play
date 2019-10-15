@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Fri Aug 09 16:51:26 BRT 2019
+// @SOURCE:/home/smartcatolica/workspace-play/crud-play/conf/routes
+// @DATE:Tue Oct 15 15:25:04 BRT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +11,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:21
+  // @LINE:22
   class ReverseEnderecoController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:23
+    // @LINE:24
     def atualizarEnderecoPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.atualizarEnderecoPage",
       """
@@ -29,7 +29,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:26
+    // @LINE:27
     def cadastrarEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.cadastrarEndereco",
       """
@@ -39,7 +39,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:24
+    // @LINE:25
     def removerEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.removerEndereco",
       """
@@ -49,7 +49,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:22
+    // @LINE:23
     def gerenciarEnderecoPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.gerenciarEnderecoPage",
       """
@@ -59,7 +59,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:27
+    // @LINE:28
     def atualizarEndereco: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.atualizarEndereco",
       """
@@ -69,7 +69,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:22
     def cadastrarEnderecoPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.EnderecoController.cadastrarEnderecoPage",
       """
@@ -89,6 +89,16 @@ package controllers.javascript {
     }
 
   
+    // @LINE:7
+    def socket: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.socket",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "socket"})
+        }
+      """
+    )
+  
     // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
@@ -101,7 +111,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:30
+  // @LINE:31
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -109,7 +119,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:30
+    // @LINE:31
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -121,7 +131,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:9
+  // @LINE:10
   class ReversePessoaController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -129,7 +139,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:11
+    // @LINE:12
     def atualizarPessoaPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.atualizarPessoaPage",
       """
@@ -139,7 +149,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:10
+    // @LINE:11
     def gerenciarPessoaPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.gerenciarPessoaPage",
       """
@@ -149,7 +159,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:17
+    // @LINE:18
     def pesquisarPessoa: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.pesquisarPessoa",
       """
@@ -159,7 +169,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:10
     def cadastrarPessoaPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.cadastrarPessoaPage",
       """
@@ -169,7 +179,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
+    // @LINE:13
     def removerPessoa: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.removerPessoa",
       """
@@ -179,7 +189,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:15
+    // @LINE:16
     def cadastrarPessoa: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.cadastrarPessoa",
       """
@@ -189,7 +199,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:13
+    // @LINE:14
     def pesquisarPessoaPage: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.pesquisarPessoaPage",
       """
@@ -199,7 +209,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:16
+    // @LINE:17
     def atualizarPessoa: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PessoaController.atualizarPessoa",
       """

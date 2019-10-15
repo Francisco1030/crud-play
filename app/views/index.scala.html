@@ -1,5 +1,26 @@
 @()
 
 @main {
-  <h1>Welcome to Play!</h1>
+    <div id="ping"></div>
+          <input type="submit" id="enviar" />
+<script>
+
+        $(function() {
+
+            var websocket = new WebSocket("@routes.HomeController.socket().webSocketURL(request)")
+
+
+            var btnEnv = document.getElementById("#enviar");
+            
+            //
+            // var receiveEvent = function(event) {
+            //     createReceive();
+            // }
+
+            //websocket.onmessage = receiveEvent
+
+            console.table(websocket);
+        })
+</script>
+
 }

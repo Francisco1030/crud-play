@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Fri Aug 09 16:51:26 BRT 2019
+// @SOURCE:/home/smartcatolica/workspace-play/crud-play/conf/routes
+// @DATE:Tue Oct 15 15:25:04 BRT 2019
 
 import play.api.mvc.Call
 
@@ -11,44 +11,44 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:21
+  // @LINE:22
   class ReverseEnderecoController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:23
+    // @LINE:24
     def atualizarEnderecoPage(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "atualizar-endereco" + play.core.routing.queryString(List(Some(implicitly[play.api.mvc.QueryStringBindable[Long]].unbind("id", id)))))
     }
   
-    // @LINE:26
+    // @LINE:27
     def cadastrarEndereco(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "cadastrar-endereco")
     }
   
-    // @LINE:24
+    // @LINE:25
     def removerEndereco(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "remover-endereco" + play.core.routing.queryString(List(Some(implicitly[play.api.mvc.QueryStringBindable[Long]].unbind("id", id)))))
     }
   
-    // @LINE:22
+    // @LINE:23
     def gerenciarEnderecoPage(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "gerenciar-endereco")
     }
   
-    // @LINE:27
+    // @LINE:28
     def atualizarEndereco(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "atualizar-endereco")
     }
   
-    // @LINE:21
+    // @LINE:22
     def cadastrarEnderecoPage(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "cadastrar-endereco")
@@ -63,6 +63,12 @@ package controllers {
     }
 
   
+    // @LINE:7
+    def socket(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "socket")
+    }
+  
     // @LINE:6
     def index(): Call = {
       
@@ -71,14 +77,14 @@ package controllers {
   
   }
 
-  // @LINE:30
+  // @LINE:31
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:30
+    // @LINE:31
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -86,56 +92,56 @@ package controllers {
   
   }
 
-  // @LINE:9
+  // @LINE:10
   class ReversePessoaController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:11
+    // @LINE:12
     def atualizarPessoaPage(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "atualizar-pessoa" + play.core.routing.queryString(List(Some(implicitly[play.api.mvc.QueryStringBindable[Long]].unbind("id", id)))))
     }
   
-    // @LINE:10
+    // @LINE:11
     def gerenciarPessoaPage(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "gerenciar-pessoa")
     }
   
-    // @LINE:17
+    // @LINE:18
     def pesquisarPessoa(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "pesquisar-pessoa")
     }
   
-    // @LINE:9
+    // @LINE:10
     def cadastrarPessoaPage(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "cadastrar-pessoa")
     }
   
-    // @LINE:12
+    // @LINE:13
     def removerPessoa(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "remover-pessoa" + play.core.routing.queryString(List(Some(implicitly[play.api.mvc.QueryStringBindable[Long]].unbind("id", id)))))
     }
   
-    // @LINE:15
+    // @LINE:16
     def cadastrarPessoa(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "cadastrar-pessoa")
     }
   
-    // @LINE:13
+    // @LINE:14
     def pesquisarPessoaPage(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "pesquisar-pessoa")
     }
   
-    // @LINE:16
+    // @LINE:17
     def atualizarPessoa(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "atualizar-pessoa")

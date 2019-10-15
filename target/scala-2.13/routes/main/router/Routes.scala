@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/home/smartcatolica/workspace-play/crud/conf/routes
-// @DATE:Fri Aug 09 16:51:26 BRT 2019
+// @SOURCE:/home/smartcatolica/workspace-play/crud-play/conf/routes
+// @DATE:Tue Oct 15 15:25:04 BRT 2019
 
 package router
 
@@ -16,11 +16,11 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   HomeController_2: controllers.HomeController,
-  // @LINE:9
+  // @LINE:10
   PessoaController_0: controllers.PessoaController,
-  // @LINE:21
+  // @LINE:22
   EnderecoController_3: controllers.EnderecoController,
-  // @LINE:30
+  // @LINE:31
   Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -29,11 +29,11 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     HomeController_2: controllers.HomeController,
-    // @LINE:9
+    // @LINE:10
     PessoaController_0: controllers.PessoaController,
-    // @LINE:21
+    // @LINE:22
     EnderecoController_3: controllers.EnderecoController,
-    // @LINE:30
+    // @LINE:31
     Assets_1: controllers.Assets
   ) = this(errorHandler, HomeController_2, PessoaController_0, EnderecoController_3, Assets_1, "/")
 
@@ -49,6 +49,7 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """socket""", """controllers.HomeController.socket()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """cadastrar-pessoa""", """controllers.PessoaController.cadastrarPessoaPage"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """gerenciar-pessoa""", """controllers.PessoaController.gerenciarPessoaPage"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """atualizar-pessoa""", """controllers.PessoaController.atualizarPessoaPage(id:Long)"""),
@@ -89,11 +90,29 @@ class Routes(
     )
   )
 
-  // @LINE:9
-  private[this] lazy val controllers_PessoaController_cadastrarPessoaPage1_route = Route("GET",
+  // @LINE:7
+  private[this] lazy val controllers_HomeController_socket1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("socket")))
+  )
+  private[this] lazy val controllers_HomeController_socket1_invoker = createInvoker(
+    HomeController_2.socket(),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.HomeController",
+      "socket",
+      Nil,
+      "GET",
+      this.prefix + """socket""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:10
+  private[this] lazy val controllers_PessoaController_cadastrarPessoaPage2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cadastrar-pessoa")))
   )
-  private[this] lazy val controllers_PessoaController_cadastrarPessoaPage1_invoker = createInvoker(
+  private[this] lazy val controllers_PessoaController_cadastrarPessoaPage2_invoker = createInvoker(
     PessoaController_0.cadastrarPessoaPage,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -107,11 +126,11 @@ class Routes(
     )
   )
 
-  // @LINE:10
-  private[this] lazy val controllers_PessoaController_gerenciarPessoaPage2_route = Route("GET",
+  // @LINE:11
+  private[this] lazy val controllers_PessoaController_gerenciarPessoaPage3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("gerenciar-pessoa")))
   )
-  private[this] lazy val controllers_PessoaController_gerenciarPessoaPage2_invoker = createInvoker(
+  private[this] lazy val controllers_PessoaController_gerenciarPessoaPage3_invoker = createInvoker(
     PessoaController_0.gerenciarPessoaPage,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -125,11 +144,11 @@ class Routes(
     )
   )
 
-  // @LINE:11
-  private[this] lazy val controllers_PessoaController_atualizarPessoaPage3_route = Route("GET",
+  // @LINE:12
+  private[this] lazy val controllers_PessoaController_atualizarPessoaPage4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("atualizar-pessoa")))
   )
-  private[this] lazy val controllers_PessoaController_atualizarPessoaPage3_invoker = createInvoker(
+  private[this] lazy val controllers_PessoaController_atualizarPessoaPage4_invoker = createInvoker(
     PessoaController_0.atualizarPessoaPage(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -143,11 +162,11 @@ class Routes(
     )
   )
 
-  // @LINE:12
-  private[this] lazy val controllers_PessoaController_removerPessoa4_route = Route("GET",
+  // @LINE:13
+  private[this] lazy val controllers_PessoaController_removerPessoa5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("remover-pessoa")))
   )
-  private[this] lazy val controllers_PessoaController_removerPessoa4_invoker = createInvoker(
+  private[this] lazy val controllers_PessoaController_removerPessoa5_invoker = createInvoker(
     PessoaController_0.removerPessoa(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -161,11 +180,11 @@ class Routes(
     )
   )
 
-  // @LINE:13
-  private[this] lazy val controllers_PessoaController_pesquisarPessoaPage5_route = Route("GET",
+  // @LINE:14
+  private[this] lazy val controllers_PessoaController_pesquisarPessoaPage6_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pesquisar-pessoa")))
   )
-  private[this] lazy val controllers_PessoaController_pesquisarPessoaPage5_invoker = createInvoker(
+  private[this] lazy val controllers_PessoaController_pesquisarPessoaPage6_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
       PessoaController_0.pesquisarPessoaPage(fakeValue[play.mvc.Http.Request]),
@@ -181,11 +200,11 @@ class Routes(
     )
   )
 
-  // @LINE:15
-  private[this] lazy val controllers_PessoaController_cadastrarPessoa6_route = Route("POST",
+  // @LINE:16
+  private[this] lazy val controllers_PessoaController_cadastrarPessoa7_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cadastrar-pessoa")))
   )
-  private[this] lazy val controllers_PessoaController_cadastrarPessoa6_invoker = createInvoker(
+  private[this] lazy val controllers_PessoaController_cadastrarPessoa7_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
       PessoaController_0.cadastrarPessoa(fakeValue[play.mvc.Http.Request]),
@@ -201,11 +220,11 @@ class Routes(
     )
   )
 
-  // @LINE:16
-  private[this] lazy val controllers_PessoaController_atualizarPessoa7_route = Route("POST",
+  // @LINE:17
+  private[this] lazy val controllers_PessoaController_atualizarPessoa8_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("atualizar-pessoa")))
   )
-  private[this] lazy val controllers_PessoaController_atualizarPessoa7_invoker = createInvoker(
+  private[this] lazy val controllers_PessoaController_atualizarPessoa8_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
       PessoaController_0.atualizarPessoa(fakeValue[play.mvc.Http.Request]),
@@ -221,11 +240,11 @@ class Routes(
     )
   )
 
-  // @LINE:17
-  private[this] lazy val controllers_PessoaController_pesquisarPessoa8_route = Route("POST",
+  // @LINE:18
+  private[this] lazy val controllers_PessoaController_pesquisarPessoa9_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("pesquisar-pessoa")))
   )
-  private[this] lazy val controllers_PessoaController_pesquisarPessoa8_invoker = createInvoker(
+  private[this] lazy val controllers_PessoaController_pesquisarPessoa9_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
       PessoaController_0.pesquisarPessoa(fakeValue[play.mvc.Http.Request]),
@@ -241,11 +260,11 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_EnderecoController_cadastrarEnderecoPage9_route = Route("GET",
+  // @LINE:22
+  private[this] lazy val controllers_EnderecoController_cadastrarEnderecoPage10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cadastrar-endereco")))
   )
-  private[this] lazy val controllers_EnderecoController_cadastrarEnderecoPage9_invoker = createInvoker(
+  private[this] lazy val controllers_EnderecoController_cadastrarEnderecoPage10_invoker = createInvoker(
     EnderecoController_3.cadastrarEnderecoPage(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -259,11 +278,11 @@ class Routes(
     )
   )
 
-  // @LINE:22
-  private[this] lazy val controllers_EnderecoController_gerenciarEnderecoPage10_route = Route("GET",
+  // @LINE:23
+  private[this] lazy val controllers_EnderecoController_gerenciarEnderecoPage11_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("gerenciar-endereco")))
   )
-  private[this] lazy val controllers_EnderecoController_gerenciarEnderecoPage10_invoker = createInvoker(
+  private[this] lazy val controllers_EnderecoController_gerenciarEnderecoPage11_invoker = createInvoker(
     EnderecoController_3.gerenciarEnderecoPage,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -277,11 +296,11 @@ class Routes(
     )
   )
 
-  // @LINE:23
-  private[this] lazy val controllers_EnderecoController_atualizarEnderecoPage11_route = Route("GET",
+  // @LINE:24
+  private[this] lazy val controllers_EnderecoController_atualizarEnderecoPage12_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("atualizar-endereco")))
   )
-  private[this] lazy val controllers_EnderecoController_atualizarEnderecoPage11_invoker = createInvoker(
+  private[this] lazy val controllers_EnderecoController_atualizarEnderecoPage12_invoker = createInvoker(
     EnderecoController_3.atualizarEnderecoPage(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -295,11 +314,11 @@ class Routes(
     )
   )
 
-  // @LINE:24
-  private[this] lazy val controllers_EnderecoController_removerEndereco12_route = Route("GET",
+  // @LINE:25
+  private[this] lazy val controllers_EnderecoController_removerEndereco13_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("remover-endereco")))
   )
-  private[this] lazy val controllers_EnderecoController_removerEndereco12_invoker = createInvoker(
+  private[this] lazy val controllers_EnderecoController_removerEndereco13_invoker = createInvoker(
     EnderecoController_3.removerEndereco(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -313,11 +332,11 @@ class Routes(
     )
   )
 
-  // @LINE:26
-  private[this] lazy val controllers_EnderecoController_cadastrarEndereco13_route = Route("POST",
+  // @LINE:27
+  private[this] lazy val controllers_EnderecoController_cadastrarEndereco14_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("cadastrar-endereco")))
   )
-  private[this] lazy val controllers_EnderecoController_cadastrarEndereco13_invoker = createInvoker(
+  private[this] lazy val controllers_EnderecoController_cadastrarEndereco14_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
       EnderecoController_3.cadastrarEndereco(fakeValue[play.mvc.Http.Request]),
@@ -333,11 +352,11 @@ class Routes(
     )
   )
 
-  // @LINE:27
-  private[this] lazy val controllers_EnderecoController_atualizarEndereco14_route = Route("POST",
+  // @LINE:28
+  private[this] lazy val controllers_EnderecoController_atualizarEndereco15_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("atualizar-endereco")))
   )
-  private[this] lazy val controllers_EnderecoController_atualizarEndereco14_invoker = createInvoker(
+  private[this] lazy val controllers_EnderecoController_atualizarEndereco15_invoker = createInvoker(
     
     (req:play.mvc.Http.Request) =>
       EnderecoController_3.atualizarEndereco(fakeValue[play.mvc.Http.Request]),
@@ -353,11 +372,11 @@ class Routes(
     )
   )
 
-  // @LINE:30
-  private[this] lazy val controllers_Assets_versioned15_route = Route("GET",
+  // @LINE:31
+  private[this] lazy val controllers_Assets_versioned16_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned15_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned16_invoker = createInvoker(
     Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -380,100 +399,106 @@ class Routes(
         controllers_HomeController_index0_invoker.call(HomeController_2.index)
       }
   
-    // @LINE:9
-    case controllers_PessoaController_cadastrarPessoaPage1_route(params@_) =>
+    // @LINE:7
+    case controllers_HomeController_socket1_route(params@_) =>
       call { 
-        controllers_PessoaController_cadastrarPessoaPage1_invoker.call(PessoaController_0.cadastrarPessoaPage)
+        controllers_HomeController_socket1_invoker.call(HomeController_2.socket())
       }
   
     // @LINE:10
-    case controllers_PessoaController_gerenciarPessoaPage2_route(params@_) =>
+    case controllers_PessoaController_cadastrarPessoaPage2_route(params@_) =>
       call { 
-        controllers_PessoaController_gerenciarPessoaPage2_invoker.call(PessoaController_0.gerenciarPessoaPage)
+        controllers_PessoaController_cadastrarPessoaPage2_invoker.call(PessoaController_0.cadastrarPessoaPage)
       }
   
     // @LINE:11
-    case controllers_PessoaController_atualizarPessoaPage3_route(params@_) =>
-      call(params.fromQuery[Long]("id", None)) { (id) =>
-        controllers_PessoaController_atualizarPessoaPage3_invoker.call(PessoaController_0.atualizarPessoaPage(id))
+    case controllers_PessoaController_gerenciarPessoaPage3_route(params@_) =>
+      call { 
+        controllers_PessoaController_gerenciarPessoaPage3_invoker.call(PessoaController_0.gerenciarPessoaPage)
       }
   
     // @LINE:12
-    case controllers_PessoaController_removerPessoa4_route(params@_) =>
+    case controllers_PessoaController_atualizarPessoaPage4_route(params@_) =>
       call(params.fromQuery[Long]("id", None)) { (id) =>
-        controllers_PessoaController_removerPessoa4_invoker.call(PessoaController_0.removerPessoa(id))
+        controllers_PessoaController_atualizarPessoaPage4_invoker.call(PessoaController_0.atualizarPessoaPage(id))
       }
   
     // @LINE:13
-    case controllers_PessoaController_pesquisarPessoaPage5_route(params@_) =>
+    case controllers_PessoaController_removerPessoa5_route(params@_) =>
+      call(params.fromQuery[Long]("id", None)) { (id) =>
+        controllers_PessoaController_removerPessoa5_invoker.call(PessoaController_0.removerPessoa(id))
+      }
+  
+    // @LINE:14
+    case controllers_PessoaController_pesquisarPessoaPage6_route(params@_) =>
       call { 
-        controllers_PessoaController_pesquisarPessoaPage5_invoker.call(
+        controllers_PessoaController_pesquisarPessoaPage6_invoker.call(
           req => PessoaController_0.pesquisarPessoaPage(req))
       }
   
-    // @LINE:15
-    case controllers_PessoaController_cadastrarPessoa6_route(params@_) =>
+    // @LINE:16
+    case controllers_PessoaController_cadastrarPessoa7_route(params@_) =>
       call { 
-        controllers_PessoaController_cadastrarPessoa6_invoker.call(
+        controllers_PessoaController_cadastrarPessoa7_invoker.call(
           req => PessoaController_0.cadastrarPessoa(req))
       }
   
-    // @LINE:16
-    case controllers_PessoaController_atualizarPessoa7_route(params@_) =>
+    // @LINE:17
+    case controllers_PessoaController_atualizarPessoa8_route(params@_) =>
       call { 
-        controllers_PessoaController_atualizarPessoa7_invoker.call(
+        controllers_PessoaController_atualizarPessoa8_invoker.call(
           req => PessoaController_0.atualizarPessoa(req))
       }
   
-    // @LINE:17
-    case controllers_PessoaController_pesquisarPessoa8_route(params@_) =>
+    // @LINE:18
+    case controllers_PessoaController_pesquisarPessoa9_route(params@_) =>
       call { 
-        controllers_PessoaController_pesquisarPessoa8_invoker.call(
+        controllers_PessoaController_pesquisarPessoa9_invoker.call(
           req => PessoaController_0.pesquisarPessoa(req))
       }
   
-    // @LINE:21
-    case controllers_EnderecoController_cadastrarEnderecoPage9_route(params@_) =>
-      call { 
-        controllers_EnderecoController_cadastrarEnderecoPage9_invoker.call(EnderecoController_3.cadastrarEnderecoPage())
-      }
-  
     // @LINE:22
-    case controllers_EnderecoController_gerenciarEnderecoPage10_route(params@_) =>
+    case controllers_EnderecoController_cadastrarEnderecoPage10_route(params@_) =>
       call { 
-        controllers_EnderecoController_gerenciarEnderecoPage10_invoker.call(EnderecoController_3.gerenciarEnderecoPage)
+        controllers_EnderecoController_cadastrarEnderecoPage10_invoker.call(EnderecoController_3.cadastrarEnderecoPage())
       }
   
     // @LINE:23
-    case controllers_EnderecoController_atualizarEnderecoPage11_route(params@_) =>
-      call(params.fromQuery[Long]("id", None)) { (id) =>
-        controllers_EnderecoController_atualizarEnderecoPage11_invoker.call(EnderecoController_3.atualizarEnderecoPage(id))
+    case controllers_EnderecoController_gerenciarEnderecoPage11_route(params@_) =>
+      call { 
+        controllers_EnderecoController_gerenciarEnderecoPage11_invoker.call(EnderecoController_3.gerenciarEnderecoPage)
       }
   
     // @LINE:24
-    case controllers_EnderecoController_removerEndereco12_route(params@_) =>
+    case controllers_EnderecoController_atualizarEnderecoPage12_route(params@_) =>
       call(params.fromQuery[Long]("id", None)) { (id) =>
-        controllers_EnderecoController_removerEndereco12_invoker.call(EnderecoController_3.removerEndereco(id))
+        controllers_EnderecoController_atualizarEnderecoPage12_invoker.call(EnderecoController_3.atualizarEnderecoPage(id))
       }
   
-    // @LINE:26
-    case controllers_EnderecoController_cadastrarEndereco13_route(params@_) =>
-      call { 
-        controllers_EnderecoController_cadastrarEndereco13_invoker.call(
-          req => EnderecoController_3.cadastrarEndereco(req))
+    // @LINE:25
+    case controllers_EnderecoController_removerEndereco13_route(params@_) =>
+      call(params.fromQuery[Long]("id", None)) { (id) =>
+        controllers_EnderecoController_removerEndereco13_invoker.call(EnderecoController_3.removerEndereco(id))
       }
   
     // @LINE:27
-    case controllers_EnderecoController_atualizarEndereco14_route(params@_) =>
+    case controllers_EnderecoController_cadastrarEndereco14_route(params@_) =>
       call { 
-        controllers_EnderecoController_atualizarEndereco14_invoker.call(
+        controllers_EnderecoController_cadastrarEndereco14_invoker.call(
+          req => EnderecoController_3.cadastrarEndereco(req))
+      }
+  
+    // @LINE:28
+    case controllers_EnderecoController_atualizarEndereco15_route(params@_) =>
+      call { 
+        controllers_EnderecoController_atualizarEndereco15_invoker.call(
           req => EnderecoController_3.atualizarEndereco(req))
       }
   
-    // @LINE:30
-    case controllers_Assets_versioned15_route(params@_) =>
+    // @LINE:31
+    case controllers_Assets_versioned16_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned15_invoker.call(Assets_1.versioned(path, file))
+        controllers_Assets_versioned16_invoker.call(Assets_1.versioned(path, file))
       }
   }
 }
